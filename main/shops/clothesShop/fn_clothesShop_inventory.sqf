@@ -6,8 +6,8 @@
 	Function for determining the available inventory for the clothes shops for After Altis
 	
 	Paramters:
-	"" Type of clothes shop
-	"" Type of clothes
+	0: STRING Type of clothing shop. Civ, gang, police, scuba etc.
+	1: STRING Type of clothes. Uniform, vest, headgear etc.
 */
 
 private ["_shopType", "_clothesType", "_array"];
