@@ -29,6 +29,10 @@ switch (_shopType) do
 	//// VEHICLE
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"
 	]};
+	
+	case "Fish" : {[
+	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",
+	]};
 
 	default  "";
 };
