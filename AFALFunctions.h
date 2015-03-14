@@ -1,16 +1,14 @@
 /*
 	File: AFALFunctions.h
-	Author : 2Dumb2bu & Ballistic
+	Author : Nuke & Ballistic
 
 	Description:	
 	All the amazing functions
 */
 
-class AFAL_client
-{
+class AFAL_client {
 	tag = "AFAL";
-	class Over_network
-	{
+	class Over_network {
 		file = "system";
 		class MP {};
 		class MPexec {};
@@ -23,8 +21,7 @@ class AFAL_client
 		class cityDemolish {};
 	};
 	
-	class Main
-	{
+	class Main {
 		file = "main";
 		class eventHandlerSetup {};
 		class keyboard {};
@@ -32,8 +29,7 @@ class AFAL_client
 		class consumables {};
 	};
 	
-	class player_actions
-	{
+	class player_actions {
 		file = "main\actions";
 		class climb {};
 		class tazed {};
@@ -44,8 +40,7 @@ class AFAL_client
 		class workMechanic {};
 	};
 	
-	class player
-	{
+	class player {
 		file = "main\menus\playerMenu";
 		class playerMenu {};
 		class givingMoney {};
@@ -54,8 +49,7 @@ class AFAL_client
 		class dropItems {};
 	};
 	
-	class shop
-	{
+	class shop {
 		file = "main\menus";
 		class clothesShop {};
 		class itemShop {};
@@ -64,8 +58,7 @@ class AFAL_client
 		class add_sub_menu {};
 	};
 	
-	class clothing
-	{
+	class clothing {
 		file = "main\menus\clothesShop";
 		class clothesShop_add {};
 		class clothesShop_buy {};
@@ -76,16 +69,14 @@ class AFAL_client
 		class clothesShop_switch {};
 	};
 	
-	class items
-	{
+	class items {
 		file = "main\menus\itemShop";
 		class itemShop_inventory {};
 		class itemShop_select {};
 		class itemShop_buyitems {};
 	};
 	
-	class weapon
-	{
+	class weapon {
 		file = "main\menus\gunShop";
 		class gunShop_add {};
 		class gunShop_buy {};
@@ -95,8 +86,7 @@ class AFAL_client
 		class gunShop_select {};
 	};
 	
-	class mapping
-	{
+	class map {
 		file = "main\map";
 		class map {};
 		class map_locations {};
