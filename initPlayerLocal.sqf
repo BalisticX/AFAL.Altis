@@ -10,12 +10,12 @@
 
 [] call AFAL_fnc_eventHandlerSetup;
 
-//// players Bools = false ////
+//// Player bools ////
 isClimbing = false;
 isTazed = false;
 isDrugged = false;
-player_inUse = false;
-//// players Number ////
+inUse = false;
+//// Player numbers ////
 AFAL_money = 0;
 AFAL_bank = 3000;
 AFAL_mechanic = 500;
