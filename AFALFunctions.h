@@ -40,17 +40,8 @@ class AFAL_client {
 		class workMechanic {};
 	};
 	
-	class player {
-		file = "main\menus\playerMenu";
-		class playerMenu {};
-		class givingMoney {};
-		class sendingMoney {};
-		class useItems {};
-		class dropItems {};
-	};
-	
 	class shop {
-		file = "main\menus";
+		file = "main\dialogs";
 		class clothesShop {};
 		class itemShop {};
 		class items {};
@@ -58,8 +49,17 @@ class AFAL_client {
 		class add_sub_menu {};
 	};
 	
+	class player {
+		file = "main\dialogs\playerMenu";
+		class playerMenu {};
+		class givingMoney {};
+		class sendingMoney {};
+		class useItems {};
+		class dropItems {};
+	};
+	
 	class clothing {
-		file = "main\menus\clothesShop";
+		file = "main\dialogs\clothesShop";
 		class clothesShop_add {};
 		class clothesShop_buy {};
 		class clothesShop_inventory {};
@@ -70,14 +70,14 @@ class AFAL_client {
 	};
 	
 	class items {
-		file = "main\menus\itemShop";
+		file = "main\dialogs\itemShop";
 		class itemShop_inventory {};
 		class itemShop_select {};
 		class itemShop_buyitems {};
 	};
 	
 	class weapon {
-		file = "main\menus\gunShop";
+		file = "main\dialogs\gunShop";
 		class gunShop_add {};
 		class gunShop_buy {};
 		class gunShop_extra {};
@@ -87,7 +87,7 @@ class AFAL_client {
 	};
 	
 	class map {
-		file = "main\map";
+		file = "main\dialogs\map";
 		class map {};
 		class map_locations {};
 		class map_move {};
