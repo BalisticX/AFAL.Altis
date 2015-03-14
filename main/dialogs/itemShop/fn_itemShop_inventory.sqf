@@ -23,9 +23,7 @@ switch (_shopType) do
 	//// FOOD
 	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon",
 	//// GADGETS
-	"AFAL_cellphone", "AFAL_matches", "AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_pepperspray",
-	//// MEDICAL
-	"AFAL_bandage", "AFAL_bloodbag", "AFAL_defib",
+	"AFAL_cellphone", "AFAL_matches", "AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_stunGun", "AFAL_pepperspray", 
 	//// VEHICLE
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"
 	]};
