@@ -1,6 +1,6 @@
 /*
 	File: fn_NWEffects.sqf
-	Author: Nuke
+	Author: Nuke & Ballistic
 	
 	Description:
 	Broadcasts particle effects over to other players.
@@ -32,7 +32,7 @@ switch (_type) do{
 	};
 	
 	case "Grinder" : {
-	  _particle1 setParticleCircle [0, [0, 0, 0]];
+	  	_particle1 setParticleCircle [0, [0, 0, 0]];
 		_particle1 setParticleRandom [0, [0, 0, 0], [0.75, 0.75, 0], 1, 0.25, [0.2, 0.1, 0, 0.5], 0, 0.5];
 		_particle1 setParticleParams [["\A3\data_f\Cl_water", 1, 1, 1], "", "Billboard", 1, 0.6, [0, 0, 0], [0, 0, 1], 0, 10, 7.9, 0.0001, [0.2, 0.4, 0.8], [[1, 0.2, 0, 0.7], [1, 0.25, 0, 0.35], [1, 0.3, 0, 0]], [0.08], 0.25, 1, "", "", _object];
 		_particle1 setDropInterval 0.01;
