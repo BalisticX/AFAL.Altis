@@ -17,29 +17,56 @@ class AFAL_client
 		class BC {};
 		class NWAnimation {};
 		class numberText {};
+		class cityDemolish {};
+		class checkBox {};
+		class eyePos {};
+		class NWEffects {};
 	};
+	
 	class Main
 	{
 		file = "main";
 		class eventHandlerSetup {};
 		class keyboard {};
-		class items {};
-		class playerMenu {};
-		class numberText {};
 		class weaponDamage {};
-		class tazed {};
 		class consumables {};
 	};
+	
+	class player_actions
+	{
+		file = "main\actions";
+		class climb {};
+		class tazed {};
+		class drugMJ {};
+		class workConstruct {};
+		class workGrinding {};
+		class workFishing {};
+		class workMechanic {};
+	};
+	
+	class player
+	{
+		file = "main\menus\playerMenu";
+		class playerMenu {};
+		class givingMoney {};
+		class sendingMoney {};
+		class useItems {};
+		class dropItems {};
+	};
+	
 	class shop
 	{
-		file = "main\shops";
+		file = "main\menus";
 		class clothesShop {};
 		class itemShop {};
+		class items {};
 		class gunShop {};
+		class add_sub_menu {};
 	};
+	
 	class clothing
 	{
-		file = "main\shops\clothesShop";
+		file = "main\menus\clothesShop";
 		class clothesShop_add {};
 		class clothesShop_buy {};
 		class clothesShop_inventory {};
@@ -48,16 +75,18 @@ class AFAL_client
 		class clothesShop_select {};
 		class clothesShop_switch {};
 	};
+	
 	class items
 	{
-		file = "main\shops\itemShop";
+		file = "main\menus\itemShop";
 		class itemShop_inventory {};
 		class itemShop_select {};
-		class buyitems {};
+		class itemShop_buyitems {};
 	};
+	
 	class weapon
 	{
-		file = "main\shops\gunShop";
+		file = "main\menus\gunShop";
 		class gunShop_add {};
 		class gunShop_buy {};
 		class gunShop_extra {};
@@ -65,6 +94,7 @@ class AFAL_client
 		class gunShop_remove {};
 		class gunShop_select {};
 	};
+	
 	class mapping
 	{
 		file = "main\map";
