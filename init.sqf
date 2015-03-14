@@ -1,9 +1,20 @@
 /*
 	File: init.sqf
-	Author : 2Dumb2bu & Ballistic
+	Author : Nuke
 
 	Description:	
 	Intialization go!
 */
 
-[] call AFAL_fnc_eventHandlerSetup;
+enableSaving [false, false];
+
+X_Server = false;
+X_Client = false;
+X_JIP = false;
+StartProgress = false;
+
+if (!isDedicated) then { X_Client = true};
+
+enableSaving [false, false];
+
+StartProgress = true;
