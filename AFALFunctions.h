@@ -44,7 +44,7 @@ class AFAL_client {
 		file = "main\dialogs";
 		class clothesShop {};
 		class itemShop {};
-		class items {};
+		class masterItems {};
 		class gunShop {};
 		class add_sub_menu {};
 	};
