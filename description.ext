@@ -1,9 +1,9 @@
 /*
 	File: Description.ext
-	Author: Ballistic
+	Author: Nuke & Ballistic
 	
 	Description:
-	description.ext for After Altis Kavala Map
+	description.ext for After Altis
 */
 
 respawn = "BASE";
@@ -12,9 +12,39 @@ respawnDialog = 0;
 respawnTemplates[] = {"Counter"};
 respawnButton = 1;
 
-enableDebugConsole = 2;
+author = "Ballistic, Nuke & Terminal";
+overviewText = "This is After Altis"; 
+onLoadName = "After Altis";
+OnLoadMission = "This is After Altis";
+overviewPicture = "overview.jpg";
+loadscreen = "loadscreen.jpg";
 
-author = "Ballistic";
-overviewText = "After Altis Kavala Map"; 
-onLoadName = "AFAL Kavala Map";
-OnLoadMission = "After Altis Kavala Map";
+wreckLimit = 3;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 100;
+};
+
+#include "dialogs\AFAL_masterfile.h"
+
+class CfgFunctions
+{
+	#include "AFALFunctions.h"
+};
+
+disabledAI = true;
+
+disableChannels[]={0,2,6};
+
+enableDebugConsole = 1;
+
+joinUnassigned = 1;
