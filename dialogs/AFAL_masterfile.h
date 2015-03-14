@@ -22,7 +22,7 @@
 
 /*	DIALOG IDD's
 	
-	Map			500
+	Map				500
 	playerMenu			1000
 	vehicleShop			2000
 	gunShop				3000
