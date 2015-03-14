@@ -1,6 +1,6 @@
 /*
 	file: fn_masterItems.sqf
-	Author: 2Dumb2bu & Ballistic
+	Author: Nuke & Ballistic
 
 	Description:
 	The master list for all items everywhere for After Altis
