@@ -1,9 +1,9 @@
 /*
 	File: initPlayerLocal.sqf
-	Author: Ballistic
+	Author: Nuke & Ballistic
 	
 	Description:
-	initPlayerLocal for AFAL Kavala Map
+	initPlayerLocal for After Altis
 */
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call AFAL_fnc_MPexec};
