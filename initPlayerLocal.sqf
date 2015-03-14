@@ -33,7 +33,7 @@ AFAL_inventory = [
 	//// FOOD
 	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon",
 	//// GADGETS
-	"AFAL_cellphone", "AFAL_matches", "AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_pepperspray",
+	"AFAL_cellphone", "AFAL_matches", "AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_pepperspray", "AFAL_stunGun",
 	//// TOOLS
 	"AFAL_measure", "AFAL_hammer", "AFAL_drill", "AFAL_grinder",
 	//// MEDICAL
