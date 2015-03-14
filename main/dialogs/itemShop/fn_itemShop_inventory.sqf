@@ -1,5 +1,5 @@
 /*
-	File: AFAL_itemShop_inventory.sqf
+	File: fn_itemShop_inventory.sqf
 	Author: Ballistic
 	
 	Description:
