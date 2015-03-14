@@ -39,7 +39,7 @@ class AFAL_client
 	};
 	class clothing
 	{
-		file = "main\shops\clothesstore";
+		file = "main\shops\clothesShop";
 		class clothesShop_add {};
 		class clothesShop_buy {};
 		class clothesShop_inventory {};
@@ -50,14 +50,14 @@ class AFAL_client
 	};
 	class items
 	{
-		file = "main\shops\itemstore";
+		file = "main\shops\itemShop";
 		class itemShop_inventory {};
 		class itemShop_select {};
 		class buyitems {};
 	};
 	class weapon
 	{
-		file = "main\shops\weaponstore";
+		file = "main\shops\gunShop";
 		class gunShop_add {};
 		class gunShop_buy {};
 		class gunShop_extra {};
@@ -67,7 +67,7 @@ class AFAL_client
 	};
 	class mapping
 	{
-		file = "main\maping";
+		file = "main\map";
 		class map {};
 		class map_locations {};
 		class map_move {};
