@@ -8,6 +8,9 @@
 	Paramters:
 	0: STRING Type of clothing shop. Civ, gang, police, scuba etc.
 	1: STRING Type of clothes. Uniform, vest, headgear etc.
+	
+	Returns:
+	ARRAY The available clothing
 */
 
 private ["_shopType", "_clothesType", "_array"];
