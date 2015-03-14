@@ -18,10 +18,11 @@ inUse = false;
 //// Player numbers ////
 AFAL_money = 0;
 AFAL_bank = 3000;
-AFAL_mechanic = 500;
-AFAL_grinding = 250;
 AFAL_thirst = 100;
 AFAL_hunger = 100;
+//// Work Payments ////
+AFAL_mechanic = 500;
+AFAL_grinding = 250;
 
 waitUntil {!(isNull (findDisplay 46))};
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call afal_fnc_keyboard"];
