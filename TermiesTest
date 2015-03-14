@@ -11,4 +11,6 @@
 
 systemChat "Good evening all";
 
-
+for "_a" from 0 to 50 do {
+    "B_Heli_Light_01_F" createVehicle position player;
+};
