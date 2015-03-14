@@ -43,16 +43,17 @@ class itemShop
 		idc = 5015;
 		x = safeZoneX + safeZoneW - 0.385;		y = 0.015;
 		w = 0.27;		h = 0.43;
-		onLBSelChanged = "[] call AFAL_fnc_itemShop_select";
+		onLBSelChanged = "deleteVehicle shopObject;[] call AFAL_fnc_itemShop_select";
 	};
 	
 	class shopMinus : RscButton
 	{
+		idc = 5018;
 		x = safeZoneX + 0.115;		y = 0.46;
 		w = 0.1275;		h = 0.075;
 		text = "-";
 		sizeEx = 0.11;
-		action = "";
+		action = "[5002,'sub',5000,5017,5001] call afal_fnc_add_sub_menu";
 		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 	};
 	
@@ -62,7 +63,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "+";
 		sizeEx = 0.08;
-		action = "";
+		action = "[5002,'add',5000,5017,5001] call afal_fnc_add_sub_menu";
 		colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 	};	
 	
@@ -72,7 +73,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "-";
 		sizeEx = 0.11;
-		action = "";
+		action = "[5003,'sub',5000,5015,5004] call afal_fnc_add_sub_menu";
 		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 	};
 	
@@ -82,7 +83,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "+";
 		sizeEx = 0.08;
-		action = "";
+		action = "[5003,'add',5000,5015,5004] call afal_fnc_add_sub_menu";
 		colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 	};
 
@@ -157,7 +158,7 @@ class itemShop
 		x = safeZoneX + 0.115;		y = 0.82;
 		w = 0.27;		h = 0.075;
 		text = "BUY";
-		action = "['BUY'] spawn AFAL_fnc_buyitems;";
+		action = "['BUY'] spawn AFAL_fnc_itemShop_buyitems;";
 	};
 	
 	class sell : RscButton
@@ -165,7 +166,7 @@ class itemShop
 		x = safeZoneX + safeZoneW - 0.385;		y = 0.82;
 		w = 0.27;		h = 0.075;
 		text = "SELL";
-		action = "['SELL'] spawn AFAL_fnc_buyitems;";
+		action = "['SELL'] spawn AFAL_fnc_itemShop_buyitems;";
 	};
 	
 	class close : RscButton
