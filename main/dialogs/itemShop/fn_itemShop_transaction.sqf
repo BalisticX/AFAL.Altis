@@ -6,7 +6,7 @@
 	Executes when you make a transaction at the item shop for After Altis
 */
 
-private["_mode","_type","_buyPrice","_playertype","_sellPrice","_shopAmount","_playerAmount","_total"];
+private["_mode", "_type", "_buyPrice", "_playertype", "_sellPrice", "_shopAmount", "_playerAmount"];
 
 _mode = [ _this, 0, "", [""]]call bis_fnc_param;
 _type = lbData [5017, (lbCurSel 5017)];
@@ -25,7 +25,7 @@ if (shopReturn) exitWith {};
 shopReturn = true;
 switch (_mode) do {
 
-	case "BUY": {
+	case "Buy": {
 		private = "_total";
 		if (AFAL_money < _buyPrice) exitWith {systemChat "Get rich chump!"; shopReturn = false};
 		closeDialog 0;
@@ -35,7 +35,8 @@ switch (_mode) do {
 		missionNameSpace setVariable [ _type, (_total + _shopAmount)];
 	};
 	
-	case "SELL" : {
+	case "Sell" : {
+		private = "_total";
 		_total = missionNameSpace getVariable _playerType;
 		if (_playertype == "") exitWith {shop_return = false};
 		if( _total < _playerAmount) exitWith { shopReturn = false; systemChat "You dont have that much to sell"};
