@@ -50,7 +50,7 @@ AFAL_inventory = [
 	missionNamespace setVariable [ _x, 1]
 } foreach AFAL_inventory;
 
-player addaction["Use ATM",afal_fnc_playerMenu,"",0,false,false,"",'call afal_fnc_checkBox == "atm"'];
+player addAction [ "Use ATM", afal_fnc_playerMenu, "", 0, false, false, "", "call afal_fnc_checkBox == 'atm'"];
 
 AFAL_walls = [
 	"city_4m_f", "city_8m_f", "city_pillar_f",
