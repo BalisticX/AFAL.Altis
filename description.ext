@@ -1,0 +1,20 @@
+/*
+	File: Description.ext
+	Author: Ballistic
+	
+	Description:
+	description.ext for After Altis Kavala Map
+*/
+
+respawn = "BASE";
+respawnDelay = 5;
+respawnDialog = 0;
+respawnTemplates[] = {"Counter"};
+respawnButton = 1;
+
+enableDebugConsole = 2;
+
+author = "Ballistic";
+overviewText = "After Altis Kavala Map"; 
+onLoadName = "AFAL Kavala Map";
+OnLoadMission = "After Altis Kavala Map";
