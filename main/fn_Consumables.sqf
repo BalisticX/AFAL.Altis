@@ -1,5 +1,5 @@
 /*
-	File:	fn_consumables.sqf
+	File:	fn_Consumables.sqf
 	Author:		2Dumb2bu
 	
 	Description:	
