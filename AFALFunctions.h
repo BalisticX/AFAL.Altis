@@ -73,7 +73,7 @@ class AFAL_client {
 		file = "main\dialogs\itemShop";
 		class itemShop_inventory {};
 		class itemShop_select {};
-		class itemShop_buyitems {};
+		class itemShop_transaction {};
 	};
 	
 	class weapon {
