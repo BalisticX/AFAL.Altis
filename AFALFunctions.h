@@ -16,11 +16,11 @@ class AFAL_client
 		class MPexec {};
 		class BC {};
 		class NWAnimation {};
+		class NWEffects {};
 		class numberText {};
-		class cityDemolish {};
 		class checkBox {};
 		class eyePos {};
-		class NWEffects {};
+		class cityDemolish {};
 	};
 	
 	class Main
