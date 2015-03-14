@@ -158,7 +158,7 @@ class itemShop
 		x = safeZoneX + 0.115;		y = 0.82;
 		w = 0.27;		h = 0.075;
 		text = "BUY";
-		action = "['BUY'] spawn AFAL_fnc_itemShop_buyitems;";
+		action = "['Buy'] spawn AFAL_fnc_itemShop_transaction;";
 	};
 	
 	class sell : RscButton
@@ -166,7 +166,7 @@ class itemShop
 		x = safeZoneX + safeZoneW - 0.385;		y = 0.82;
 		w = 0.27;		h = 0.075;
 		text = "SELL";
-		action = "['SELL'] spawn AFAL_fnc_itemShop_buyitems;";
+		action = "['Sell'] spawn AFAL_fnc_itemShop_transaction;";
 	};
 	
 	class close : RscButton
