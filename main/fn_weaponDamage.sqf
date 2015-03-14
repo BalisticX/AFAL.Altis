@@ -1,5 +1,5 @@
 /*
-	File: AFAL_handleDamage.sqf
+	File: fn_handleDamage.sqf
 	Author: Nuke & Ballistic
 	
 	Description:
