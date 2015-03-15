@@ -1,6 +1,6 @@
 /*
-	File:			fn_transferMoney.sqf
-	Author: 		Nuke
+	File:		fn_givingMoney.sqf
+	Author:		Nuke
 	
 	Description: 
 	Give all your moneys to another player
