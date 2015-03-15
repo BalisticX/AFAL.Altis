@@ -53,7 +53,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "-";
 		sizeEx = 0.11;
-		action = "[5002,'sub',5000,5017,5001] call afal_fnc_add_sub_menu";
+		action = "[5002,'sub',5000,5017,5001] call AFAL_fnc_itemShop_qty";
 		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 	};
 	
@@ -63,7 +63,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "+";
 		sizeEx = 0.08;
-		action = "[5002,'add',5000,5017,5001] call afal_fnc_add_sub_menu";
+		action = "[5002,'add',5000,5017,5001] call AFAL_fnc_itemShop_qty";
 		colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 	};	
 	
@@ -73,7 +73,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "-";
 		sizeEx = 0.11;
-		action = "[5003,'sub',5000,5015,5004] call afal_fnc_add_sub_menu";
+		action = "[5003,'sub',5000,5015,5004] call AFAL_fnc_itemShop_qty";
 		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 	};
 	
@@ -83,7 +83,7 @@ class itemShop
 		w = 0.1275;		h = 0.075;
 		text = "+";
 		sizeEx = 0.08;
-		action = "[5003,'add',5000,5015,5004] call afal_fnc_add_sub_menu";
+		action = "[5003,'add',5000,5015,5004] call AFAL_fnc_itemShop_qty";
 		colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 	};
 
