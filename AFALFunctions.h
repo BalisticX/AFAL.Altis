@@ -47,7 +47,6 @@ class AFAL_client {
 		class itemShop {};
 		class masterItems {};
 		class gunShop {};
-		class add_sub_menu {};
 	};
 	
 	class player {
@@ -74,6 +73,7 @@ class AFAL_client {
 		class itemShop_inventory {};
 		class itemShop_select {};
 		class itemShop_transaction {};
+		class itemShop_qty {};
 	};
 	
 	class weapon {
