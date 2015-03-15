@@ -42,6 +42,7 @@ class AFAL_client {
 	
 	class shop {
 		file = "main\dialogs";
+		class playerMenu {};
 		class clothesShop {};
 		class itemShop {};
 		class masterItems {};
@@ -51,7 +52,6 @@ class AFAL_client {
 	
 	class player {
 		file = "main\dialogs\playerMenu";
-		class playerMenu {};
 		class givingMoney {};
 		class sendingMoney {};
 		class useItems {};
