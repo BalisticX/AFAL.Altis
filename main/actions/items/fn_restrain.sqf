@@ -25,4 +25,6 @@ sleep 0.8;
 
 deleteVehicle _object;
 
-[[cursorTarget, player, _item],"AFAL_fnc_restrained", cursorTarget, false, false] call BIS_fnc_MP;
+if (isNull cursorTarget) exitWith {} else {
+	[[cursorTarget, player, _item],"AFAL_fnc_restrained", cursorTarget, false, false] call BIS_fnc_MP;
+};
