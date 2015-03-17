@@ -35,6 +35,7 @@ class AFAL_client {
 		file = "main\actions";
 		class climb {};
 		class tazed {};
+		class restrained {};
 		class workConstruct {};
 		class workGrinding {};
 		class workFishing {};
