@@ -21,7 +21,7 @@ isDrugged = true;
 
 _battery = "Land_Battery_F" createVehicle (getPos player);
 _smoke = "#particlesource" createVehicle (getPos _battery);
-[[0,_battery,_smoke],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_mp;
+[["MJSmoke",_battery,_smoke],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_mp;
 _battery attachTo [ player, [ -0.06, -0.02, 0], "head"];
 hideObjectGlobal _battery;
 
