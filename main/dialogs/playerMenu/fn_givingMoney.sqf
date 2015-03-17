@@ -1,4 +1,4 @@
-;/*
+/*
 	File:		fn_givingMoney.sqf
 	Author:		Nuke
 	
