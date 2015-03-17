@@ -27,3 +27,9 @@ deleteVehicle _object;
 if (isNull cursorTarget) exitWith {} else {
 	[[cursorTarget, player, _item],"AFAL_fnc_restrained", cursorTarget, false, false] call AFAL_fnc_MPexec;
 };
+
+/*
+////
+ALSO need the missionSpace setVariable removing one of the restraint items from the player.
+////
+*/
