@@ -28,6 +28,7 @@ class AFAL_client {
 		class keyboard {};
 		class weaponDamage {};
 		class consumables {};
+		class newSpawn {};
 	};
 	
 	class player_actions {
