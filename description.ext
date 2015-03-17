@@ -48,3 +48,18 @@ disableChannels[]={0,2,6};
 enableDebugConsole = 1;
 
 joinUnassigned = 1;
+
+class RscTitles {
+	#include "dialogs\AFAL_title.hpp"
+};
+
+class CfgMusic 
+{
+	tracks[]={};
+	
+	class Theme
+	{
+		name = "";
+		sound[] = {"sounds\AFAL_theme.ogg", db +10, 1.0};
+	};
+};
