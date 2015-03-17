@@ -11,7 +11,7 @@ _keyCode = _this select 1;
 _shiftKey = _this select 2;
 _ctrlKey = _this select 3;
 _altKey = _this select 4;
-_hand = false;
+_enableKeys = false;
 
 switch (_keyCode) do {
 
@@ -31,7 +31,7 @@ switch (_keyCode) do {
 						_name = [];
 						_end = _arr find 46;
 						for "_r" from (_start + 2) to (_end - 1) do {_name set [count _name, _arr select _r]};
-						if (toString _name in afal_walls) exitWith {[] spawn AFAL_fnc_climb; _hand = true};
+						if (toString _name in afal_walls) exitWith {[] spawn AFAL_fnc_climb; _enableKeys = true};
 					}
 				}
 			} count _nearObjects;
@@ -39,4 +39,4 @@ switch (_keyCode) do {
 	};
 };
 
-_hand;
+_enableKeys;
