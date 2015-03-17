@@ -1,9 +1,9 @@
 # AFAL.Altis / Sounds
 
+In the current build:
 
-Includes: 
-
-
-AFAL_theme.ogg
-
-  Theme song for the intro
+  AFAL_theme.ogg
+  
+    Theme music for the intro
+    
+    
