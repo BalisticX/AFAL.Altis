@@ -1,14 +1,10 @@
 # AFAL.Altis / Images
 
-Currently have:
+In the current build:
 
   AFAL_police.paa
   
     Sherrif uniform texture
-    
-  AFAL_hunter.paa
-  
-    Demo donator uniform texture
     
     
   AFAL_title.paa
@@ -24,6 +20,6 @@ Currently have:
   
     Keychain menu image
     
-  AFAL_license
+  AFAL_license.paa
   
     License menu image
