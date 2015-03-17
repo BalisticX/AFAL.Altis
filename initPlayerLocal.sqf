@@ -81,4 +81,6 @@ _dust setParticleParams [["\A3\data_f\cl_basic.p3d", 1, 0, 1], "", "Billboard", 
 _dust setParticleRandom [0, [0.25, 0.25, 0], [1, 1, 1], 0, 1, [0, 0, 0, 0.5], 0, 0];
 _dust setParticleCircle [20, [0.5, 0, 0.1]];  
 _dust setDropInterval 0.07;
+
+[] spawn AFAL_fnc_newSpawn;
   
