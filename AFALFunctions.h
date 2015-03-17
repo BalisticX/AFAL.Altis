@@ -31,15 +31,19 @@ class AFAL_client {
 		class newSpawn {};
 	};
 	
-	class player_actions {
+	class actions {
 		file = "main\actions";
 		class climb {};
 		class tazed {};
-		class drugMJ {};
 		class workConstruct {};
 		class workGrinding {};
 		class workFishing {};
 		class workMechanic {};
+	};
+	
+	class actions_items {
+		file = "main\actions\items";
+		class drugMJ {};
 	};
 	
 	class shop {
