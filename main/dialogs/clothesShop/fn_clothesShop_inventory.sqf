@@ -21,11 +21,8 @@ _clothesType = [ _this, 1, "", [""]] call BIS_fnc_param;
 _array = [];
 
 switch (_shopType) do {
-	
 	case "Scuba" : {
-	
 		switch (_clothesType) do {
-		
 			case "Uniforms" : {
 				_array = _array + [
 					["Black Wetsuit", 5000, "U_B_Wetsuit", "$5000"],
@@ -34,7 +31,6 @@ switch (_shopType) do {
 					["Fisherman's Clothes", 1250, "U_C_Poor_1", "$1250"]
 				];
 			};
-			
 			case "Vests" : {
 				_array = _array + [
 					["Black Rebreather", 8000, "V_RebreatherB", "$8000"],
@@ -42,14 +38,12 @@ switch (_shopType) do {
 					["Camo Rebreather", 8250, "V_RebreatherIR", "$8250"]
 				];	
 			};
-			
 			case "Headgear" : {
 				_array = _array + [
 					["Fisherman's Hat", 1250, "H_StrawHat", "$1250"],
 					["Dark Straw Hat", 1350, "H_StrawHat_dark", "$1350"]
 				];
 			};
-			
 			case "Facewear" : {
 				_array = _array + [
 					["Black Scuba Goggles", 2600, "G_B_Diving", "$2800"],
@@ -59,16 +53,13 @@ switch (_shopType) do {
 					["Aviators", 1700, "G_Aviator", "$1700"]
 				];				
 			};
-			
 			case "Backpacks" : {
 				_array = _array + [
 					["Assault Pack", 12500, "B_AssaultPack_blk", "$12500"],
 					["Field Pack", 17500, "B_FieldPack_blk", "$15500"],
 					["Tactical Pack", 15500, "B_TacticalPack_blk", "$17500"]
-				];	
-			
+				];
 			};
-			
 			case "Presets" : {
 				_array = _array + [
 					["Black Diver Outfit", 15800, "PresetScubaBlack", "$15800"],
@@ -79,11 +70,8 @@ switch (_shopType) do {
 			};
 		};
 	};
-	
 	case "Civ" : {
-	
 		switch (_clothesType) do {
-		
 			case "Uniforms" : {
 				_array = _array + [
 					["Polo Blue", 1000, "U_C_Poloshirt_blue", "$1000"],
@@ -102,7 +90,6 @@ switch (_shopType) do {
 					["Fancy Clothes", 25000, "U_NikosBody", "$25000"]
 				];
 			};
-			
 			case "Vests" : {
 				_array = _array + [
 					["Khaki Bandolier", 15000, "V_BandollierB_khk", "$15000"],
@@ -116,7 +103,6 @@ switch (_shopType) do {
 					["Black Chestrig", 22500, "V_Chestrig_blk", "$22500"]
 				];	
 			};
-			
 			case "Headgear" : {
 				_array = _array + [
 					["Cap Red", 1100, "H_Cap_red", "$1100"],
@@ -147,7 +133,6 @@ switch (_shopType) do {
 					["Cap of Awesome", 2500, "H_Cap_surfer", "$2500"]
 				];
 			};
-			
 			case "Facewear" : {
 				_array = _array + [
 					["Aviators", 1700, "G_Aviator", "$1700"],
@@ -163,13 +148,10 @@ switch (_shopType) do {
 					["Stylish Sports", 2750, "G_Sport_Checkered", "$2750"]
 				];				
 			};
-			
 			case "Backpacks" : {
 				_array = _array + [
 				];	
-			
 			};
-			
 			case "Presets" : {
 				_array = _array + [
 					["Brown Jacket Outfit", 1000, "PresetBrownJacket", "$1000"],
@@ -179,42 +161,35 @@ switch (_shopType) do {
 			};
 		};
 	};
-	
 	case "Press" : {
-		
 		switch (_clothesType) do {
-		
 			case "Uniforms" : {
 				_array = _array + [
 					["Journalist Uniform", 10500, "U_C_Journalist", "$10500"]
 				];
 			};
-			
 			case "Vests" : {
 				_array = _array + [
 					["Press Vest", 15250, "V_Press_F", "$15250"]
 				];	
 			};
-			
 			case "Headgear" : {
 				_array = _array + [
 					["Press Cap", 1500, "H_Cap_press", "$1500"],
 					["Warzone Helmet", 3000, "H_HelmetB_plain_blk", "$3000"]
 				];
 			};
-			
 			case "Facewear" : {
 				_array = _array + [
-					["Aviators", 1700, "G_Aviator", "$1700"]
+					["Aviators", 1700, "G_Aviator", "$1700"],
+					["Black Shades", 2150, "G_Shades_Black", "$2150"]
 				];				
 			};
-			
 			case "Backpacks" : {
 				_array = _array + [
-				];	
-			
+					["Assault Pack", 12500, "B_AssaultPack_blk", "$12500"]
+				];
 			};
-			
 			case "Presets" : {
 				_array = _array + [
 					["Press Outfit", 28950, "PresetPress", "$28950"]
