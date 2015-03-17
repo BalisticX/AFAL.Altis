@@ -19,6 +19,7 @@ class AFAL_client {
 		class checkBox {};
 		class eyePos {};
 		class cityDemolish {};
+		class cityBarricade {};
 	};
 	
 	class Main {
