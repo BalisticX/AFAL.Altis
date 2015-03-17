@@ -6,14 +6,6 @@
 	The animation and effect of being restrained in AfterAltis
 */
 
-/*
-	File: AFAL_restrained.sqf
-	Author: Ballistic
-	
-	Description:
-	The animation and effect of being restrained in AfterAltis
-*/
-
 private ["_target", "_source", "_item"];
 
 _target = [ _this, 0, player, [objNull]] call BIS_fnc_param;
