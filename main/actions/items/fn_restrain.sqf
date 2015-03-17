@@ -6,7 +6,7 @@
 	Action for restraining someone also activates the restraint on cursorTarget for AfterAltis
 */
 
-private ["_item", "_restrainItems", "_object"];
+private ["_item", "_restrainItems", "_object", "_total"];
 
 _item = [ _this, 0, "", [""]] call BIS_fnc_param;
 	if (_item == "") exitWith {};
@@ -28,8 +28,6 @@ if (isNull cursorTarget) exitWith {} else {
 	[[cursorTarget, player, _item],"AFAL_fnc_restrained", cursorTarget, false, false] call AFAL_fnc_MPexec;
 };
 
-/*
-////
-ALSO need the missionSpace setVariable removing one of the restraint items from the player.
-////
-*/
+_total = missionNamespace getVariable _item;
+missionNamespace setVariable [ _item, (_total - 1)];
+////	I'm not sure if i added this last line correctly just copy/paste from MJ script	////
