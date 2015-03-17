@@ -8,7 +8,6 @@
 
 private ["_spawnCam", "_uniformList", "_houseList", "_uniform", "_house"];
 
-
 cutText ["", "BLACK FADED", 0];
 
 player enableSimulation false;
@@ -25,8 +24,7 @@ _houseList = nearestObjects [(getMarkerPos "KavalaCenter"), [
 	"Land_i_House_Small_02_V1_F", "Land_i_House_Small_01_V1_F", 
 	"Land_i_House_Big_01_V1_F", "Land_i_House_Big_02_V1_F"], 700];
 
-sleep 10;
-
+	sleep 10;
 playMusic "Theme";
 	
 cutText ["", "BLACK IN", 5];
@@ -79,7 +77,7 @@ player cameraEffect ["terminate","back"];
 camDestroy _spawnCam;
 	sleep 1.5;
 cutText ["", "BLACK IN", 1.5];
-player switchMove "Acts_UnconsciousStandUp_part1";
+[[ player, "switchMove","Acts_UnconsciousStandUp_part1"], "AFAL_fnc_NWAnimation", true, false] spawn AFAL_fnc_mp;
 	sleep 40;
 player allowDamage true;
 player switchMove "";
