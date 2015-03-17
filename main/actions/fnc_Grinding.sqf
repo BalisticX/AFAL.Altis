@@ -28,7 +28,7 @@ _sparkOrange = "#particlesource" createVehicleLocal _pos;
 _sparkYellow = "#particlesource" createVehicleLocal _pos;
 _smoke = "#particlesource" createVehicleLocal _pos;
 
-[[1,_pos,_sparkOrange,_sparkYellow,_smoke],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_mp;
+[["Grinder",_pos,_sparkOrange,_sparkYellow,_smoke],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_mp;
 
 _grindcam = "camera" camCreate (player modelToWorld [ 3, -7, 1]);
 	_grindcam camSetTarget (player);
