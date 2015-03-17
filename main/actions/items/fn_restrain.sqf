@@ -9,7 +9,7 @@
 private ["_item", "_restrainItems", "_object"];
 
 _item = [ _this, 0, "", [""]] call BIS_fnc_param;
-	if (isNull _item) exitWith {};
+	if (_item == "") exitWith {};
 
 _restrainItems = ["AFAL_ductTape", "AFAL_rope", "AFAL_zipTie", "AFAL_handcuffs"];
 	if (_item in _restrainItems > 0) exitWith {};
