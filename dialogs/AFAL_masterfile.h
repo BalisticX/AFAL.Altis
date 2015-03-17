@@ -10,8 +10,6 @@
 
 #include "AFAL_map.hpp"
 
-#include "AFAL_vehicleShop.hpp"
-
 #include "AFAL_gunShop.hpp"
 
 #include "AFAL_clothesShop.hpp"
@@ -22,6 +20,7 @@
 
 /*	DIALOG IDD's
 	
+	Intro Title			17
 	Map				500
 	playerMenu			1000
 	vehicleShop			2000
