@@ -94,6 +94,6 @@ camDestroy _spawnCam;
 cutText ["", "BLACK IN", 1.5];
 player switchMove "Acts_UnconsciousStandUp_part1";
 	sleep 40;
-player allowDamage false;
+player allowDamage true;
 player switchMove "";
 player setDir (getDir player - 200);
