@@ -28,7 +28,6 @@ switch (_type) do {
 			[ "4-five .45", 4500, "hgun_Pistol_heavy_01_F", "$4500", "\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_01\data\UI\gear_pistol_heavy_01_X_ca.paa"],
 			["PDW 2000", 22250, "hgun_PDW2000_F", "$22250", "\A3\Weapons_F_gamma\Smgs\pdw2000\data\UI\gear_pdw2X_X_CA.paa"]
 		];
-		
 		if (side player == west) then {
 			_array = _array + [
 			["Vermin SMG", 25500, "SMG_01_F", "$25500", "\A3\Weapons_F_beta\Smgs\SMG_01\data\UI\gear_SMG_01_X_CA.paa"],
@@ -49,7 +48,6 @@ switch (_type) do {
 			["Mk.20 Carbine", 29500, "arifle_Mk20C_F", "30Rnd 5.56x45mm"],
 			["Mk.20 Rifle", 31500, "arifle_Mk20_F", "30Rnd 5.56x45mm"],
 		];
-		
 		if (side player == east) then {
 			_array = _array + [
 				["TRG-21 UGL", 40000, "arifle_TRG21_GL_F", "30Rnd 5.56x45mm + 40mm"],
