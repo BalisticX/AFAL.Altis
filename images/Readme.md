@@ -14,7 +14,7 @@ In the current build:
     
   AFAL_phone.paa
   
-    Phone menu image
+    Phone menu background
     
   AFAL_keychain.paa
   
@@ -22,4 +22,8 @@ In the current build:
     
   AFAL_license.paa
   
-    License menu image
+    License menu background
+    
+  AFAL_atm.paa
+  
+    ATM menu background
