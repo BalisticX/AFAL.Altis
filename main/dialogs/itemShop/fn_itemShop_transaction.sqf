@@ -38,7 +38,7 @@ switch (_mode) do {
 	case "Sell" : {
 		private = "_total";
 		_total = missionNameSpace getVariable _playerType;
-		if (_playertype == "") exitWith {shop_return = false};
+		if (_playertype == "") exitWith {shopReturn = false};
 		if( _total < _playerAmount) exitWith { shopReturn = false; systemChat "You dont have that much to sell"};
 		if( _total < 0) exitWith { HINT "This message has been added to the watch list for glitches"; shopReturn = false;};
 	
