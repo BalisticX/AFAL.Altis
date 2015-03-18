@@ -16,7 +16,7 @@
 
 #include "AFAL_itemShop.hpp"
 
-#include "AFAL_playerMenu.hpp"
+//#include "AFAL_playerMenu.hpp" // as we dont have this file in the dialog file
 
 /*	DIALOG IDD's
 	
