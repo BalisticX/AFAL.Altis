@@ -40,13 +40,9 @@ switch (_mode) do {
 		_total = missionNameSpace getVariable _playerType;
 		if (_playertype == "") exitWith {shopReturn = false};
 		if( _total < _playerAmount) exitWith { shopReturn = false; systemChat "You dont have that much to sell"};
-		if( _total < 0) exitWith { HINT "This message has been added to the watch list for glitches"; shopReturn = false;};
-		
-		_itemArray = [shopType] call AFAL_fnc_itemShop_inventory;
-		if (_playertype find _itemArray > 0) then {
-			AFAL_money = AFAL_money + (_sellPrice * _playerAmount);
-			missionNameSpace setVariable [ _playertype, (_total - _playerAmount)];
-			[ shopLocation, shopType] call AFAL_fnc_itemShop;
-		} else {systemChat "You can't sell that item to this shop!"};
+		if( _total < 0) exitWith { HINT "This message has been added to the watch list for glitches"; shopReturn = false}; 
+		AFAL_money = AFAL_money + (_sellPrice * _playerAmount);
+		missionNameSpace setVariable [ _playertype, (_total - _playerAmount)];
+		[ shopLocation, shopType] call AFAL_fnc_itemShop;
 	};
 };
