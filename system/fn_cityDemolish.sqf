@@ -15,7 +15,7 @@ _markerList = [
 {
   private ["_location", "_radius", "_demolishList"];
   
-  _location = getMarkerPos _x select 0;
+  _location = getMarkerPos (_x select 0);
   _radius = _x select 1;
   
 _demolishList = nearestObjects [(position _location), [
