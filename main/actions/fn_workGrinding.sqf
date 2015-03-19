@@ -1,5 +1,5 @@
 /*
-	File: fnc_workGrinding.sqf
+	File: fn_workGrinding.sqf
 	Author: Ballistic
 	
 	Description:
