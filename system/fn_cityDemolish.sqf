@@ -18,7 +18,7 @@ _markerList = [
   _location = getMarkerPos (_x select 0);
   _radius = _x select 1;
   
-_demolishList = nearestObjects [(position _location), [
+_demolishList = nearestObjects [_location, [
 	"Land_Atm_01_F", "Land_Atm_02_F",
 	"Land_i_Shop_01_V1_F", "Land_i_Shop_02_V1_F",
 	"Land_Kiosk_blueking_F",
