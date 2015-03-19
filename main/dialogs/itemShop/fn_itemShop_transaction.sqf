@@ -47,6 +47,6 @@ switch (_mode) do {
 			AFAL_money = AFAL_money + (_sellPrice * _playerAmount);
 			missionNameSpace setVariable [ _playertype, (_total - _playerAmount)];
 			[ shopLocation, shopType] call AFAL_fnc_itemShop;
-		};
+		} else {systemChat "You can't sell that item to this shop!"};
 	};
 };
