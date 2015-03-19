@@ -43,7 +43,7 @@ switch (_mode) do {
 		if( _total < 0) exitWith { HINT "This message has been added to the watch list for glitches"; shopReturn = false;};
 		
 		_itemArray = [shopType] call AFAL_fnc_itemShop_inventory;
-		if (_type find _itemArray > 0) then {
+		if (_playertype find _itemArray > 0) then {
 			AFAL_money = AFAL_money + (_sellPrice * _playerAmount);
 			missionNameSpace setVariable [ _playertype, (_total - _playerAmount)];
 			[ shopLocation, shopType] call AFAL_fnc_itemShop;
