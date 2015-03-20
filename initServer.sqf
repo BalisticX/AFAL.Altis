@@ -3,14 +3,16 @@
 	Author : Nuke & Ballistic
 	
 	Description:	
-  	Gives the server some smarts
+  	Sets up server side stuff at mission start for After Altis
 */
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call AFAL_fnc_MPexec};
 
+////	Gives the server some brains	////
+
 [] call compile PreprocessFileLineNumbers "\AFAL_brain\init.sqf";
 
-////	Barricades Kavala and demolish rest of the map	////
+////	Barricades Kavala and demolishes rest of the map	////
 
 [] spawn AFAL_fnc_cityBarricade;
 [] spawn AFAL_fnc_cityDemolish;
