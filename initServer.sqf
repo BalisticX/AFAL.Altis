@@ -38,7 +38,7 @@ _NPCList = [
 ];
 {	[(_x select 0), (_x select 1), "MEDIUM"] call BIS_fnc_ambientAnim	} forEach _NPCList;
 
-////	Secures jail cells and buildings	////
+////	Locks down jail cells and building	////
 
 {	_x setVariable ["BIS_disabled_Door_1", 1, true]	} forEach [
 	jailCell1, jailCell2, jailCell3, jailCell4, 
