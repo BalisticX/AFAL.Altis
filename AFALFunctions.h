@@ -29,6 +29,7 @@ class AFAL_client {
 		class weaponDamage {};
 		class consumables {};
 		class newSpawn {};
+		class newEquip {};
 	};
 	
 	class actions {
