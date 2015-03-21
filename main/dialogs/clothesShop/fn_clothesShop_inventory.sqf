@@ -197,6 +197,60 @@ switch (_shopType) do {
 			};
 		};
 	};
+	
+	case "Race" : {
+		switch (_clothesType) do {
+			case "Uniforms" : {
+				_array = _array + [
+					["Driver Black", 8500, "U_C_Driver_1_black", "$8500"],
+					["Driver Blue", 8500, "U_C_Driver_1_blue", "$8500"],
+					["Driver Green", 8500, "U_C_Driver_1_green", "$8500"],
+					["Driver Orange", 8500, "U_C_Driver_1_orange", "$8500"],
+					["Driver Red", 8500, "U_C_Driver_1_red", "$8500"],
+					["Driver White", 8500, "U_C_Driver_1_white", "$8500"],
+					["Driver Yellow", 8500, "U_C_Driver_1_yellow", "$8500"],
+					["Driver Fuel", 9000, "U_C_Driver_1", "$8750"],
+					["Driver Bluking", 9000, "U_C_Driver_2", "$9000"],
+					["Driver Redstone", 9000, "U_C_Driver_3", "$9000"],
+					["Driver Vrana", 90050, "U_C_Driver_4", "$9000"]
+				];
+			};
+			case "Vests" : {
+				_array = _array + [
+				];	
+			};
+			case "Headgear" : {
+				_array = _array + [
+					["Helmet Black", 2000, "H_RacingHelmet_1_black_F", "$2000"],
+					["Helmet Blue", 2000, "H_RacingHelmet_1_blue_F", "$2000"],
+					["Helmet Green", 2000, "H_RacingHelmet_1_green_F", "$2000"],
+					["Helmet Orange", 2000, "H_RacingHelmet_1_orange_F", "$2000"],
+					["Helmet Red", 2000, "H_RacingHelmet_1_red_F", "$2000"],
+					["Helmet White", 2000, "H_RacingHelmet_1_white_F", "$2000"],
+					["Helmet Yellow", 2000, "H_RacingHelmet_1_yellow_F", "$2000"],
+					["Helmet Fuel", 2500, "H_RacingHelmet_1_F", "$2500"],
+					["Helmet Bluking", 2500, "H_RacingHelmet_2_F", "$2500"],
+					["Helmet Redstone", 2500, "H_RacingHelmet_3_F", "$2500"],
+					["Helmet Vrana", 2500, "H_RacingHelmet_4_F", "$2500"]
+				];
+			};
+			case "Facewear" : {
+				_array = _array + [
+					["Aviators", 1700, "G_Aviator", "$1700"],
+					["Black Shades", 2150, "G_Shades_Black", "$2150"]
+				];				
+			};
+			case "Backpacks" : {
+				_array = _array + [
+					["Assault Pack", 12500, "B_AssaultPack_blk", "$12500"]
+				];
+			};
+			case "Presets" : {
+				_array = _array + [
+				];
+			};
+		};
+	};
 };
 
 _array;
