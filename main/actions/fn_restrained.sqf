@@ -9,8 +9,8 @@
 private ["_target", "_source", "_item"];
 
 _target = [ _this, 0, player, [objNull]] call BIS_fnc_param;
-_source = [ _this, 0, objNull, [objNull]] call BIS_fnc_param;
-_item = [ _this, 0, "", [""]] call BIS_fnc_param;
+_source = [ _this, 1, objNull, [objNull]] call BIS_fnc_param;
+_item = [ _this, 2, "", [""]] call BIS_fnc_param;
 
 if (isRestrained) exitWith {};
 
