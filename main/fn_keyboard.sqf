@@ -17,6 +17,8 @@ if(isRestrained && (_keyCode in (actionKeys "GetOver") || _keyCode in (actionKey
 	_enableKeys = true;
 };
 
+if(isWASD && _keyCode in [17,30,31,32]) exitWith {_enableKeys = true;};
+
 switch (_keyCode) do {
 
 	case 21: {
