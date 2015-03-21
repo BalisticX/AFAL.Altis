@@ -7,6 +7,7 @@
 */
 
 _unit = _this select 0;
+_part = _this select 1;
 _damage = _this select 2;
 _source = _this select 3;
 _projectile = _this select 4;
@@ -20,4 +21,5 @@ if ( _projectile in ["B_9x21_Ball"] && _weapon in ["hgun_Rook40_snds_F"]) then {
 		};
 	};
 };
+if (_part == "") exitWith {_damage = false};
 _damage;
