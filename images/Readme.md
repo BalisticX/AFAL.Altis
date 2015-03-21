@@ -2,15 +2,13 @@
 
 In the current build:
 
+//// UNIFORMS
+
   AFAL_police.paa
   
     Sherrif uniform texture
     
-    
-  AFAL_title.paa
-  
-    After Altis logo for the intro
-    
+//// PLAYER MENU
     
   AFAL_phone.paa
   
@@ -28,6 +26,8 @@ In the current build:
   
     ATM menu background
     
+//// LOCKPICKING
+    
   AFAL_lockpick.paa
   
     Lockpick minigame pick
@@ -39,3 +39,10 @@ In the current build:
   AFAL_lockpick_tumbler.paa
   
     Lockpick minigame tumbler
+    
+    
+    
+  AFAL_title.paa
+  
+    After Altis logo for the intro
+    
