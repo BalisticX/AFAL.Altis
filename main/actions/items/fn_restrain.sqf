@@ -29,6 +29,6 @@ if (isNull cursorTarget) exitWith {} else {
 };
 
 _total = missionNamespace getVariable _item;
-if(_total == 0) eixtWith {};
+if(_total == 0) exitWith {};
 missionNamespace setVariable [ _item, (_total - 1)];
 ////	I'm not sure if i added this last line correctly just copy/paste from MJ script	////
