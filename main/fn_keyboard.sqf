@@ -13,6 +13,10 @@ _ctrlKey = _this select 3;
 _altKey = _this select 4;
 _enableKeys = false;
 
+if(isRestrained && (_keyCode in (actionKeys "GetOver") || _keyCode in (actionKeys "salute"))) exitWith {
+	_enableKeys = true;
+};
+
 switch (_keyCode) do {
 
 	case 21: {
