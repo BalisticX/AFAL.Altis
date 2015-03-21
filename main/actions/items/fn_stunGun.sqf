@@ -26,7 +26,7 @@ _electric = "#particlesource" createVehicle (getPos _stunGun);
 sleep 1;
 
 if (!isNull cursorTarget && cursorTarget isKindOf "Man") then {
-	["AFAL_fnc_tazed",cursorTarget,false,false] call AFAL_fnc_MP //// NUKE please proof read this line
+	[[],"AFAL_fnc_tazed",cursorTarget,false] call AFAL_fnc_MP //// NUKE please proof read this line
 };
 
 sleep 1;
