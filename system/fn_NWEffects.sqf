@@ -58,7 +58,7 @@ switch (_type) do{
 	case "StunGun" : {
 		_particle1 setParticleCircle [0, [0, 0, 0]];
 		_particle1 setParticleRandom [0, [0.05, 0.05, 0.05], [0.05, 0.05, 0.05], 0.1, 0.01, [0, 0, 0, 0], 0, 0];
-		_particle1 setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.15, [0, 0, 0], [0, 0, 0], 0.5, 10, 7.9, 0.075, [0.0004, 0.0015], [[1, 1, 1, 1], [0.25, 0.25, 0.25, 0.5], [0.5, 0.5, 0.5, 0]], [0.08], 0.1, 0.05, "", "", _stunGun];
+		_particle1 setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.15, [0, 0, 0], [0, 0, 0], 0.5, 10, 7.9, 0.075, [0.0004, 0.0015], [[1, 1, 1, 1], [0.25, 0.25, 0.25, 0.5], [0.5, 0.5, 0.5, 0]], [0.08], 0.1, 0.05, "", "", _object];
 		_particle1 setDropInterval 0.05;
 	}:
 };
