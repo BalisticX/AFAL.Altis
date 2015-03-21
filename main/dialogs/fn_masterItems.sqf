@@ -45,7 +45,7 @@ switch (_item) do
 	case "AFAL_ziptie": 							{[ "Land_MetalWire_F", "ZipTie", 2250, "$2250", 1125, "$1125", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_handcuffs": 							{[ "Land_MetalWire_F", "Handcuffs", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]],AFAL_fnc_restrain};
 	case "AFAL_pepperSpray":						{[ "Land_ButaneCanister_F", "Pepper Spray", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_stunGun":							{[ "Land_MobilePhone_old_F", "Stun Gun", 5000, "$5000", 2500, "$2500", [ 1, 0.5, 0.14, 1]]};
+	case "AFAL_stunGun":							{[ "Land_MobilePhone_old_F", "Stun Gun", 5000, "$5000", 2500, "$2500", [ 1, 0.5, 0.14, 1]],AFAL_fnc_stunGun};
 	
 	/// TOOLS	ORANGE [ 1, 0.5, 0.14, 1]
 	
