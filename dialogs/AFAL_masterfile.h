@@ -16,13 +16,14 @@
 
 #include "AFAL_itemShop.hpp"
 
-//#include "AFAL_playerMenu.hpp" // as we dont have this file in the dialog file
+#include "AFAL_lockpick.hpp"
 
 /*	DIALOG IDD's
 	
 	Intro Title			17
 	Map				500
 	playerMenu			1000
+	lockpick			1700
 	vehicleShop			2000
 	gunShop				3000
 	clothesShop			4000
