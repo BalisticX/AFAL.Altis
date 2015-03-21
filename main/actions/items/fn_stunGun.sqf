@@ -16,9 +16,7 @@ _stunGun = "Land_MobilePhone_old_F" createVehicle [0,0,0];
 sleep 0.5;
 	
 _electric = "#particlesource" createVehicle (getPos _stunGun);
-[["StunGun",_stunGun,_electric],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_mp;
-	
-//// NUKE Please add in NWEffects however that works here
+[["StunGun", _stunGun, _electric], "AFAL_fnc_NWEffects", true, false] spawn AFAL_fnc_MP;
 
 sleep 1;
 
