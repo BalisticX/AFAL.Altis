@@ -26,7 +26,7 @@ class AFAL_lockpick
 		style = 48 + 2048;
 		x = -0.5;		y = 0.105;
 		w = 0.9;		h = 0.45;
-		text = "AFAL_lockpick.paa";
+		text = "images\AFAL_lockpick.paa";
 		colorText[] = {};
 		colorBackground[] = {};
 	};
@@ -36,7 +36,7 @@ class AFAL_lockpick
 		style = 48 + 2048;
 		x = 0;		y = 0;
 		w = 1;		h = 1;
-		text = "AFAL_lockpick_tumblers.paa";
+		text = "images\AFAL_lockpick_tumblers.paa";
 		colorText[] = {};
 		colorBackground[] = {};
 	};
@@ -45,7 +45,7 @@ class AFAL_lockpick
 		style = 48 + 2048;
 		x = 0;		y = 0;
 		w = 1;		h = 1;
-		text = "AFAL_lockpick_base.paa";
+		text = "images\AFAL_lockpick_base.paa";
 		colorText[] = {};
 		colorBackground[] = {};
 	};
@@ -75,7 +75,7 @@ class AFAL_lockpick
 		x = 0.2175;		y = 0.615;
 		w = 0.1;		h = 0.075;
 		text = "TRY";
-		action = "execVM 'scripts\dialogs\AFAL_lockpick_attempt.sqf'";
+		action = "spawn AFAL_fnc_lockpick_attempt";
 		colorText[] = { 1, 1, 1, 0.75};
 		colorBackground[] = { 0, 0, 0, 0};
 		colorFocused[] = { 0, 0, 0, 0};
