@@ -21,6 +21,7 @@ _clothesType = [ _this, 1, "", [""]] call BIS_fnc_param;
 _array = [];
 
 switch (_shopType) do {
+
 	case "Scuba" : {
 		switch (_clothesType) do {
 			case "Uniforms" : {
@@ -70,6 +71,7 @@ switch (_shopType) do {
 			};
 		};
 	};
+	
 	case "Civ" : {
 		switch (_clothesType) do {
 			case "Uniforms" : {
@@ -161,6 +163,7 @@ switch (_shopType) do {
 			};
 		};
 	};
+	
 	case "Press" : {
 		switch (_clothesType) do {
 			case "Uniforms" : {
