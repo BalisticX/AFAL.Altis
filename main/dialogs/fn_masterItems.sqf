@@ -43,7 +43,7 @@ switch (_item) do
 	case "AFAL_ductTape": 							{[ "Land_DuctTape_F", "Duct Tape", 500, "$500", 250, "$250", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_rope": 							{[ "Land_Rope_01_F", "Rope", 1500, "$1500", 1750, "$1750", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_ziptie": 							{[ "Land_MetalWire_F", "ZipTie", 2250, "$2250", 1125, "$1125", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_handcuffs": 							{[ "Land_MetalWire_F", "Handcuffs", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]]};
+	case "AFAL_handcuffs": 							{[ "Land_MetalWire_F", "Handcuffs", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]],AFAL_fnc_restrain};
 	case "AFAL_pepperSpray":						{[ "Land_ButaneCanister_F", "Pepper Spray", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_stunGun":							{[ "Land_MobilePhone_old_F", "Stun Gun", 5000, "$5000", 2500, "$2500", [ 1, 0.5, 0.14, 1]]};
 	
@@ -85,7 +85,7 @@ switch (_item) do
 	case "AFAL_c4": 							{[ "DemoCharge_Remote_Ammo", "C-4", 15000, "$15000", 8750, "$8750", [ 0.502, 0, 0, 1]]};
 	case "AFAL_claymore":							{[ "ClaymoreDirectionalMine_Remote_Ammo", "Claymore", 13750, "$13750", 7500, "$7500", [ 0.502, 0, 0, 1]]};
 	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
-	case "AFAL_marijuana":							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]]};
+	case "AFAL_marijuana":							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]],AFAL_fnc_drugMJ};
 	case "AFAL_heroin":							{[ "Land_Sack_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
 	case "AFAL_cocaine":							{[ "Land_Sack_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};
 
