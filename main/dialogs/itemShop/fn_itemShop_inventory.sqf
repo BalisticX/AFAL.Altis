@@ -41,7 +41,7 @@ switch (_shopType) do
 		//// FOOD
 	"AFAL_rice", "AFAL_bakedBeans",	
 		//// GADGETS
-	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_c4", "AFAL_claymore", "AFAL_lockpick",
+	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_pepperSpray", "AFAL_stunGun", "AFAL_c4", "AFAL_claymore", "AFAL_lockpick",
 		//// VEHICLE
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"
 	]};
