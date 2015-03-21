@@ -52,6 +52,7 @@ switch (_item) do
 	case "AFAL_hammer":							{[ "Land_Grinder_F", "Hammer", 2000, "$2000", 500, "$500", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_drill":							{[ "Land_DrillAku_F", "Power Drill", 4000, "$4000", 1750, "$1750", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_grinder":							{[ "Land_Hammer_F", "Angle Grinder", 5000, "$5000", 2000, "$2000", [ 1, 0.5, 0.14, 1]]};
+	case "AFAL_lockpick":							{[ "Land_File_F", "Lockpick", 2000, "$2000", 1000, "$1000", [ 1, 0.5, 0.14, 1]]};
 
 	
 	//// MEDICAL	RED  [ 1, 0.188, 0.188, 1]
