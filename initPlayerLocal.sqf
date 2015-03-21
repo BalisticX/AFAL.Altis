@@ -11,6 +11,7 @@
 [] call AFAL_fnc_eventHandlerSetup;
 
 //// Player bools ////
+isWASD = false;
 isRestrained = false;
 isClimbing = false;
 isTazed = false;
