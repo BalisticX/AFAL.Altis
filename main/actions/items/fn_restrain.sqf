@@ -10,6 +10,7 @@ private ["_item", "_restrainItems", "_object", "_total"];
 
 _item = [ _this, 0, "", [""]] call BIS_fnc_param;
 	if (_item == "") exitWith {};
+	if (isNull cursorTarget) exitWith {};
 
 _restrainItems = ["AFAL_ductTape", "AFAL_rope", "AFAL_zipTie", "AFAL_handcuffs"];
 	if (_item in _restrainItems > 0) exitWith {};
@@ -24,9 +25,7 @@ _object attachTo [player, [0,0,0], "LeftHand"];
 
 deleteVehicle _object;
 
-if (isNull cursorTarget) exitWith {} else {
-	[[player, _item],"AFAL_fnc_restrained", cursorTarget, false] call AFAL_fnc_MP;
-};
+[[player, _item],"AFAL_fnc_restrained", cursorTarget, false] call AFAL_fnc_MP;
 
 _total = missionNamespace getVariable _item;
 if(_total == 0) exitWith {};
