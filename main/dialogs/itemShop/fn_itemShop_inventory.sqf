@@ -6,7 +6,7 @@
 	Function for determining the available inventory for the item shops for After Altis
 	
 	Paramters:
-	0: STRING Type of item shop. Civ, fish, drug, blackmarket etc.
+	0: STRING Type of item shop. Civ, fish, drug, illegal etc.
 */
 
 private "_shopType";
