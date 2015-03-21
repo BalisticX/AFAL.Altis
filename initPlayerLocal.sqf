@@ -11,6 +11,7 @@
 [] call AFAL_fnc_eventHandlerSetup;
 
 //// Player bools ////
+isRestrained = false;
 isClimbing = false;
 isTazed = false;
 isDrugged = false;
