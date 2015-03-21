@@ -99,4 +99,10 @@ class AFAL_client {
 		class map_locations {};
 		class map_move {};
 	};
+	
+	class lockpick {
+		file = "main\dialogs\lockpick";	
+		class lockpick {};
+		class lockpick_attempt {};
+	};
 };
