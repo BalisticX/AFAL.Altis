@@ -27,3 +27,15 @@ In the current build:
   AFAL_atm.paa
   
     ATM menu background
+    
+  AFAL_lockpick.paa
+  
+    Lockpick minigame pick
+    
+  AFAL_lockpick_base.paa
+  
+    Lockpick minigame lock
+    
+  AFAL_lockpick_tumbler.paa
+  
+    Lockpick minigame tumbler
