@@ -2,13 +2,13 @@
 
 In the current build:
 
-//// UNIFORMS
+////  UNIFORMS  ////
 
   AFAL_police.paa
   
     Sherrif uniform texture
     
-//// PLAYER MENU
+////  PLAYER MENU ////
     
   AFAL_phone.paa
   
@@ -26,7 +26,7 @@ In the current build:
   
     ATM menu background
     
-//// LOCKPICKING
+////  LOCKPICKING ////
     
   AFAL_lockpick.paa
   
