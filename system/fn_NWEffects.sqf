@@ -78,4 +78,11 @@ switch (_type) do{
 		_particle2 setParticleParams [["\A3\data_f\Cl_water", 1, 0, 1], "", "Billboard", 1, 1.5, [0, 0, 0], [_vectorX * 0.5, _vectorY * 0.5, 1.25], 0, 2, 1, 1e-009, [0.05, 0.025, 0.005], [[0, 0, 0.001, 0.6], [0, 0, 0.001, 0.3], [0, 0, 0.001, 0.15], [0, 0, 0.001, 0]], [0.08], 0.05, 0.2, "", "", _object];
 		_particle2 setDropInterval 0.05;
 	};
+	
+	case "Headshot" : {
+		_particle1 setParticleCircle [0, [0, 0, 0]];
+		_particle1 setParticleRandom [0, [0.1, 0.1, 0.1], [0.5, 0.5, 0.5], 0, 0.25, [0, 0, 0, 0.3], 0, 0];
+		_particle1 setParticleParams [["\A3\data_f\cl_basic.p3d", 1, 0, 1], "", "Billboard", 1, 0.25, [0, 0, 0], [0, 0, 0], 0, 2, 1, 0.075, [0.5, 1], [[0.3, 0.02, 0.02, 0.3], [0.2, 0, 0, 0]], [0.08], 1, 0, "", "", _object];
+		_particle1 setDropInterval 0.1;	
+	};
 };
