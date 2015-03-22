@@ -13,8 +13,11 @@ AFAL.Altis Layout -
     * clothesShop
     * title
     * lockpick
+    * map
+    * masterfile
+    * resource
 * Main
     * Actions
-
+         
     * Dialogs
 * System
