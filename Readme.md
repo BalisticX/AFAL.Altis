@@ -7,23 +7,14 @@ After Altis Work In Progress
 Everything here is subject to change
 
 AFAL.Altis Layout - 
-  
-   Dialogs
-   
-      .hpp 
-      gunShop
-      itemShop
-      clothesShop
-      playermenu
-      title
-      lockpick
-  
-  
-    Main
-    
-      actions
-      
-      dialogs
-  
-  
-    System
+* Dialogs
+    * gunShop
+    * itemShop
+    * clothesShop
+    * title
+    * lockpick
+* Main
+    * Actions
+
+    * Dialogs
+* System
