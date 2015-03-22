@@ -19,6 +19,17 @@ AFAL.Altis Layout -
 
 * Main
     * Actions
+       * Items
+          * fn_drugMJ
+          * fn_refuel
+          * fn_restrain
+          * fn_stunGun
+       * fn_climb
+       * fn_restrained
+       * fn_tazed
+       * fn_workFishing
+       * fn_workGrinding
+       * fn_workMechanic
     * Dialogs
 
 * System
