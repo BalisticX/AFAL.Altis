@@ -22,4 +22,5 @@ if ( _projectile in ["B_9x21_Ball"] && _weapon in ["hgun_Rook40_snds_F"]) then {
 	};
 };
 if (_part == "") exitWith {_damage = false};
+if (_part == "Head" && _damage < 0.9 && !isTazed) exitWith {spawn AFAL_fnc_headshot}
 _damage;
