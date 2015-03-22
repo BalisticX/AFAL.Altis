@@ -8,12 +8,13 @@ Everything here is subject to change
 
 AFAL.Altis Layout - 
 * Dialogs /
-    * gunShop
-    * itemShop
-    * clothesShop
     * title
-    * lockpick
     * map
+    * lockpick
+    * vehicleShop
+    * gunShop
+    * clothesShop
+    * itemShop
     * masterfile
     * resource
 
@@ -22,6 +23,7 @@ AFAL.Altis Layout -
        * Items /
           * fn_drugMJ
           * fn_refuel
+          * fn_repair
           * fn_restrain
           * fn_stunGun
        * fn_climb
