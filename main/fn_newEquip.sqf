@@ -16,7 +16,7 @@ switch (_type) do {
 	
 	case "Police" : {
 		player forceAddUniform "U_Marshal";
-			player setObjectTextureGlobal [0, "images\AFAL_police.paa"];
+			player setObjectTextureGlobal [0, "images\AFAL_sheriff.paa"];
 		player addVest "V_Rangemaster_belt";
 		player addWeapon "hgun_Rook40_snds_F";
 		player addMagazineCargo ["16Rnd_9x21_Mag", 2];
