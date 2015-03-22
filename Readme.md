@@ -30,6 +30,13 @@ AFAL.Altis Layout -
     * title
 
 * Main /
+    * fn_comsumables
+    * fn_eventHandlerSetup
+    * fn_handleDamage
+    * fn_keyboard
+    * fn_newEquip
+    * fn_newSpawn
+
     * Actions /
        * Items /
           * fn_drugMJ
@@ -38,6 +45,7 @@ AFAL.Altis Layout -
           * fn_restrain
           * fn_stunGun
        * fn_climb
+       * fn_headshot
        * fn_restrained
        * fn_tazed
        * fn_workFishing
