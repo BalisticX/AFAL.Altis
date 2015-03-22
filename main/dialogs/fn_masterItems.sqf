@@ -66,10 +66,10 @@ switch (_item) do
 	
 	case "AFAL_fuelSmall": 							{[ "Land_CanisterOil_F", "Small Jerry Can", 3000, "$3000", 1500, "$1500", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_refuel};
 	case "AFAL_fuelBig":							{[ "Land_CanisterFuel_F", "Jerry Can", 4000, "$4000", 2000, "$2000", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_refuel};
-	case "AFAL_repairFuel": 						{[ "Land_Wrench_F", "Fuel Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
-	case "AFAL_repairEngine": 						{[ "Land_Wrench_F", "Engine Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
-	case "AFAL_repairTyre": 						{[ "Land_Wrench_F", "Tyre Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
-	case "AFAL_repairHull":							{[ "Land_Wrench_F", "Hull Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
+	case "AFAL_repairFuel": 						{[ "Land_Wrench_F", "Fuel Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_repair};
+	case "AFAL_repairEngine": 						{[ "Land_Wrench_F", "Engine Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_repair};
+	case "AFAL_repairTyre": 						{[ "Land_Wrench_F", "Tyre Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_repair};
+	case "AFAL_repairHull":							{[ "Land_Wrench_F", "Hull Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_repair};
 	
 	//// PRODUCE	YELLOW [ 0.855, 0.647, 0.125, 1]
 	
