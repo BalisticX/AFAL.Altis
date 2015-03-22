@@ -1,8 +1,7 @@
 # AFAL.Altis
 
-By Ballistic, Nuke & Terminal
-
-After Altis Work In Progress
+Developed by Ballistic & Nuke
+Created by Ballistic & Terminal
 
 Everything here is subject to change
 
