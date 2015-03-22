@@ -12,7 +12,7 @@ _unit = [_this,0,objnull,[objnull]] call BIS_fnc_param;
 if(isTazed) exitWith {};
 isTazed = true;
 _electric = "#particlesource" createVehicle (getPos _unit);
-[["Tazed",_unit,_electric],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_mp;	
+[["Tazed",_unit,_electric],"AFAL_fnc_NWEffects",true,false] spawn AFAL_fnc_MP;	
 
 _unit allowDamage false;
 _velocity = velocity _unit;
