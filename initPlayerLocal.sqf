@@ -38,7 +38,7 @@ AFAL_inventory = [
 	"AFAL_cellphone", "AFAL_matches", "AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", 
 	"AFAL_pepperspray", "AFAL_stunGun",
 	//// TOOLS
-	"AFAL_measure", "AFAL_hammer", "AFAL_drill", "AFAL_grinder",
+	"AFAL_measure", "AFAL_hammer", "AFAL_drill", "AFAL_grinder", "AFAL_lockpick",
 	//// MEDICAL
 	"AFAL_bandage", "AFAL_bloodbag", "AFAL_defib",
 	//// VEHICLE
@@ -50,7 +50,7 @@ AFAL_inventory = [
 ];
 
 {
-	missionNamespace setVariable [ _x, 1]
+	missionNamespace setVariable [ _x, 0]
 } foreach AFAL_inventory;
 
 player addAction [ "Use ATM", afal_fnc_playerMenu, "", 0, false, false, "", "call afal_fnc_checkBox == 'atm'"];
