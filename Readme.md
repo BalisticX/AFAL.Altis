@@ -43,6 +43,7 @@ AFAL.Altis Layout -
        * fn_workFishing
        * fn_workGrinding
        * fn_workMechanic
+
     * Dialogs /
        * clothesShop /
           * fn_clothesShop_add
