@@ -18,11 +18,11 @@ AFAL.Altis Layout -
     * resource
 * Main
       * Actions
-            * Items  
+         * Items  
        * Dialogs
-            * gunShop
-            * itemShop
-            * clothesShop
-            * map
-            * lockpick
+         * gunShop
+         * itemShop
+         * clothesShop
+         * map
+         * lockpick
 * System
