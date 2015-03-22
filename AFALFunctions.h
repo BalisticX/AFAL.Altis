@@ -46,6 +46,7 @@ class AFAL_client {
 		file = "main\actions\items";
 		class drugMJ {};
 		class restrain {};
+		class refuel {};
 		class stunGun {};
 	};
 	
