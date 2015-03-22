@@ -20,3 +20,14 @@ AFAL.Altis Layout -
 * Main
     * Actions
     * Dialogs
+
+* System
+    * fn_BC
+    * fn_MP
+    * fn_MPexec
+    * fn_NWAnimation
+    * fn_NWEffects
+    * fn_cityBarricade
+    * fn_cityDemolish
+    * fn_eyePos
+    * fn_numberText
