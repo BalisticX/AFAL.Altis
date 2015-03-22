@@ -7,7 +7,7 @@ After Altis Work In Progress
 Everything here is subject to change
 
 AFAL.Altis Layout - 
-* Dialogs/
+* Dialogs /
     * gunShop
     * itemShop
     * clothesShop
@@ -17,9 +17,9 @@ AFAL.Altis Layout -
     * masterfile
     * resource
 
-* Main/
-    * Actions/
-       * Items/
+* Main /
+    * Actions /
+       * Items /
           * fn_drugMJ
           * fn_refuel
           * fn_restrain
@@ -30,8 +30,8 @@ AFAL.Altis Layout -
        * fn_workFishing
        * fn_workGrinding
        * fn_workMechanic
-    * Dialogs/
-       * clothesShop/
+    * Dialogs /
+       * clothesShop /
           * fn_clothesShop_add
           * fn_clothesShop_buy
           * fn_clothesShop_inventory
@@ -39,26 +39,26 @@ AFAL.Altis Layout -
           * fn_clothesShop_remove
           * fn_clothesShop_select
           * fn_clothesShop_switch
-       * gunShop/
+       * gunShop /
           * fn_gunShop_add
           * fn_gunShop_buy
           * fn_gunShop_extra
           * fn_gunShop_inventory
           * fn_gunShop_remove
           * fn_gunShop_select
-       * itemShop/
+       * itemShop /
           * fn_itemShop_inventory
           * fn_itemShop_qty
           * fn_itemShop_select
           * fn_itemShop_transaction
-       * lockpick/
+       * lockpick /
           * fn_lockpick
           * fn_lockpick_attempt
-       * map/
+       * map /
           * fn_map
           * fn_map_locations
           * fn_map_move
-       * playerMenu/
+       * playerMenu /
           * fn_dropItems
           * fn_givingMoney
           * fn_sendingMoney
@@ -69,7 +69,7 @@ AFAL.Altis Layout -
        * fn_masterItems
        * fn_playerMenu
 
-* System/
+* System /
     * fn_BC
     * fn_MP
     * fn_MPexec
