@@ -8,15 +8,15 @@ Everything here is subject to change
 
 AFAL.Altis Layout - 
 * Dialogs /
-    * title
-    * map
-    * lockpick
-    * vehicleShop
-    * gunShop
-    * clothesShop
-    * itemShop
-    * masterfile
-    * resource
+    - title
+    - map
+    - lockpick
+    - vehicleShop
+    - gunShop
+    - clothesShop
+    - itemShop
+    - masterfile
+    - resource
 
 * Images /
     * police
