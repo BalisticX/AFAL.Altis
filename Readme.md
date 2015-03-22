@@ -65,6 +65,10 @@ AFAL.Altis Layout -
           * fn_itemShop_qty
           * fn_itemShop_select
           * fn_itemShop_transaction
+       * vehicleShop /
+          * fn_vehicleShop_buy
+          * fn_vehicleShop_inventory
+          * fn_vehicleShop_select
        * lockpick /
           * fn_lockpick
           * fn_lockpick_attempt
@@ -82,6 +86,7 @@ AFAL.Altis Layout -
        * fn_itemShop
        * fn_masterItems
        * fn_playerMenu
+       * fn_vehicleShop
 
 * Sounds /
      * theme
