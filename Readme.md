@@ -6,7 +6,7 @@ After Altis Work In Progress
 
 Everything here is subject to change
 
-AFAL.Altis - 
+AFAL.Altis Layout - 
   
    Dialogs
    
@@ -18,6 +18,12 @@ AFAL.Altis -
       title
       lockpick
   
+  
     Main
+    
+      actions
+      
+      dialogs
+  
   
     System
