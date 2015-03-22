@@ -17,7 +17,12 @@ AFAL.Altis Layout -
     * masterfile
     * resource
 * Main
-    * Actions
-         
-    * Dialogs
+      * Actions
+            * Items  
+       * Dialogs
+            * gunShop
+            * itemShop
+            * clothesShop
+            * map
+            * lockpick
 * System
