@@ -7,6 +7,8 @@
 
 */
 
+private ["_type", "_object", "_particle1", "_particle2", "_particle3", "_vectorX", "_vectorY"];
+
 _type = [ _this, 0, "", [""]] call BIS_fnc_param;
 _object = [ _this, 1, objNull, [objNull]] call BIS_fnc_param;
 _particle1 = [ _this, 2, ObjNull, [ObjNull]] call BIS_fnc_param;
@@ -14,6 +16,9 @@ _particle2 = [ _this, 3, ObjNull, [ObjNull]] call BIS_fnc_param;
 _particle3 = [ _this, 4, ObjNull, [ObjNull]] call BIS_fnc_param;
 
 if (_type == "") exitWith {};
+
+_vectorX = vectorDir player select 0;
+_vectorY = vectorDir player select 1;
 
 switch (_type) do{
 
