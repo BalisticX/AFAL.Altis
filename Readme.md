@@ -31,6 +31,43 @@ AFAL.Altis Layout -
        * fn_workGrinding
        * fn_workMechanic
     * Dialogs
+       * clothesShop
+          * fn_clothesShop_add
+          * fn_clothesShop_buy
+          * fn_clothesShop_inventory
+          * fn_clothesShop_presets
+          * fn_clothesShop_remove
+          * fn_clothesShop_select
+          * fn_clothesShop_switch
+       * gunShop
+          * fn_gunShop_add
+          * fn_gunShop_buy
+          * fn_gunShop_extra
+          * fn_gunShop_inventory
+          * fn_gunShop_remove
+          * fn_gunShop_select
+       * itemShop
+          * fn_itemShop_inventory
+          * fn_itemShop_qty
+          * fn_itemShop_select
+          * fn_itemShop_transaction
+       * lockpick
+          * fn_lockpick
+          * fn_lockpick_attempt
+       * map
+          * fn_map
+          * fn_map_locations
+          * fn_map_move
+       * playerMenu
+          * fn_dropItems
+          * fn_givingMoney
+          * fn_sendingMoney
+          * fn_useItems
+       * fn_clothesShop
+       * fn_gunShop
+       * fn_itemShop
+       * fn_masterItems
+       * fn_playerMenu
 
 * System
     * fn_BC
