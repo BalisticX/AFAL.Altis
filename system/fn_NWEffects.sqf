@@ -61,4 +61,16 @@ switch (_type) do{
 		_particle1 setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.15, [0, 0, 0], [0, 0, 0], 0.5, 10, 7.9, 0.075, [0.0004, 0.0015], [[1, 1, 1, 1], [0.25, 0.25, 0.25, 0.5], [0.5, 0.5, 0.5, 0]], [0.08], 0.1, 0.05, "", "", _object];
 		_particle1 setDropInterval 0.05;
 	}:
+	
+	case "Refuel" : {
+		_particle1 setParticleCircle [0, [0, 0, 0]];
+		_particle1 setParticleRandom [0, [0, 0, 0], [0.25, 0, 0.25], 0, 0, [0, 0, 0, 0.25], 0, 0];
+		_particle1 setParticleParams [["\A3\data_f\Cl_water", 1, 0, 1], "", "Billboard", 1, 1.25, [0, 0, 0], [_vectorX * 0.5, _vectorY * 0.5, 1.25], 0, 2, 1, 1e-009, [0.15, 0.3, 0.15, 0.075], [[0, 0, 0.001, 0.8], [0, 0, 0.001, 0.4], [0, 0, 0.001, 0.2]], [0.08], 0.2, 0.2, "", "", _object];
+		_particle1 setDropInterval 0.08;
+	
+		_particle2 setParticleCircle [0, [0, 0, 0]];
+		_particle2 setParticleRandom [0.25, [0.1, 0.1, 0.1], [0.25, 0, 0.25], 0, 0, [0, 0, 0, 0.25], 0.5, 0];
+		_particle2 setParticleParams [["\A3\data_f\Cl_water", 1, 0, 1], "", "Billboard", 1, 1.5, [0, 0, 0], [_vectorX * 0.5, _vectorY * 0.5, 1.25], 0, 2, 1, 1e-009, [0.05, 0.025, 0.005], [[0, 0, 0.001, 0.6], [0, 0, 0.001, 0.3], [0, 0, 0.001, 0.15], [0, 0, 0.001, 0]], [0.08], 0.05, 0.2, "", "", _object];
+		_particle2 setDropInterval 0.05;
+	};
 };
