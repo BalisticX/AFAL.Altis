@@ -51,13 +51,14 @@ class AFAL_client {
 		class stunGun {};
 	};
 	
-	class shop {
+	class dialogs {
 		file = "main\dialogs";
 		class playerMenu {};
 		class clothesShop {};
 		class itemShop {};
 		class masterItems {};
 		class gunShop {};
+		class vehicleShop {};
 	};
 	
 	class player {
@@ -96,6 +97,13 @@ class AFAL_client {
 		class gunShop_remove {};
 		class gunShop_select {};
 	};
+	
+	class vehicle {
+		file = "main\dialogs\vehicleShop";
+		class vehicleShop_buy {};
+		class vehicleShop_inventory {};
+		class vehicleShop_select {};
+	}
 	
 	class map {
 		file = "main\dialogs\map";
