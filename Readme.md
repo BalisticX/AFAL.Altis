@@ -18,6 +18,17 @@ AFAL.Altis Layout -
     * masterfile
     * resource
 
+* Images /
+    * police
+    * phone
+    * keychain
+    * license
+    * AFAL_atm
+    * lockpick
+    * lockpick_base
+    * lockpick_tumbler
+    * title
+
 * Main /
     * Actions /
        * Items /
