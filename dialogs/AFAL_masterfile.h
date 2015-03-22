@@ -10,13 +10,15 @@
 
 #include "AFAL_map.hpp"
 
+#include "AFAL_lockpick.hpp"
+
+#include "AFAL_vehicleShop.hpp"
+
 #include "AFAL_gunShop.hpp"
 
 #include "AFAL_clothesShop.hpp"
 
 #include "AFAL_itemShop.hpp"
-
-#include "AFAL_lockpick.hpp"
 
 /*	DIALOG IDD's
 	
