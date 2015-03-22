@@ -33,7 +33,7 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 			detach player;
 			[[player, "switchMove", "HubFixingVehicleProne_idle1"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP;
 			_tyre = "Land_Tyre_F" createVehicle [0,0,0];
-				_tyre setPos (player modelToWorld [-1,0,0]);
+				_tyre setPos (player modelToWorld [1,0,0]);
 			{	_vehicle setHitPointDamage [_x, 0]	} forEach ["HitLFWheel", "HitLF2Wheel", "HitLMWheel", "HitLBWheel", "HitRFWheel", "HitRF2Wheel", "HitRMWheel", "HitRBWheel"];
 		};
 		
