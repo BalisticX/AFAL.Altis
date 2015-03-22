@@ -37,6 +37,7 @@ AFAL.Altis Layout -
     * fn_newEquip
     * fn_newSpawn
 
+
     * Actions /
        * Items /
           * fn_drugMJ
