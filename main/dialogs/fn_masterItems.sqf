@@ -40,12 +40,12 @@ switch (_item) do
 	case "AFAL_compass": 							{[ "Land_Compass_F", "Magnetic Compass", 4500, "$4500", 2750, "$2750", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_matches": 							{[ "Land_Matches_F", "Matches", 500, "$500", 250, "$250", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_cigarettes": 						{[ "Land_Antibiotic_F","Cigarettes", 2450,  "$2450", 1350, "$1350", [ 1, 0.5, 0.14, 1]]};	
-	case "AFAL_ductTape": 							{[ "Land_DuctTape_F", "Duct Tape", 500, "$500", 250, "$250", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_rope": 							{[ "Land_Rope_01_F", "Rope", 1500, "$1500", 1750, "$1750", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_ziptie": 							{[ "Land_MetalWire_F", "ZipTie", 2250, "$2250", 1125, "$1125", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_handcuffs": 							{[ "Land_MetalWire_F", "Handcuffs", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]],AFAL_fnc_restrain};
+	case "AFAL_ductTape": 							{[ "Land_DuctTape_F", "Duct Tape", 500, "$500", 250, "$250", [ 1, 0.5, 0.14, 1]], AFAL_fnc_restrain};
+	case "AFAL_rope": 							{[ "Land_Rope_01_F", "Rope", 1500, "$1500", 1750, "$1750", [ 1, 0.5, 0.14, 1]], AFAL_fnc_restrain};
+	case "AFAL_ziptie": 							{[ "Land_MetalWire_F", "ZipTie", 2250, "$2250", 1125, "$1125", [ 1, 0.5, 0.14, 1]], AFAL_fnc_restrain};
+	case "AFAL_handcuffs": 							{[ "Land_MetalWire_F", "Handcuffs", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]], AFAL_fnc_restrain};
 	case "AFAL_pepperSpray":						{[ "Land_ButaneCanister_F", "Pepper Spray", 3000, "$3000", 1500, "$1500", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_stunGun":							{[ "Land_MobilePhone_old_F", "Stun Gun", 5000, "$5000", 2500, "$2500", [ 1, 0.5, 0.14, 1]],AFAL_fnc_stunGun};
+	case "AFAL_stunGun":							{[ "Land_MobilePhone_old_F", "Stun Gun", 5000, "$5000", 2500, "$2500", [ 1, 0.5, 0.14, 1]], AFAL_fnc_stunGun};
 	
 	/// TOOLS	ORANGE [ 1, 0.5, 0.14, 1]
 	
@@ -64,8 +64,8 @@ switch (_item) do
 	
 	//// VEHICLE	PURPLE [ 0.365, 0.278, 0.545, 1]
 	
-	case "AFAL_fuelSmall": 							{[ "Land_CanisterOil_F", "Small Jerry Can", 3000, "$3000", 1500, "$1500", [ 0.365, 0.278, 0.545, 1]]};
-	case "AFAL_fuelBig":							{[ "Land_CanisterFuel_F", "Jerry Can", 4000, "$4000", 2000, "$2000", [ 0.365, 0.278, 0.545, 1]};
+	case "AFAL_fuelSmall": 							{[ "Land_CanisterOil_F", "Small Jerry Can", 3000, "$3000", 1500, "$1500", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_refuel};
+	case "AFAL_fuelBig":							{[ "Land_CanisterFuel_F", "Jerry Can", 4000, "$4000", 2000, "$2000", [ 0.365, 0.278, 0.545, 1]], AFAL_fnc_refuel};
 	case "AFAL_repairFuel": 						{[ "Land_Wrench_F", "Fuel Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
 	case "AFAL_repairEngine": 						{[ "Land_Wrench_F", "Engine Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
 	case "AFAL_repairTyre": 						{[ "Land_Wrench_F", "Tyre Repair Kit", 5000, "$5000", 2500, "$2500", [ 0.365, 0.278, 0.545, 1]]};
@@ -85,7 +85,7 @@ switch (_item) do
 	case "AFAL_c4": 							{[ "DemoCharge_Remote_Ammo", "C-4", 15000, "$15000", 8750, "$8750", [ 0.502, 0, 0, 1]]};
 	case "AFAL_claymore":							{[ "ClaymoreDirectionalMine_Remote_Ammo", "Claymore", 13750, "$13750", 7500, "$7500", [ 0.502, 0, 0, 1]]};
 	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
-	case "AFAL_marijuana":							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]],AFAL_fnc_drugMJ};
+	case "AFAL_marijuana":							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_drugMJ};
 	case "AFAL_heroin":							{[ "Land_Sack_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
 	case "AFAL_cocaine":							{[ "Land_Sack_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};
 
