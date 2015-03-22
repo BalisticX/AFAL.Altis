@@ -32,7 +32,8 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 				sleep 12.5;
 			detach player;
 			[[player, "switchMove", "HubFixingVehicleProne_idle1"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP;
-			_tyre = createVehicle ["Land_Tyre_F", (_vehicle modelToWorld [ 0, 0, 0]), [], 2.5, "NONE"];
+			_tyre = "Land_Tyre_F" createVehicle [0,0,0];
+				_tyre setPos (player modelToWorld [-1,0,0]);
 			{	_vehicle setHitPointDamage [_x, 0]	} forEach ["HitLFWheel", "HitLF2Wheel", "HitLMWheel", "HitLBWheel", "HitRFWheel", "HitRF2Wheel", "HitRMWheel", "HitRBWheel"];
 		};
 		
@@ -43,10 +44,12 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 			detach player;
 			player setDir (getDir _vehicle - 180);
 			[[player, "switchMove", "AmovPpneMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP;
-			_spill = "Oil_Spill_F" createVehicle (_vehicle modelToWorld [0,1.75,0]);
+			_spill = "Oil_Spill_F" createVehicle [0,0,0];
+				_spill setPos (player modelToWorld [0,0,0]);
 				_spill setDir (random 360);
-			_wrench = createVehicle ["Land_Wrench_F", (_vehicle modelToWorld [ 0, 1.75, 0]), [], 0.5, "NONE"];
-				_spill setDir (random 360);
+			_wrench = "Land_Wrench_F" createVehicle [0,0,0];
+				_wrench setPos (player modelToWorld [0,0,0]);
+				_wrench setDir (random 360);
 			_vehicle setHitPointDamage ["HitEngine", 0];	
 		};
 		
@@ -66,7 +69,8 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 				player setDir (getDir _vehicle - 90);				
 			};	
 			[[player, "switchMove", "AmovPpneMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP;
-			_spill = createVehicle ["Oil_Spill_F", (_vehicle modelToWorld [ 0, 0, 0]), [], 1.25, "NONE"];
+			_spill = "Oil_Spill_F" createVehicle [0,0,0];
+				_spill setPos (player modelToWorld [0,0,0]);
 				_spill setDir (random 360);
 			_vehicle setHitPointDamage ["HitFuel", 0];
 		};
@@ -87,7 +91,8 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 				player setDir (getDir _vehicle - 90);				
 			};			
 			[[player, "switchMove", "AmovPpneMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP;
-			_wrench = createVehicle ["Land_Wrench_F", (_vehicle modelToWorld [ 0, 0, 0]), [], 1.25, "NONE"];
+			_wrench = "Land_Wrench_F" createVehicle [0,0,0];
+				_wrench setPos (player modelToWorld [0,0,0]);
 				_wrench setDir (random 360);
 			_vehicle setHitPointDamage ["HitBody", 0];
 		};
