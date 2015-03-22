@@ -26,7 +26,7 @@ _uniformList = ["U_C_Poloshirt_blue", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_s
 	_x forceAddUniform _uniform;
 } forEach [KavalaGeneralStoreNPC, KavalaClothesNPC1, KavalaClothesNPC2, KavalaPortNPC, KavalaFishNPC, KavalaGunShopNPC ];
 
-KavalaPoliceGearNPC setObjectTextureGlobal "images/AFAL_police.paa";
+KavalaPoliceGearNPC setObjectTextureGlobal "images/AFAL_sheriff.paa";
 
 ////	Sets up ambient animations for NPCs	////
 
