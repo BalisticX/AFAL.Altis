@@ -4,9 +4,13 @@ In the current build:
 
 ////  UNIFORMS  ////
 
-  AFAL_police.paa
+  AFAL_sheriff.paa
   
     Sherrif uniform texture
+    
+  AFAL_inmate.paa
+  
+    Inmate uniform texture
     
 ////  PLAYER MENU ////
     
