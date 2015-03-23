@@ -6,11 +6,14 @@
 	Refuelling animation and effects for After Altis
 */
 
-private ["_item", "_vehicle", "_canister", "_refuel", "_vectorX", "_vectorY", "_sploosh", "_drops"];
+private ["_item", "_total", "_vehicle", "_canister", "_refuel", "_vectorX", "_vectorY", "_sploosh", "_drops"];
 
 _item = [ _this, 0, "", [""]] call BIS_fnc_param;
 
 if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
+	_total = missionNamespace getVariable _item;
+	missionNamespace setVariable [ _item, (_total - 1)];
+	
 	_vehicle = cursorTarget;
 	
 	player switchMove "Acts_carFixingWheel";
@@ -51,6 +54,4 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 	
 	_vehicle setFuel (fuel _vehicle + _refuel);
 		systemChat "You have refuelled your vehicle";
-	_total = missionNamespace getVariable _item;
-	missionNamespace setVariable [_item, (_total - 1)];
 } else {	systemChat "There are no vehicles nearby to refuel"	};
