@@ -15,48 +15,30 @@ _shopType = [ _this, 0, "", [""]] call BIS_fnc_param;
 
 if (_shopType == "") exitWith {};
 
-switch (_shopType) do
-{
+switch (_shopType) do {
+
 	case "Civ" : {[
-		//// DRINKS
-	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",
-		//// FOOD
-	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon",
-		//// GADGETS
-	"AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_lockpick", 
-		//// VEHICLE
-	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"
+	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_lockpick",	//// GADGETS 
+	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
 	case "Police" : {[
-		//// GADGETS
-	"AFAL_ziptie", "AFAL_handcuffs", "AFAL_lockpick", "AFAL_pepperSpray", "AFAL_stunGun",
-		//// VEHICLE
-	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"
+	"AFAL_ziptie", "AFAL_handcuffs", "AFAL_lockpick", "AFAL_stunGun",	//// GADGETS
+	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
 	case "Illegal" : {[
-		//// DRINKS
-	"AFAL_waterbottle", "AFAL_canteen",
-		//// FOOD
-	"AFAL_rice", "AFAL_bakedBeans",	
-		//// GADGETS
-	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_pepperSpray", "AFAL_stunGun", "AFAL_c4", "AFAL_claymore", "AFAL_lockpick",
-		//// VEHICLE
-	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"
+	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_stunGun", "AFAL_lockpick",	//// GADGETS
+	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
-	case "Fish" : {[
-	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna"
-	]};
-	
-	case "Poacher" : {[
-	"AFAL_turtle"
-	]};
-	
-	case "Drug" : {[
-	"AFAL_marijuana", "AFAL_heroin", "AFAL_cocaine"
-	]};
+	case "Fish" : {[	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna"	]};
+
+	case "Museum" : {[	"AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold"	]};
+
+	case "Poacher" : {[	"AFAL_turtle"	]};
+
+	case "Drug" : {[	"AFAL_marijuana", "AFAL_heroin", "AFAL_cocaine"	]};
 
 	default  "";
 };
