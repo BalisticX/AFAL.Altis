@@ -42,7 +42,11 @@ if (_difference < 4) then {
 			} else {	(_dialog displayCtrl 1703) ctrlSetTextColor [ 1, 0.502, 0, 0.75]	};
 		} else {	(_dialog displayCtrl 1703) ctrlSetTextColor [ 0.8, 0.2, 0.2, 0.75]		};
 	};
-
+	_tumbler ctrlSetPosition [0, 0.02, 1, 1]; 
+	_tumbler ctrlCommit 0.2;
+		sleep 0.2;
+	_tumbler ctrlSetPosition [0, 0, 1, 1]; 
+	_tumbler ctrlCommit 0.2;
 	switch (lockpickStrike) do {
 		case 1 : {	(_dialog displayCtrl 1711) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1]		};
 		case 2 : {	(_dialog displayCtrl 1712) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1]		};
