@@ -24,7 +24,8 @@ if (_difference < 7) then {
 		sleep 1.5;
 	closeDialog 1700;
 	
-	_vehicle = cursorTarget;
+	_list = (position player) nearEntities [[ "Air", "Car"], 3.5];
+	_vehicle = _list select 0;
 	if (locked _vehicle > 1) then {
 		_vehicle lock false;
 		systemChat format ["You have unlocked %1", _vehicle];
