@@ -41,7 +41,7 @@ AFAL_inventory = [
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull", 
 	//// RESOURCE
 	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",
-	"AFAL_relicBox", "AFAL_relicMil", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",
+	"AFAL_relicBox", "AFAL_relicMilitary", "AFAL_relicIllegal", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",
 	//// ILLEGAL
 	"AFAL_turtle", "AFAL_marijuana"
 	//// FUN
