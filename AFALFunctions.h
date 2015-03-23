@@ -46,6 +46,8 @@ class AFAL_client {
 	class actions_items {
 		file = "main\actions\items";
 		class consume {};
+		class lockpick {};
+		class lockpick_attempt {};
 		class marijuana {};
 		class open {};
 		class refuel {};
@@ -113,11 +115,5 @@ class AFAL_client {
 		class map {};
 		class map_locations {};
 		class map_move {};
-	};
-	
-	class lockpick {
-		file = "main\dialogs\lockpick";	
-		class lockpick {};
-		class lockpick_attempt {};
 	};
 };
