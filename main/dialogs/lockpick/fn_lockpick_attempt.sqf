@@ -16,8 +16,6 @@ _tumbler = _dialog displayCtrl 1702;
 
 _difference = abs ((round (sliderPosition _slider * 10)) - lockpickNum);
 
-//// If you successfully guess within 7 of the random num ////
-
 if (_difference < 7) then {
   systemChat "You have picked the lock, like a boss!";
 	(_dialog displayCtrl 1703) ctrlSetTextColor [ 0, 0.8, 0.3, 0.75];
@@ -25,8 +23,6 @@ if (_difference < 7) then {
 	_tumbler ctrlCommit 0.8;
 		sleep 1.5;
 	closeDialog 1700;
-	
-	//// Unlocks nearest car or heli ////
 	
 	_list = (position player) nearEntities [[ "Air", "Car"], 3.5];
 	_vehicle = _list select 0;
@@ -37,9 +33,6 @@ if (_difference < 7) then {
 		_vehicle lock true;
 		systemChat format ["You have securely locked %1", _vehicle];
 	};
-	
-//// If you fail to guess correctly ////
-
 } else {
 	lockpickStrike = lockpickStrike + 1;
 	if (_difference >= 50) then {	(_dialog displayCtrl 1703) ctrlSetTextColor [ 0, 0, 0, 0.75]
@@ -64,8 +57,8 @@ if (_difference < 7) then {
 			_lockpick ctrlCommit 2.2;
 				sleep 2;
 			closeDialog 1700;
-			
-			//// NUKE I need your line that removes a lockpick from your inventory ////
+			_total = missionNamespace getVariable "AFAL_lockpick";
+			missionNamespace setVariable [ "AFAL_lockpick", (_total - 1)];
 		};
 	};
 };
