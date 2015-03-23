@@ -7,17 +7,10 @@
 */
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call AFAL_fnc_MPexec};
-
-////	Gives the server some brains	////
-
 [] call compile PreprocessFileLineNumbers "\AFAL_brain\init.sqf";
 
-////	Barricades Kavala and demolishes rest of the map	////
-
-[] spawn AFAL_fnc_cityBarricade;
+////[] spawn AFAL_fnc_cityBarricade;	LEAVE THIS OUT FOR NOW
 [] spawn AFAL_fnc_cityDemolish;
-
-////	Randomizes and sets NPCs uniforms	////
 
 _uniformList = ["U_C_Poloshirt_blue", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_stripped", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_salmon", "U_C_Poloshirt_redwhite"];
 
@@ -28,8 +21,6 @@ _uniformList = ["U_C_Poloshirt_blue", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_s
 
 KavalaPoliceGearNPC setObjectTextureGlobal "images/AFAL_sheriff.paa";
 
-////	Sets up ambient animations for NPCs	////
-
 _NPCList = [
 	[KavalaGeneralStoreNPC, "STAND_U1"], 
 	[KavalaPoliceGearNPC, "GUARD"],
@@ -39,8 +30,6 @@ _NPCList = [
 	[KavalaPoliceCarNPC, "REPAIR_VEH_STAND"]
 ];
 {	[(_x select 0), (_x select 1), "MEDIUM"] call BIS_fnc_ambientAnim	} forEach _NPCList;
-
-////	Locks down jail cells and building	////
 
 {	_x setVariable ["BIS_disabled_Door_1", 1, true]	} forEach [
 	jailCell1, jailCell2, jailCell3, jailCell4, 
