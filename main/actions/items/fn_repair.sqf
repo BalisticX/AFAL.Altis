@@ -6,11 +6,15 @@
 	Repairing animation and effects for After Altis
 */
 
-private ["_item", "_vehicle", "_length", "_width", "_height", "_difference", "_tyre", "_spill", "_wrench"];
+private ["_item", "_total", "_vehicle", "_length", "_width", "_height", "_difference", "_tyre", "_spill", "_wrench"];
 
 _item = [ _this, 0, "", [""]] call BIS_fnc_param;
 
 if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
+
+	_total = missionNamespace getVariable _item;
+	missionNamespace setVariable [ _item, (_total - 1)];
+	
 	_vehicle = cursorTarget;
 
 	_length = (boundingBoxReal _vehicle select 1) select 0; 
