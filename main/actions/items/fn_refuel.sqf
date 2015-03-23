@@ -16,7 +16,7 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 	
 	_vehicle = cursorTarget;
 	
-	player switchMove "Acts_carFixingWheel";
+	[[player, "switchMove", "Acts_carFixingWheel"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP;
 		sleep 0.01;
 	player EnableSimulation false;
 	
@@ -49,7 +49,7 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 	{deleteVehicle _x} forEach [_sploosh, _drops];
 		sleep 6;
 	player enableSimulation true;
-	player switchMove "AmovPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon";
+	[[player, "switchMove", "AmovPknlMstpSnonWnonDnon_AmovPercMstpSnonWnonDnon"],"AFAL_fnc_NWAnimation",true,false] spawn AFAL_fnc_MP; 
 	deleteVehicle _canister;
 	
 	_vehicle setFuel (fuel _vehicle + _refuel);
