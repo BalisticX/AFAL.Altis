@@ -68,12 +68,12 @@ switch (_item) do {
 		deleteVehicle _object;
 		_reward = ["AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin", "Money"] call BIS_fnc_selectRandom;
 		if (_reward == "Money") then {
-			systemChat "You have found $10,000";
-			AFAL_money = AFAL_money + 10000;
+			systemChat format ["You have recovered $%1", AFAL_relicMoney];
+			AFAL_money = AFAL_money + AFAL_relicMoney;
 		} else {
 			_rewardInfo = [_reward] call AFAL_fnc_items;
 			_amount = [5, 10, 15, 20, 25] call BIS_fnc_selectRandom;
-			systemChat format ["You have found a lost stash of %1x %2", _amount, (_rewardInfo select 1)];
+			systemChat format ["You have recovered a lost stash of %1x %2", _amount, (_rewardInfo select 1)];
 			_rewardTotal = missionNamespace getVariable _reward;
 			missionNamespace setVariable [ _reward, (_rewardTotal + _amount)];
 		};
