@@ -50,4 +50,7 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 	deleteVehicle _canister;
 	
 	_vehicle setFuel (fuel _vehicle + _refuel);
+		systemChat "You have refuelled your vehicle";
+	_total = missionNamespace getVariable _item;
+	missionNamespace setVariable [_item, (_total - 1)];
 } else {	systemChat "There are no vehicles nearby to refuel"	};
