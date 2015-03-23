@@ -15,6 +15,22 @@ if (_item == "") exitWith {};
 
 switch (_item) do
 {
+	//// DRINKS		BLUE [ 0.275, 0.51, 0.706, 1]
+
+	case "AFAL_waterbottle": 						{[ "Land_BottlePlastic_V2_F", "Water Bottle", 1000, "$1000", 500, "$500", [ 0.275, 0.51, 0.706, 1]], AFAL_fnc_consume};
+	case "AFAL_canteen": 							{[ "Land_Canteen_F", "Water Canteen", 3000, "$3000", 1500, "$1500", [ 0.275, 0.51, 0.706, 1]], AFAL_fnc_consume};
+	case "AFAL_sprite": 							{[ "Land_Can_V1_F", "Can of Sprite", 2000, "$2000", 1000, "$1000", [ 0.275, 0.51, 0.706, 1]], AFAL_fnc_consume};
+	case "AFAL_fanta": 							{[ "Land_Can_V2_F", "Can of Fanta", 2000, "$1000", 1000, "$1000", [ 0.275, 0.51, 0.706, 1]], AFAL_fnc_consume};
+	case "AFAL_redbull": 							{[ "Land_Can_V3_F", "Can of Redbull", 2250, "$2250", 1500, "$1500", [ 0.275, 0.51, 0.706, 1]], AFAL_fnc_consume};
+	
+	//// FOOD		GREEN [ 0.42, 0.557, 0.137, 1]
+	
+	case "AFAL_cereal": 							{[ "Land_CerealsBox_F", "Cereal Box", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]], AFAL_fnc_consume};
+	case "AFAL_rice": 							{[ "Land_RiceBox_F", "Bag of Rice", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]], AFAL_fnc_consume};
+	case "AFAL_bakedBeans": 						{[ "Land_BakedBeans_F", "Baked Beans", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]], AFAL_fnc_consume};
+	case "AFAL_bacon": 							{[ "Land_TacticalBacon_F",  "Tactical Bacon", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]], AFAL_fnc_consume};
+	case "AFAL_milk": 							{[ "Land_PowderedMilk_F",  "Powdered Milk", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]], AFAL_fnc_consume};
+
 	//// GADGETS	ORANGE [ 1, 0.5, 0.14, 1]
 	
 	case "AFAL_ductTape" : 							{[ "Land_DuctTape_F", "Duct Tape", 500, "$500", 250, "$250", [ 1, 0.5, 0.14, 1]], AFAL_fnc_restrain};
@@ -56,29 +72,13 @@ switch (_item) do
 
 	//// ILLEGAL	DARK RED [ 0.502, 0, 0, 1]
 	
-	case "AFAL_marijuana" :							{[ "Land_Pillow_camouflage_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_drugMJ};
+	case "AFAL_marijuana" :							{[ "Land_Pillow_camouflage_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_marijuana};
 	case "AFAL_heroin":							{[ "Land_Pillow_old_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
 	case "AFAL_cocaine":							{[ "Land_Pillow_grey_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};	
 	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
 	
 	/*
 	//////// NOT IMPLEMENTED YET ////////
-
-	//// DRINKS		BLUE [ 0.275, 0.51, 0.706, 1]
-
-	case "AFAL_waterbottle": 						{[ "Land_BottlePlastic_V2_F", "Water Bottle", 1000, "$1000", 500, "$500", [ 0.275, 0.51, 0.706, 1]]};
-	case "AFAL_canteen": 							{[ "Land_Canteen_F", "Water Canteen", 3000, "$3000", 1500, "$1500", [ 0.275, 0.51, 0.706, 1]]};
-	case "AFAL_sprite": 							{[ "Land_Can_V1_F", "Can of Sprite", 2000, "$2000", 1000, "$1000", [ 0.275, 0.51, 0.706, 1]]};
-	case "AFAL_fanta": 							{[ "Land_Can_V2_F", "Can of Fanta", 2000, "$1000", 1000, "$1000", [ 0.275, 0.51, 0.706, 1]]};
-	case "AFAL_redbull": 							{[ "Land_Can_V3_F", "Can of Redbull", 2250, "$2250", 1500, "$1500", [ 0.275, 0.51, 0.706, 1]]};
-	
-	//// FOOD		GREEN [ 0.42, 0.557, 0.137, 1]
-	
-	case "AFAL_cereal": 							{[ "Land_CerealsBox_F", "Cereal Box", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
-	case "AFAL_rice": 							{[ "Land_RiceBox_F", "Bag of Rice", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
-	case "AFAL_bakedBeans": 						{[ "Land_BakedBeans_F", "Baked Beans", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
-	case "AFAL_bacon": 							{[ "Land_TacticalBacon_F",  "Tactical Bacon", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
-	case "AFAL_milk": 							{[ "Land_PowderedMilk_F",  "Powdered Milk", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
 
 	//// GADGETS	ORANGE [ 1, 0.5, 0.14, 1]
 	
