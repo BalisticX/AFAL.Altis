@@ -37,6 +37,7 @@ class AFAL_client {
 		class climb {};
 		class tazed {};
 		class restrained {};
+		class workChurch {};
 		class workGrinding {};
 		class workFishing {};
 		class workMechanic {};
