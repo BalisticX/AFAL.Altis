@@ -16,7 +16,7 @@ _tumbler = _dialog displayCtrl 1702;
 
 _difference = abs ((round (sliderPosition _slider * 10)) - lockpickNum);
 
-if (_difference < 6) then {
+if (_difference < 4) then {
   systemChat "You have picked the lock, like a boss!";
 	(_dialog displayCtrl 1703) ctrlSetTextColor [ 0, 0.8, 0.3, 0.75];
 	_tumbler ctrlSetPosition [0, -0.06, 1, 1]; 
