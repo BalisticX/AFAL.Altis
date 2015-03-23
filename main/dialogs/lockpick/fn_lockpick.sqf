@@ -9,11 +9,8 @@
 private ["_dialog"];
 
 if ((cursorTarget isKindOf "Car" || cursorTarget isKindOf "Air") && player distance cursorTarget < 3.5) then {
-	
 	if (!dialog) then {createdialog "AFAL_lockpick";};
-	
-	disableSerialization;
-	
+		disableSerialization;
 	_dialog = findDisplay 1700;
 	
 	lockpickNum = round (random 100);
@@ -25,5 +22,4 @@ if ((cursorTarget isKindOf "Car" || cursorTarget isKindOf "Air") && player dista
 	
 	lockpickNum = nil;
 	lockpickStrike = nil;
-
 } else {	systemChat "There are no vehicles nearby to lockpick"	};
