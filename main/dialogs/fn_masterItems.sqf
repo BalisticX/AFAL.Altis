@@ -57,6 +57,8 @@ switch (_item) do
 	//// ILLEGAL	DARK RED [ 0.502, 0, 0, 1]
 	
 	case "AFAL_marijuana" :							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_drugMJ};
+	case "AFAL_heroin":							{[ "Land_Sack_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
+	case "AFAL_cocaine":							{[ "Land_Sack_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};	
 	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
 	
 	/*
@@ -105,8 +107,6 @@ switch (_item) do
 	
 	case "AFAL_c4": 							{[ "DemoCharge_Remote_Ammo", "C-4", 15000, "$15000", 8750, "$8750", [ 0.502, 0, 0, 1]]};
 	case "AFAL_claymore":							{[ "ClaymoreDirectionalMine_Remote_Ammo", "Claymore", 13750, "$13750", 7500, "$7500", [ 0.502, 0, 0, 1]]};
-	case "AFAL_heroin":							{[ "Land_Sack_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
-	case "AFAL_cocaine":							{[ "Land_Sack_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};
 
 	//// FUN		PINK [ 0.855, 0.44,0.84, 1]
 	
