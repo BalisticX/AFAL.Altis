@@ -6,6 +6,8 @@
 	Creates lockpicking dialog, generates the random number and waits for you to win the minigame for After Altis
 */
 
+private ["_dialog"];
+
 if ((cursorTarget isKindOf "Car" || cursorTarget isKindOf "Air") && player distance cursorTarget < 3.5) then {
 	
 	if (!dialog) then {createdialog "AFAL_lockpick";};
