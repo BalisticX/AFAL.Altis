@@ -31,21 +31,14 @@ waitUntil {!(isNull (findDisplay 46))};
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call afal_fnc_keyboard"];
 
 AFAL_inventory = [
-	//// DRINKS
-	//// FOOD
-	//// GADGETS
-	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_stunGun",
-	//// TOOLS
-	"AFAL_lockpick",
-	//// MEDICAL
-	//// VEHICLE
-	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull", 
-	//// RESOURCE
-	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",
-	"AFAL_relicBox", "AFAL_relicMilitary", "AFAL_relicIllegal", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",
-	//// ILLEGAL
-	"AFAL_turtle", "AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin"
-	//// FUN
+	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",	//// DRINKS
+	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon", "AFAL_milk",		//// FOOD
+	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_stunGun",		//// GADGETS
+	"AFAL_lockpick",		//// TOOLS
+	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull",		//// VEHICLE
+	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",					//// RESOURCE
+	"AFAL_relicBox", "AFAL_relicMilitary", "AFAL_relicIllegal", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",	//// RESOURCE
+	"AFAL_turtle", "AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin"		//// ILLEGAL
 ];
 
 {
