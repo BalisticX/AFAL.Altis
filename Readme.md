@@ -19,7 +19,8 @@ AFAL.Altis Layout -
     * resource
 
 * Images /
-    * police
+    * sheriff
+    * inmate
     * phone
     * keychain
     * license
@@ -47,6 +48,7 @@ AFAL.Altis Layout -
        * fn_headshot
        * fn_restrained
        * fn_tazed
+       * fn_workChurch
        * fn_workFishing
        * fn_workGrinding
        * fn_workMechanic
