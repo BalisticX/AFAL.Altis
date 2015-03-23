@@ -8,7 +8,7 @@
 
 private ["_item", "_info", "_object", "_reward", "_rewardInfo", "_rewardTotal"];
 
-//_item = [ _this, 0, "", [""]] call BIS_fnc_param;
+_item = [ _this, 0, "", [""]] call BIS_fnc_param;
 
 switch (_item) do {
 	case "AFAL_relicBox" : {
