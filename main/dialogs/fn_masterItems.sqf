@@ -48,8 +48,8 @@ switch (_item) do
 	case "AFAL_tuna" : 							{[ "Tuna_F", "Tuna", 3000, "$3000", 2500, "$2500", [ 0.855, 0.647, 0.125, 1]]};
 
 	case "AFAL_relicBox" :							{[ "Land_WoodenBox_F", "Ancient Loot", 0, "$0", 0, "$0", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
-	case "AFAL_relicMilitary" :						{[ "Box_NATO_WpsSpecial_F", "Military Loot", 0, "$", 0, "$0", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
-	case "AFAL_relicIllegal" :						{[ "Land_PlasticCase_01_large_F", "Illegal Loot", 0, "$", 0, "$0", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
+	case "AFAL_relicMilitary" :						{[ "Box_NATO_WpsSpecial_F", "Military Loot", 100000000, "$100000000", 13250, "$13250", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
+	case "AFAL_relicIllegal" :						{[ "Land_PlasticCase_01_large_F", "Illegal Loot", 100000000, "$100000000", 12250, "$12250", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
 	case "AFAL_relicBronze" :						{[ "Land_Trophy_01_bronze_F", "Bronze Relic", 10500, "$10500", 8500, "$8500", [ 0.855, 0.647, 0.125, 1]]};
 	case "AFAL_relicSilver" :						{[ "Land_Trophy_01_silver_F", "Silver Relic", 19000, "$19000", 15000, "$15000", [ 0.855, 0.647, 0.125, 1]]};
 	case "AFAL_relicGold" :							{[ "Land_Trophy_01_gold_F", "Gold Relic", 28500, "$28500", 20150, "$20150", [ 0.855, 0.647, 0.125, 1]]};
