@@ -1,5 +1,5 @@
 /*
-	File: fn_drugMJ.sqf
+	File: fn_marijuana.sqf
 	Author: Ballistic
 	
 	Description:
