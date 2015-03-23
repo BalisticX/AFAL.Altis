@@ -6,7 +6,10 @@
 	The master list for all items everywhere for After Altis
 
 	Parameters:
-	[Object classname, Display name, Buy cost, Sell cost, Type colour, TODO: Image]
+	0 : STRING Item AFAL classname
+	
+	Return:
+	ARRAY Item information and use function
 */
 
 _item = [ _this, 0, "", [""]] call BIS_fnc_param;
