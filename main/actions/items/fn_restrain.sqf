@@ -28,6 +28,4 @@ deleteVehicle _object;
 [[player, _item],"AFAL_fnc_restrained", cursorTarget, false] call AFAL_fnc_MP;
 
 _total = missionNamespace getVariable _item;
-if(_total == 0) exitWith {};
 missionNamespace setVariable [ _item, (_total - 1)];
-////	I'm not sure if i added this last line correctly just copy/paste from MJ script	////
