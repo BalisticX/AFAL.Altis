@@ -31,23 +31,20 @@ waitUntil {!(isNull (findDisplay 46))};
 
 AFAL_inventory = [
 	//// DRINKS
-	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",
 	//// FOOD
-	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon",
 	//// GADGETS
-	"AFAL_cellphone", "AFAL_matches", "AFAL_cigarettes", "AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", 
-	"AFAL_pepperspray", "AFAL_stunGun",
+	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_stunGun",
 	//// TOOLS
-	"AFAL_measure", "AFAL_hammer", "AFAL_drill", "AFAL_grinder", "AFAL_lockpick",
+	"AFAL_lockpick",
 	//// MEDICAL
-	"AFAL_bandage", "AFAL_bloodbag", "AFAL_defib",
 	//// VEHICLE
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull", 
 	//// RESOURCE
 	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",
 	"AFAL_relicBox", "AFAL_relicMil", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",
 	//// ILLEGAL
-	"AFAL_turtle", "AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin"
+	"AFAL_turtle", "AFAL_marijuana"
+	//// FUN
 ];
 
 {
