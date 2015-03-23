@@ -35,9 +35,6 @@ if (cursorTarget isKindOf "Car" && player distance cursorTarget < 3.5) then {
 	_canister allowDamage false;
 	_canister setVectorDirandUp [ [ 1, 0, 0], [ 0, 0.5, 0]];  /// This setVector doesn't do anything
 	
-	_vectorX = vectorDir player select 0;
-	_vectorY = vectorDir player select 1; 
-	
 	_sploosh = "#particlesource" createVehicle (getPos _canister);
 	_drops = "#particlesource" createVehicle (getPos _canister);
 		[["Refuel", _canister, _sploosh, _drops], "AFAL_fnc_NWEffects", true, false] spawn AFAL_fnc_MP;	
