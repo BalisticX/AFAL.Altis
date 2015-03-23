@@ -47,9 +47,9 @@ switch (_item) do
 	case "AFAL_catshark" : 							{[ "CatShark_F", "Cat Shark", 2750, "$2750", 2250, "$2250", [ 0.855, 0.647, 0.125, 1]]};
 	case "AFAL_tuna" : 							{[ "Tuna_F", "Tuna", 3000, "$3000", 2500, "$2500", [ 0.855, 0.647, 0.125, 1]]};
 
-	case "AFAL_relicBox" :							{[ "Land_WoodenBox_F", "Ancient Loot", 0, "$0", 0, "$0", [ 0.855, 0.647, 0.125, 1]]};
-	case "AFAL_relicMilitary" :							{[ "Box_NATO_WpsSpecial_F", "Military Loot", 0, "$", 0, "$0", [ 0.855, 0.647, 0.125, 1]]};
-	case "AFAL_relicIllegal" :						{[ "Land_PlasticCase_01_large_F", "Illegal Loot", 0, "$", 0, "$0", [ 0.855, 0.647, 0.125, 1]]};
+	case "AFAL_relicBox" :							{[ "Land_WoodenBox_F", "Ancient Loot", 0, "$0", 0, "$0", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
+	case "AFAL_relicMilitary" :						{[ "Box_NATO_WpsSpecial_F", "Military Loot", 0, "$", 0, "$0", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
+	case "AFAL_relicIllegal" :						{[ "Land_PlasticCase_01_large_F", "Illegal Loot", 0, "$", 0, "$0", [ 0.855, 0.647, 0.125, 1]], AFAL_fnc_open};
 	case "AFAL_relicBronze" :						{[ "Land_Trophy_01_bronze_F", "Bronze Relic", 10500, "$10500", 8500, "$8500", [ 0.855, 0.647, 0.125, 1]]};
 	case "AFAL_relicSilver" :						{[ "Land_Trophy_01_silver_F", "Silver Relic", 19000, "$19000", 15000, "$15000", [ 0.855, 0.647, 0.125, 1]]};
 	case "AFAL_relicGold" :							{[ "Land_Trophy_01_gold_F", "Gold Relic", 28500, "$28500", 20150, "$20150", [ 0.855, 0.647, 0.125, 1]]};
@@ -57,6 +57,7 @@ switch (_item) do
 	//// ILLEGAL	DARK RED [ 0.502, 0, 0, 1]
 	
 	case "AFAL_marijuana" :							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_drugMJ};
+	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
 	
 	/*
 	//////// NOT IMPLEMENTED YET ////////
@@ -104,7 +105,6 @@ switch (_item) do
 	
 	case "AFAL_c4": 							{[ "DemoCharge_Remote_Ammo", "C-4", 15000, "$15000", 8750, "$8750", [ 0.502, 0, 0, 1]]};
 	case "AFAL_claymore":							{[ "ClaymoreDirectionalMine_Remote_Ammo", "Claymore", 13750, "$13750", 7500, "$7500", [ 0.502, 0, 0, 1]]};
-	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
 	case "AFAL_heroin":							{[ "Land_Sack_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
 	case "AFAL_cocaine":							{[ "Land_Sack_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};
 
