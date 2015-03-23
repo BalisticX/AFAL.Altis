@@ -78,6 +78,7 @@ switch (_item) do
 	case "AFAL_rice": 							{[ "Land_RiceBox_F", "Bag of Rice", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
 	case "AFAL_bakedBeans": 						{[ "Land_BakedBeans_F", "Baked Beans", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
 	case "AFAL_bacon": 							{[ "Land_TacticalBacon_F",  "Tactical Bacon", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
+	case "AFAL_milk": 							{[ "Land_PowderedMilk_F",  "Powdered Milk", 1000, "$1000", 500, "$500", [ 0.42, 0.557, 0.137, 1]]};
 
 	//// GADGETS	ORANGE [ 1, 0.5, 0.14, 1]
 	
