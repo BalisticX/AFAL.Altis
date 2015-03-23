@@ -45,6 +45,7 @@ class AFAL_client {
 	
 	class actions_items {
 		file = "main\actions\items";
+		class consume {};
 		class marijuana {};
 		class open {};
 		class refuel {};
