@@ -44,7 +44,7 @@ AFAL_inventory = [
 	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",
 	"AFAL_relicBox", "AFAL_relicMilitary", "AFAL_relicIllegal", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",
 	//// ILLEGAL
-	"AFAL_turtle", "AFAL_marijuana"
+	"AFAL_turtle", "AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin"
 	//// FUN
 ];
 
