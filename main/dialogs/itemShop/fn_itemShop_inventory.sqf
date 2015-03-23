@@ -35,6 +35,8 @@ switch (_shopType) do {
 	case "Fish" : {[	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna"	]};
 
 	case "Museum" : {[	"AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold"	]};
+	
+	case "Evidence" : {[	"AFAL_relicMilitary", "AFAL_relicIllegal"	]};
 
 	case "Poacher" : {[	"AFAL_turtle"	]};
 
