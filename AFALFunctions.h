@@ -35,6 +35,7 @@ class AFAL_client {
 	class actions {
 		file = "main\actions";
 		class climb {};
+		class items {};
 		class tazed {};
 		class restrained {};
 		class workChurch {};
@@ -61,7 +62,6 @@ class AFAL_client {
 		class playerMenu {};
 		class clothesShop {};
 		class itemShop {};
-		class masterItems {};
 		class gunShop {};
 		class vehicleShop {};
 	};
