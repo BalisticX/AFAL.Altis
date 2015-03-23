@@ -32,6 +32,10 @@ lbClear _shopList;
 lbClear _playerList;
 
 _itemArray = [_type] call AFAL_fnc_itemShop_inventory;
+
+if (_type in ["Evidence", "Muesum"]) then {	_itemArray = []	};
+
+_itemArray;
 {
 	_items = [_x] call AFAL_fnc_items;
 	_index = _shopList lbAdd format[ "%1", (_items select 1)];
