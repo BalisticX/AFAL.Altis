@@ -56,9 +56,9 @@ switch (_item) do
 
 	//// ILLEGAL	DARK RED [ 0.502, 0, 0, 1]
 	
-	case "AFAL_marijuana" :							{[ "Land_Sack_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_drugMJ};
-	case "AFAL_heroin":							{[ "Land_Sack_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
-	case "AFAL_cocaine":							{[ "Land_Sack_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};	
+	case "AFAL_marijuana" :							{[ "Land_Pillow_camouflage_F", "Marijuana", 11500, "$11500", 7500, "$7500", [ 0.502, 0, 0, 1]], AFAL_fnc_drugMJ};
+	case "AFAL_heroin":							{[ "Land_Pillow_old_F", "Heroin", 12250, "$12250", 8500, "$8500", [ 0.502, 0, 0, 1]]};
+	case "AFAL_cocaine":							{[ "Land_Pillow_grey_F", "Cocaine", 13500, "$13500", 9550, "$9550", [ 0.502, 0, 0, 1]]};	
 	case "AFAL_turtle": 							{[ "Turtle_F", "Turtle", 10500, "$10500", 8500, "$8500", [ 0.502, 0, 0, 1]]};	
 	
 	/*
