@@ -34,8 +34,7 @@ player cameraEffect ["terminate","back"];
 camDestroy _prayerCam;
 	sleep 0.25;
 
-//// Take this out when we implement sanity - B	
-systemChat "Good Job!";
+systemChat "Good Job!";		//// Take this out when we implement sanity - B	
 
 _rain = "#particlesource" createVehicleLocal (getPos player);
 	_rain setParticleCircle [0, [0, 0, 0]];
