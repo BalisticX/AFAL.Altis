@@ -31,7 +31,7 @@ switch (_item) do {
 		missionNamespace setVariable [ _reward, (_rewardTotal + 1)];
 	};
 	
-	case "AFAL_relicMil" : {
+	case "AFAL_relicMilitary" : {
 		_total = missionNamespace getVariable _item;
 		missionNamespace setVariable [ _item, (_total - 1)];
 		_info = [_item] call AFAL_fnc_items;
