@@ -44,12 +44,8 @@ if (_difference < 7) then {
 	};
 
 	switch (lockpickStrike) do {
-		case 1 : {
-			(_dialog displayCtrl 1711) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1];
-		};
-		case 2 : {
-			(_dialog displayCtrl 1712) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1];
-		};
+		case 1 : {	(_dialog displayCtrl 1711) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1]		};
+		case 2 : {	(_dialog displayCtrl 1712) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1]		};
 		case 3 : {
 			systemChat "Game over chump!";
 			(_dialog displayCtrl 1713) ctrlSetTextColor [ 0.8, 0.2, 0.2, 1];
