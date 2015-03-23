@@ -25,7 +25,7 @@ switch (_item) do {
 			sleep 1.5;
 		deleteVehicle _object;
 		_reward = ["AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold"] call BIS_fnc_selectRandom;
-		_rewardInfo = [_item] call AFAL_fnc_items;
+		_rewardInfo = [_reward] call AFAL_fnc_items;
 		systemChat format ["You have discovered a %1", (_rewardInfo select 1)];
 		_rewardTotal = missionNamespace getVariable _reward;
 		missionNamespace setVariable [ _reward, (_rewardTotal + 1)];
@@ -71,7 +71,7 @@ switch (_item) do {
 			systemChat "You have found $10,000";
 			AFAL_money = AFAL_money + 10000;
 		} else {
-			_rewardInfo = [_item] call AFAL_fnc_items;
+			_rewardInfo = [_reward] call AFAL_fnc_items;
 			_amount = [5, 10, 15, 20, 25] call BIS_fnc_selectRandom;
 			systemChat format ["You have found a lost stash of %1x %2", _amount, (_rewardInfo select 1)];
 			_rewardTotal = missionNamespace getVariable _reward;
