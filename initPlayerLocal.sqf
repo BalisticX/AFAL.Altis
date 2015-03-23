@@ -25,7 +25,7 @@ AFAL_hunger = 100;
 //// Work Payments ////
 AFAL_mechanic = 500;
 AFAL_grinding = 250;
-AFAL_relicLoot = 10000;
+AFAL_relicMoney = 10000;
 
 waitUntil {!(isNull (findDisplay 46))};
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call afal_fnc_keyboard"];
