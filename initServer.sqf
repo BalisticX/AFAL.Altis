@@ -9,8 +9,8 @@
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call AFAL_fnc_MPexec};
 [] call compile PreprocessFileLineNumbers "\AFAL_brain\init.sqf";
 
-////[] spawn AFAL_fnc_cityBarricade;	LEAVE THIS OUT FOR NOW
-[] spawn AFAL_fnc_cityDemolish;
+[] spawn AFAL_fnc_cityBarricade;
+////[] spawn AFAL_fnc_cityDemolish;	LEAVE THIS OUT FOR NOW
 
 _uniformList = ["U_C_Poloshirt_blue", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_stripped", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_salmon", "U_C_Poloshirt_redwhite"];
 
