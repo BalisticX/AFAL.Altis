@@ -1,5 +1,5 @@
 /*
-	File: fn_clothesShop.hpp
+	File: AFAL_clothesShop.hpp
 	Author: Ballistic
 	
 	Description:
@@ -37,7 +37,7 @@ class clothesShop
 		x = 0;		y = safeZoneY + safeZoneH - 0.601;
 		w = 0.155;		h = 0.07;
 		text = "Uniforms";
-		action = "[shopType, 'Uniforms'] execVM 'main\shops\clothstore\fn_clothesShop_switch.sqf'";
+		action = "[shopType, 'Uniforms'] call AFAL_fnc_clothesShop_switch";
 		sizeEx = 0.04;
 		colorBackgroundActive[] = { 1, 0.5, 0.14, 0.8};
 	};
@@ -47,7 +47,7 @@ class clothesShop
 		x = 0.155;		y = safeZoneY + safeZoneH - 0.601;
 		w = 0.155;		h = 0.07;
 		text = "Vests";
-		onButtonClick = "[shopType, 'Vests'] execVM 'main\shops\clothstore\fn_clothesShop_switch.sqf'";
+		action = "[shopType, 'Vests'] call AFAL_fnc_clothesShop_switch";
 		sizeEx = 0.04;
 		colorBackgroundActive[] = { 0.855, 0.647, 0.125,0.8};
 	};
@@ -57,7 +57,7 @@ class clothesShop
 		x = 0.31;		y = safeZoneY + safeZoneH - 0.601;
 		w = 0.155;		h = 0.07;
 		text = "Headgear";
-		action = "[shopType, 'Headgear'] execVM 'main\shops\clothstore\fn_clothesShop_switch.sqf'";
+		action = "[shopType, 'Headgear'] call AFAL_fnc_clothesShop_switch";
 		sizeEx = 0.04;
 		colorBackgroundActive[] = { 0.42, 0.557, 0.137, 0.8};
 	};
@@ -67,7 +67,7 @@ class clothesShop
 		x = 0.466;		y = safeZoneY + safeZoneH - 0.601;
 		w = 0.154;		h = 0.07;
 		text = "Facewear";
-		action = "[shopType, 'Facewear'] execVM 'main\shops\clothstore\fn_clothesShop_switch.sqf'";
+		action = "[shopType, 'Facewear']  call AFAL_fnc_clothesShop_switch";
 		sizeEx = 0.04;
 		colorBackgroundActive[] = { 0.275, 0.51, 0.706, 0.8};
 	};
@@ -77,7 +77,7 @@ class clothesShop
 		x = 0.62;		y = safeZoneY + safeZoneH - 0.601;
 		w = 0.155;		h = 0.07;
 		text = "Backpacks";
-		action = "[shopType, 'Backpacks'] execVM 'main\shops\clothstore\fn_clothesShop_switch.sqf'";
+		action = "[shopType, 'Backpacks']  call AFAL_fnc_clothesShop_switch";
 		sizeEx = 0.04;
 		colorBackgroundActive[] = { 0.365, 0.278, 0.545, 0.8};
 	};
@@ -87,7 +87,7 @@ class clothesShop
 		x = 0.775;		y = safeZoneY + safeZoneH - 0.601;
 		w = 0.155;		h = 0.07;
 		text = "Outfits";
-		action = "[shopType, 'Presets'] execVM 'main\shops\clothstore\fn_clothesShop_switch.sqf'";
+		action = "[shopType, 'Presets']  call AFAL_fnc_clothesShop_switch";
 		sizeEx = 0.04;
 		colorBackgroundActive[] = { 0.855, 0.44,0.84, 0.8};
 	};
@@ -97,7 +97,7 @@ class clothesShop
 		idc = 4017;
 		x = 0.015;		y = safeZoneY + safeZoneH - 0.515;
 		w = 0.35;		h = 0.255;
-		onLbDblClick = "execVM 'main\shops\clothstore\fn_clothesShop_add.sqf'";
+		onLbDblClick = "[] call AFAL_fnc_clothesShop_add";
 	};
 	
 	class selected : RscListBox 
@@ -105,15 +105,17 @@ class clothesShop
 		idc = 4015;
 		x = 0.38;		y = safeZoneY + safeZoneH - 0.515;
 		w = 0.335;		h = 0.255;
-		onLbDblClick = "execVM 'main\shops\clothstore\fn_clothesShop_remove.sqf'";
+		onLbDblClick = "[] call AFAL_fnc_clothesShop_remove";
 	};
 	
+/*	
+
 	class add : RscButton 
 	{
 		x = 0.38;		y = safeZoneY + safeZoneH - 0.335;
 		w = 0.16;		h = 0.075;
 		text = "ADD";
-		action = "execVM 'main\shops\clothstore\fn_clothesShop_add.sqf'";
+		action = "execVM 'scripts\dialogs\AFAL_clothesShop_add.sqf'";
 		colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 	};
 	
@@ -122,9 +124,11 @@ class clothesShop
 		x = 0.555;		y = safeZoneY + safeZoneH - 0.335;
 		w = 0.16;		h = 0.075;
 		text = "REMOVE";
-		action = "execVM 'main\shops\clothstore\fn_clothesShop_remove.sqf'";
+		action = "execVM 'scripts\dialogs\AFAL_clothesShop_remove.sqf'";
 		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 	};
+	
+*/
 	
 	class price : RscText
 	{
@@ -148,6 +152,6 @@ class clothesShop
 		x = 0.73;		y = safeZoneY + safeZoneH - 0.335;
 		w = 0.255;		h = 0.075;
 		text = "PURCHASE";
-		action = "execVM 'main\shops\clothstore\fn_clothesShop_buy.sqf'";
+		action = "[] call AFAL_fnc_clothesShop_buy";
 	};
 };
