@@ -37,12 +37,12 @@ class AFAL_client {
 		class climb {};
 		class items {};
 		class tazed {};
+		class unlock {};
 		class restrained {};
 		class workChurch {};
 		class workGrinding {};
 		class workFishing {};
 		class workMechanic {};
-		class unlock {};
 	};
 	
 	class actions_items {
