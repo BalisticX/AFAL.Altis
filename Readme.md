@@ -24,7 +24,7 @@ AFAL.Altis Layout -
     * phone
     * keychain
     * license
-    * AFAL_atm
+    * atm
     * lockpick
     * lockpick_base
     * lockpick_tumbler
@@ -43,6 +43,7 @@ AFAL.Altis Layout -
           * fn_drugMJ
           * fn_lockpick
           * fn_lockpick_attempt
+          * fn_open
           * fn_refuel
           * fn_repair
           * fn_restrain
