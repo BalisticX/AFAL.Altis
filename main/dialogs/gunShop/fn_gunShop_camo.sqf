@@ -23,11 +23,11 @@ switch (_class) do {
 	
 	case "srifle_LRR_F" : 				{	_array = [		"srifle_LRR_F", "srifle_LRR_camo_F"			]	};	
 	
-	case "arifle_Mk20C_plain_F" : 		{	_array = [		"arifle_Mk20C_plain_F", "arifle_Mk20C_F"		]	};
+	case "arifle_Mk20C_plain_F" : 			{	_array = [		"arifle_Mk20C_plain_F", "arifle_Mk20C_F"		]	};
 	
-	case "arifle_Mk20_plain_F" : 		{	_array = [		"arifle_Mk20_plain_F", "arifle_Mk20_F"			]	};
+	case "arifle_Mk20_plain_F" : 			{	_array = [		"arifle_Mk20_plain_F", "arifle_Mk20_F"			]	};
 	
-	case "arifle_Mk20_GL_plain_F" : 	{	_array = [		"arifle_Mk20_GL_plain_F", "arifle_Mk20_GL_F"	]	};	
+	case "arifle_Mk20_GL_plain_F" : 		{	_array = [		"arifle_Mk20_GL_plain_F", "arifle_Mk20_GL_F"	]	};	
 	
 	case "arifle_MXC_F" : 				{	_array = [		"arifle_MXC_F", "arifle_MXC_Black_F"			]	};
 	
