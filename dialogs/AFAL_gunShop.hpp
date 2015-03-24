@@ -13,56 +13,64 @@ class gunShop
 	movingEnable = true;
 	onLoad = "";
 	controlsBackground[] = {WeaponBground, ExtraBground};
-	controls[] = {weapons, extras, add, remove, mags, magValue, price, priceValue, weaponBuy, close};
+	controls[] = {weapons, extras, add, remove, nogun, mags, magValue, price, priceValue, buy, close};
 		
 	class WeaponBground : RscBground 
 	{
 		x = safeZoneX + 0.1;		y = 0;
-		w = 0.3;		h = 1;
+		w = 0.35;		h = 1;
 	};
 	
 	class ExtraBground : RscBground 
 	{
-		x = safeZoneX + safeZoneW - 0.4;		y = 0;
-		w = 0.3;		h = 0.56;
+		x = safeZoneX + safeZoneW - 0.45;		y = 0;
+		w = 0.35;		h = 0.56;
 	};
 
 	class weapons : RscListBox 
 	{
 		idc = 3017;
 		x = safeZoneX + 0.115;		y = 0.015;
-		w = 0.27;		h = 0.52;
+		w = 0.32;		h = 0.52;
 	};
 	
 	class extras : RscListBox 
 	{
 		idc = 3015;
-		x = safeZoneX + safeZoneW - 0.385;		y = 0.015;
-		w = 0.27;		h = 0.35;
+		x = safeZoneX + safeZoneW - 0.435;		y = 0.015;
+		w = 0.32;		h = 0.35;
 	};
 	
 		class add : RscButton
 		{
-			x = safeZoneX + safeZoneW - 0.385;		y = 0.38;
-			w = 0.27;		h = 0.075;
+			x = safeZoneX + safeZoneW - 0.435;		y = 0.38;
+			w = 0.32;		h = 0.075;
 			text = "ADD";
-			action = "[] spawn AFAL_fnc_gunShop_add";
+			action = "execVM 'scripts\dialogs\AFAL_gunShop_add.sqf'";
 			colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 		};
 		
 		class remove : RscButton
 		{
-			x = safeZoneX + safeZoneW - 0.385;		y = 0.47;
-			w = 0.27;		h = 0.075;
+			x = safeZoneX + safeZoneW - 0.435;		y = 0.47;
+			w = 0.32;		h = 0.075;
 			text = "REMOVE";
-			action = "[] spawn AFAL_fnc_gunShop_remove";
+			action = "execVM 'scripts\dialogs\AFAL_gunShop_remove.sqf'";
 			colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 		};
 		
-	class mags : RscText
+	class nogun : RscButton
 	{
 		x = safeZoneX + 0.115;		y = 0.55;
-		w = 0.135;		h = 0.075;
+		w = 0.32;		h = 0.075;
+		text = "REMOVE GUN";
+		action = "execVM 'scripts\dialogs\AFAL_gunShop_gun.sqf'";
+	};
+		
+	class mags : RscText
+	{
+		x = safeZoneX + 0.115;		y = 0.64;
+		w = 0.16;		h = 0.075;
 		text = "MAGS";
 	};
 	
@@ -70,15 +78,15 @@ class gunShop
 		{
 			idc = 3002
 			style = 2;
-			x = safeZoneX + 0.25;		y = 0.55;
-			w = 0.135;		h = 0.075;
+			x = safeZoneX + 0.275;		y = 0.64;
+			w = 0.16;		h = 0.075;
 			text = "0";
 		};
 	
 	class price : RscText
 	{
-		x = safeZoneX + 0.115;		y = 0.64;
-		w = 0.27;		h = 0.075;
+		x = safeZoneX + 0.115;		y = 0.73;
+		w = 0.32;		h = 0.075;
 		text = "PRICE";
 		colorText[] = { 0, 0.8, 0.3, 0.8};
 	};	
@@ -87,23 +95,23 @@ class gunShop
 		{
 			idc = 3001;
 			style = 2;
-			x = safeZoneX + 0.115;		y = 0.73;
-			w = 0.27;		h = 0.075;
+			x = safeZoneX + 0.115;		y = 0.82;
+			w = 0.32;		h = 0.075;
 			text = "$ 0";
 		};
 	
-	class weaponBuy : RscButton
+	class buy : RscButton
 	{
-		x = safeZoneX + 0.115;		y = 0.82;
-		w = 0.27;		h = 0.075;
+		x = safeZoneX + 0.115;		y = 0.91;
+		w = 0.1525;		h = 0.075;
 		text = "BUY";
-		action = "deleteVehicle extraHolder; [] spawn AFAL_fnc_gunShop_buy";
+		action = "deleteVehicle extraHolder; execVM 'scripts\dialogs\AFAL_gunShop_buy.sqf'";
 	};
 	
 	class close : RscButton
 	{
-		x = safeZoneX + 0.115;		y = 0.91;
-		w = 0.27;		h = 0.075;
+		x = safeZoneX + 0.2825;		y = 0.91;
+		w = 0.1525;		h = 0.075;
 		text = "CLOSE";
 		action = "closeDialog 3000";
 		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
