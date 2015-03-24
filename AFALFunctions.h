@@ -42,6 +42,7 @@ class AFAL_client {
 		class workGrinding {};
 		class workFishing {};
 		class workMechanic {};
+		class unlock {};
 	};
 	
 	class actions_items {
