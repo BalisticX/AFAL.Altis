@@ -5,7 +5,6 @@
 	Description:
 	Executes when you switch tabs at the clothes shop for After Altis
 */
-
 disableSerialization;
 
 _shopType = [ _this, 0, "", [""]] call BIS_fnc_param;
@@ -39,3 +38,15 @@ removeGoggles shopMannequin;
 	shopMannequin addGoggles ((shopSelect select 3) select 2);
 removeBackpack shopMannequin; 
 	shopMannequin addBackpack ((shopSelect select 4) select 2);
+	
+if (_clothesType in ["Headgear", "Facewear"]) then {
+shopCam camPreparePos (shopLocation modelToWorld [ 0, 1.25, 2]);
+	shopCam camSetTarget (shopLocation modelToWorld [ 0, 0, 2.1]);
+	shopCam camPrepareFOV 0.4;
+	shopCam camCommitPrepared 2;
+} else {
+shopCam camPreparePos (shopLocation modelToWorld [ 0, 3, 1.5]);
+	shopCam camSetTarget (shopLocation modelToWorld [ 0, 0, 1]);
+	shopCam camPrepareFov 0.9;
+	shopCam camCommitPrepared 3;
+};
