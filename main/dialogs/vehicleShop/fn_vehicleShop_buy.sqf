@@ -30,6 +30,7 @@ if (AFAL_money >= _value) then {
 	_vehicle setPos getPosATL _location;
 	_vehicle setDir _dir;
 	_vehicle setVariable ["Owner", format ["%1", player], true];
+	_vehicle lock true;
 		sleep 0.25;
 	cutText [ format["You have purchased a %1 for $%2", _name, _value], "PLAIN DOWN", 3, false];
 	switch (_class) do {
