@@ -12,6 +12,9 @@ _gunList = _dialog displayCtrl 3017;
 _extraList = _dialog displayCtrl 3015;
 
 if (AFAL_money > shopSelect select 4) then {
+
+	{	deleteVehicle _x	} forEach [shopHolder, extraHolder, shopPivot];
+	
 	_gunHolder = "WeaponHolder_Single_F" createVehicleLocal [0,0,0];
 	_gunHolder setPosATL [getPosATL shopPivot select 0, getPosATL shopPivot select 1, (getPosATL shopPivot select 2) + 1];
 	
