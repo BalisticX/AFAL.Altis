@@ -37,8 +37,8 @@ switch (_item) do {
 	case "AFAL_redbull" : 				{		AFAL_thirst = AFAL_thirst + 30; AFAL_hunger = AFAL_hunger - 10;	player setFatigue 6;	};	
 //// FOOD
 	case "AFAL_cereal" : 				{		AFAL_hunger = AFAL_hunger + 50		};
-	case "AFAL_rice" : 					{		AFAL_hunger = AFAL_hunger + 100; AFAL_thirst = AFAL_thirst - 20;		};
+	case "AFAL_rice" : 				{		AFAL_hunger = AFAL_hunger + 100; AFAL_thirst = AFAL_thirst - 20;		};
 	case "AFAL_bakedBeans" : 			{		AFAL_hunger = AFAL_hunger + 75;		};
 	case "AFAL_bacon" : 				{		AFAL_hunger = AFAL_hunger + 100; AFAL_thirst = AFAL_thirst - 20;		};
-	case "AFAL_milk" :					{		AFAL_hunger = AFAL_hunger + 20; AFAL_thirst = AFAL_thirst + 20;			};
+	case "AFAL_milk" :				{		AFAL_hunger = AFAL_hunger + 20; AFAL_thirst = AFAL_thirst + 20;			};
 };
