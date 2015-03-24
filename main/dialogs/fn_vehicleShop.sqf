@@ -36,14 +36,22 @@ _vehicles ctrlSetEventHandler [ "LBSelChanged", "deleteVehicle shopVehicle; [_th
 
 shopPivot = "Land_Tyre_F" createVehicleLocal [0,0,0];
 hideObject shopPivot;
-shopPivot setPosATL [getPosATLVisual _location select 0, getPosATLVisual _location select 1, getPosATLVisual _location select 2];
+shopPivot setPosATL [getPosATL _location select 0, getPosATL _location select 1, getPosATL _location select 2];
 shopPivot allowDamage false;
 
-_shopCam = "camera" camCreate (_location modelToWorld [ 10, 0, 7]);
-_shopCam camSetTarget (_location modelToWorld [ 0, 0, 4]);
-_shopCam cameraEffect ["internal", "back"];
-_shopCam camPrepareFov 0.7;
-_shopCam camCommitPrepared 0;
+if (_type in ["Scrapyard", "Boatyard", "PoliceCar", "MedicCar", "GangCar"]) then {
+	_shopCam = "camera" camCreate (_location modelToWorld [ 10, 0, 7]);
+		_shopCam camSetTarget (_location modelToWorld [ 0, 0, 4]);
+		_shopCam cameraEffect ["internal", "back"];
+		_shopCam camPrepareFov 0.7;
+		_shopCam camCommitPrepared 0;
+} else {
+	_shopCam = "camera" camCreate (_location modelToWorld [ 14, 0, 4]);
+		_shopCam camSetTarget (_location modelToWorld [ 0, 0, 4]);
+		_shopCam cameraEffect ["internal", "back"];
+		_shopCam camPrepareFov 1;
+		_shopCam camCommitPrepared 0;
+};
 
 _dir = getDir shopPivot;
 
