@@ -98,6 +98,7 @@ class AFAL_client {
 		class gunShop_add {};
 		class gunShop_buy {};
 		class gunShop_extra {};
+		class gunShop_gun {};
 		class gunShop_inventory {};
 		class gunShop_remove {};
 		class gunShop_select {};
