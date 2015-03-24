@@ -10,8 +10,7 @@ class gunShop
 {
 	idd = 3000;
 	name= "gunShop";
-	movingEnable = true;
-	onLoad = "";
+	movingEnable = false;
 	controlsBackground[] = {WeaponBground, ExtraBground};
 	controls[] = {weapons, extras, add, remove, nogun, mags, magValue, price, priceValue, buy, close};
 		
@@ -46,7 +45,7 @@ class gunShop
 			x = safeZoneX + safeZoneW - 0.435;		y = 0.38;
 			w = 0.32;		h = 0.075;
 			text = "ADD";
-			action = "execVM 'scripts\dialogs\AFAL_gunShop_add.sqf'";
+			action = "call AFAL_fnc_gunShop_add";
 			colorBackgroundActive[] = { 0, 0.8, 0.3, 0.8};
 		};
 		
@@ -55,7 +54,7 @@ class gunShop
 			x = safeZoneX + safeZoneW - 0.435;		y = 0.47;
 			w = 0.32;		h = 0.075;
 			text = "REMOVE";
-			action = "execVM 'scripts\dialogs\AFAL_gunShop_remove.sqf'";
+			action = "call AFAL_fnc_gunShop_remove";
 			colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.8};
 		};
 		
@@ -64,7 +63,7 @@ class gunShop
 		x = safeZoneX + 0.115;		y = 0.55;
 		w = 0.32;		h = 0.075;
 		text = "REMOVE GUN";
-		action = "execVM 'scripts\dialogs\AFAL_gunShop_gun.sqf'";
+		action = "call AFAL_fnc_gunShop_gun";
 	};
 		
 	class mags : RscText
@@ -105,7 +104,7 @@ class gunShop
 		x = safeZoneX + 0.115;		y = 0.91;
 		w = 0.1525;		h = 0.075;
 		text = "BUY";
-		action = "deleteVehicle extraHolder; execVM 'scripts\dialogs\AFAL_gunShop_buy.sqf'";
+		action = "call AFAL_fnc_gunshop_buy";
 	};
 	
 	class close : RscButton
