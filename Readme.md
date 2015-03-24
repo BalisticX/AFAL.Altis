@@ -39,7 +39,10 @@ AFAL.Altis Layout -
     * fn_newSpawn
     * Actions /
        * Items /
+          * fn_consume
           * fn_drugMJ
+          * fn_lockpick
+          * fn_lockpick_attempt
           * fn_refuel
           * fn_repair
           * fn_restrain
@@ -48,6 +51,7 @@ AFAL.Altis Layout -
        * fn_headshot
        * fn_restrained
        * fn_tazed
+       * fn_unlock
        * fn_workChurch
        * fn_workFishing
        * fn_workGrinding
@@ -66,6 +70,7 @@ AFAL.Altis Layout -
           * fn_gunShop_add
           * fn_gunShop_buy
           * fn_gunShop_extra
+          * fn_gunShop_gun
           * fn_gunShop_inventory
           * fn_gunShop_remove
           * fn_gunShop_select
