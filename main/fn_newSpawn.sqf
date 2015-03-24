@@ -78,7 +78,6 @@ camDestroy _spawnCam;
 	sleep 1.5;
 cutText ["", "BLACK IN", 1.5];
 [[ player, "switchMove","Acts_UnconsciousStandUp_part1"], "AFAL_fnc_NWAnimation", true, false] spawn AFAL_fnc_mp;
-	sleep 40;
+	sleep 29;
 player allowDamage true;
 player switchMove "";
-player setDir (getDir player - 200);
