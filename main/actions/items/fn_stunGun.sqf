@@ -10,7 +10,7 @@ player playMove "AmovPercMstpSnonWnonDnon_AmovPercMstpSrasWpstDnon_end";
 
 _stunGun = "Land_MobilePhone_old_F" createVehicle [0,0,0];
 	_stunGun allowDamage false;
-	_stunGun attachTo [player, [0,0,0], "RightHand"];
+	_stunGun attachTo [player, [ 0, 0, -0.1], "RightHand"];
 	_stunGun setVectorUp [0,0,-1];
 	
 sleep 0.5;
