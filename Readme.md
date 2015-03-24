@@ -83,9 +83,6 @@ AFAL.Altis Layout -
           * fn_vehicleShop_buy
           * fn_vehicleShop_inventory
           * fn_vehicleShop_select
-       * lockpick /
-          * fn_lockpick
-          * fn_lockpick_attempt
        * map /
           * fn_map
           * fn_map_locations
