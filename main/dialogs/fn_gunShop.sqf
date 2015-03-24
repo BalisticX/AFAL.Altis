@@ -6,26 +6,21 @@
 	Creates gun shop dialog and sets available weapons for After Altis
 */
 
-shopLocation = _this select 0;
+private ["_location", "_type", "_dialog", "_weaponList", "_weaponArray", "_weaponIndex", "_shopCam", "_dir"];
 
+_location = [ _this, 0, objNull, [objNull]] call BIS_fnc_param;
 _type = [ _this, 1, "", [""]] call BIS_fnc_param;
 
-if (!dialog) then {createdialog "gunShop";};
+if (!dialog) then {	createdialog "gunShop"	};
 
 disableSerialization;
 
-shopType = _type;
-shopHolder = objNull;
-extraHolder = objNull;
-shopPivot = objNull;
-shopValue = 0;
-
 _dialog = findDisplay 3000;
 _weaponList = _dialog displayCtrl 3017;
-_extraList = _dialog displayCtrl 3015;
-_priceValue = _dialog displayCtrl 3001;
 
-_weaponArray = [_type] call AFAL_fnc_gunShop_inventory;
+_availableWeapons = compile preprocessFile "scripts\dialogs\AFAL_gunShop_inventory.sqf";
+
+_weaponArray = _type call _availableWeapons;
 
 {
 	_weaponIndex = _weaponList lbAdd format[ "%1", (_x select 0)];
@@ -37,35 +32,40 @@ _weaponArray = [_type] call AFAL_fnc_gunShop_inventory;
 
 } forEach _weaponArray;
 
-_weaponList ctrlSetEventHandler [ "LBSelChanged", "{deleteVehicle _x} forEach [extraHolder]; [_this] call AFAL_fnc_gunShop_select"];
-
-_shopCam = "camera" camCreate (shopLocation modelToWorld [ 2.5, -1, 2]);
-_shopCam camSetTarget (shopLocation modelToWorld [ 0, 0, 1]);
-_shopCam cameraEffect ["internal", "back"];
-_shopCam camPrepareFov 0.7;
-_shopCam camCommitPrepared 0;
-
 shopPivot = "Land_Tyre_F" createVehicleLocal [0,0,0];
 hideObject shopPivot;
-shopPivot setPosATL [getPosATLVisual shopLocation select 0, getPosATLVisual shopLocation select 1, (getPosATLVisual shopLocation select 2)];
-shopPivot allowDamage false;
+shopPivot setPosATL getPosATL _location;
+
+shopHolder = "WeaponHolderSimulated" createVehicleLocal [0,0,0];
+	shopHolder attachTo [ shopPivot, [ 0, -0.63, 1.25]];
+	shopHolder setVectorDirAndUp [[0,0,1],[0,-1,0]];
+extraHolder = "WeaponHolderSimulated" createVehicleLocal [0,0,0];
+	extraHolder attachTo [ shopPivot, [ 0, 0, 1.5]];
+	extraHolder setVectorDirAndUp [[0,1,0],[0,0,1]];
+
+_weaponList ctrlSetEventHandler [ "LBSelChanged", "{	deleteVehicle _x	} forEach [shopHolder, extraHolder]; [_this] execVM 'scripts\dialogs\AFAL_gunShop_select.sqf'"];
+
+_shopCam = "camera" camCreate (_location modelToWorld [ 2.5, -1, 2]);
+	_shopCam camSetTarget (_location modelToWorld [ 0, 0, 1]);
+	_shopCam cameraEffect ["internal", "back"];
+	_shopCam camPrepareFov 0.7;
+	_shopCam camCommitPrepared 0;
+
 _dir = getDir shopPivot;
 
-waitUntil
-{
+waitUntil {
 	_dir = _dir + (
-	if (_dir > 360) then [{-360},{1.25}]
+		if (_dir > 360) then [{-360},{0.75}]
 	);
 	shopPivot setDir _dir;
-	isNull _dialog
+
+	isNull _dialog;
 };
+
+{deleteVehicle _x} forEach [shopHolder, extraHolder, shopPivot];
 
 player cameraEffect ["terminate","back"];
 camDestroy _shopCam;
 
-{deleteVehicle _x} forEach [shopHolder, extraHolder, shopPivot];
-
-shopSelect = nil;
-shopValue = nil;
-shopLocation = nil;
 magCount = nil;
+shopSelect = nil;
