@@ -26,7 +26,7 @@ _NPCList = [
 	[KavalaPoliceGearNPC, "GUARD"],
 	[KavalaMedicCarNPC, "LEAN"], [KavalaScubaNPC, "LEAN"], [KavalaPoliceAirNPC, "LEAN"],
 	[KavalaMedicGearNPC, "LEAN_ON_TABLE"], [KavalaClothesNPC1, "LEAN_ON_TABLE"],
-	[KavalaMedicAirNPC, "SIT_U1"], [KavalaGunShopNPC, "SIT_U1"], [KavalaStudioNPC, "SIT_U1"], [KavalaPortNPC, "SIT_U1"], [KavalaFishNPC, "SIT_U1"], [KavalaClothesNPC2, "SIT_U1"],
+	[KavalaMedicAirNPC, "SIT_U1"], [KavalaGunShopNPC, "SIT_U1"], [KavalaStudioNPC, "SIT_U1"], [KavalaPortNPC, "SIT_U1"], [KavalaFishNPC, "SIT_U1"], [KavalaClothesNPC2, "SIT_U1"], [KavalaMuseumNPC, "SIT_U1"], 
 	[KavalaPoliceCarNPC, "REPAIR_VEH_STAND"]
 ];
 {	[(_x select 0), (_x select 1), "MEDIUM"] call BIS_fnc_ambientAnim	} forEach _NPCList;
