@@ -20,6 +20,8 @@ class AFAL_client {
 		class eyePos {};
 		class cityDemolish {};
 		class cityBarricade {};
+		class wreckSpawn {};
+		class wreckExtra {};
 	};
 	
 	class Main {
