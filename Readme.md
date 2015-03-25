@@ -114,3 +114,5 @@ AFAL.Altis Layout -
     * fn_cityDemolish
     * fn_eyePos
     * fn_numberText
+    * fn_wreckExtra
+    * fn_wreckSpawn
