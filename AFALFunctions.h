@@ -52,6 +52,7 @@ class AFAL_client {
 		class lockpick_attempt {};
 		class marijuana {};
 		class open {};
+		class recover {};
 		class refuel {};
 		class repair {};
 		class restrain {};
