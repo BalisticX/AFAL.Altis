@@ -44,6 +44,7 @@ AFAL.Altis Layout -
           * fn_lockpick
           * fn_lockpick_attempt
           * fn_open
+          * fn_recover
           * fn_refuel
           * fn_repair
           * fn_restrain
