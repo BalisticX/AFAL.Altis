@@ -3,7 +3,7 @@
 	Author: Ballistic
 	
 	Description:
-	Function for recovering relic boxes from underwater wrecks After Altis
+	Function for recovering relic boxes from underwater wrecks in After Altis
 	
 	Parameters:
 	0 : OBJECT The box that is being retrived
