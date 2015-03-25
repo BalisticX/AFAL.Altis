@@ -12,7 +12,7 @@ respawnDialog = 0;
 respawnTemplates[] = {"Counter"};
 respawnButton = 1;
 
-author = "Ballistic, Nuke & Terminal";
+author = "Ballistic & Nuke";
 overviewText = "This is After Altis"; 
 onLoadName = "After Altis";
 OnLoadMission = "This is After Altis";
