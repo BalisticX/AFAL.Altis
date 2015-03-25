@@ -101,6 +101,7 @@ _underwaterList = [
 	if (_type in ["Military", "Garbage"]) then {} else {
 		private ["_loot", "_relic", "_illegal"];
 		_loot = ["AFAL_relicBox", "AFAL_relicIllegal"] call BIS_fnc_selectRandom;
+		if (_type == "Ruins") then {_loot = "AFAL_relicBox"};
 		switch (_loot) do {
 			case "AFAL_relicBox" : {
 				for "_r" from 0 to 5 do {
