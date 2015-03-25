@@ -14,7 +14,6 @@ private ["_object", "_type", "_total", "_time"];
 
 _object = [ _this, 0, objNull, [objNull]] call bis_fnc_param;
 _type = [ _this, 1, "", [""]] call bis_fnc_param;
-	systemChat format ["%1  %2", _object, _type];
 	
 _object hideObject true;
 
@@ -25,7 +24,7 @@ systemChat format ["You have recovered a %1", _info select 1];
 _total = missionNamespace getVariable _type;
 missionNamespace setVariable [ _type, (_total + 1)];
 
-_time = time + 600;
+_time = time + 900;
 
 waitUntil {
 	time > _time
