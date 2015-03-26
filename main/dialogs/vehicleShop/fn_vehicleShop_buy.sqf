@@ -18,7 +18,7 @@ _class = _list lbData _index;
 _name = _list lbText _index;
 _value = _list lbValue _index;
 
-_location = shopLocation;
+_location = getPosATL shopPivot;
 _dir = shopDir;
 
 if (AFAL_money >= _value) then {
@@ -27,20 +27,23 @@ if (AFAL_money >= _value) then {
 
 	_vehicle = _class createVehicle [0,0,0];
 	_vehicle allowDamage false;
-	_vehicle setPos getPosATL _location;
+	_vehicle setPos _location;
 	_vehicle setDir _dir;
-	_vehicle setVariable ["Owner", format ["%1", player], true];
-	_vehicle lock true;
+	_vehicle setVariable ["Owner", player, true];
+	_vehicle setVehicleAmmo 0;
+	clearItemCargoGlobal _vehicle;
+	clearWeaponCargoGlobal _vehicle;
+	clearMagazineCargoGlobal _vehicle;
+	clearBackpackCargoGlobal _vehicle;
 		sleep 0.25;
-	cutText [ format["You have purchased a %1 for $%2", _name, _value], "PLAIN DOWN", 3, false];
+	systemChat format ["You have purchased a %1 for $%2", _name, _value];
+		sleep 4.75;
+	_vehicle allowDamage true;
+	
 	switch (_class) do {
 		case "B_SDV_01_F" : {
-		  shopVehicle setObjectTexture [0, "#(argb,8,8,3)color( 0.9, 0.45, 0.15, 1)"];
+			_vehicle setObjectTextureGlobal [0, "#(argb,8,8,3)color(0.9,0.6,0.15,1)"];
 		};
 		default {};
 	};
-		sleep 4.75;
-	_vehicle allowDamage true;
-	cutText [" ", "PLAIN", 1];
-	
-} else { systemChat "You can't afford this chump!" };
+} else {	systemChat "You can't afford this ride chump!" 	};
