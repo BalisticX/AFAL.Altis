@@ -46,9 +46,9 @@ switch (_shopType) do {
 					["Aviators", 1700, "G_Aviator", "$1700", "\A3\Characters_F\data\ui\icon_g_aviators_CA.paa"]
 				]	};
 			case "Backpacks" : {	_array = _array + [
-					["Black Assault Pack", 12500, "B_AssaultPack_blk", "$12500"],
-					["Black Field Pack", 17500, "B_FieldPack_blk", "$15500"],
-					["Black Tactical Pack", 15500, "B_TacticalPack_blk", "$17500"]
+					["Black Assault Pack", 12500, "B_AssaultPack_blk", "$12500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_blk_ca.paa"],
+					["Black Field Pack", 17500, "B_FieldPack_blk", "$15500", "\A3\Weapons_F_beta\ammoboxes\bags\data\ui\icon_B_Gorod_blk_ca.paa"],
+					["Black Tactical Pack", 15500, "B_TacticalPack_blk", "$17500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Small_blk.paa"]
 				]	};
 			case "Presets" : {		_array = _array + [
 					["Black Diver Outfit", 15600, "PresetScubaBlack", "$15600", "\A3\characters_f\data\ui\icon_U_B_Wetsuit_CA.paa"],
@@ -137,19 +137,18 @@ switch (_shopType) do {
 				]	};
 			case "Backpacks" : {
 				_array = _array + [
-					["Khaki Assault Pack", 12500, "B_AssaultPack_khk", "$12500"],
-					["Coyote Assault Pack", 12500, "B_AssaultPack_cbr", "$12500"],
-					["Sage Assault Pack", 12500, "B_AssaultPack_sgg", "$12500"],
-					["Green Assault Pack", 12500, "B_AssaultPack_rgr", "$12500"],
-					["Black Assault Pack", 12500, "B_AssaultPack_blk", "$12500"],
-					["Khaki Field Pack", 17500, "B_FieldPack_khk", "$15500"],
-					["Coyote Field Pack", 17500, "B_FieldPack_cbr", "$15500"],
-					["Black Field Pack", 17500, "B_FieldPack_blk", "$15500"],
-					["Green Tactical Pack", 15500, "B_TacticalPack_rgr", "$17500"],
-					["Olive Tactical Pack", 15500, "B_TacticalPack_oli", "$17500"],
-					["Black Tactical Pack", 15500, "B_TacticalPack_blk", "$17500"],
-					["Khaki Carryall Pack", 20000, "B_Carryall_khk", "$20000"],
-					["Coyote Carryall Pack", 20000, "B_Carryall_cbr", "$20000"]
+					["Sage Assault Pack", 12500, "B_AssaultPack_sgg", "$12500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_sgg_ca.paa"],
+					["Green Assault Pack", 12500, "B_AssaultPack_rgr", "$12500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_rgr_ca.paa"],
+					["Black Assault Pack", 12500, "B_AssaultPack_blk", "$12500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_blk_ca.paa"],
+					["Khaki Field Pack", 17500, "B_FieldPack_khk", "$15500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Gorod_khk_ca.paa"],
+					["Coyote Field Pack", 17500, "B_FieldPack_cbr", "$15500", "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Gorod_cbr_ca.paa"],
+					["Black Field Pack", 17500, "B_FieldPack_blk", "$15500",  "\A3\Weapons_F_beta\ammoboxes\bags\data\ui\icon_B_Gorod_blk_ca.paa"],
+					["Green Tactical Pack", 15500, "B_TacticalPack_rgr", "$17500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Small_rgr.paa"],
+					["Olive Tactical Pack", 15500, "B_TacticalPack_oli", "$17500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Small_oli.paa"],
+					["Black Tactical Pack", 15500, "B_TacticalPack_blk", "$17500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Small_blk.paa"],
+					["Khaki Carryall Pack", 20000, "B_Carryall_khk", "$20000", "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Tortila_khk.paa"],
+					["Coyote Carryall Pack", 20000, "B_Carryall_cbr", "$20000", "\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_C_Tortila_cbr.paa"],
+					["Olive Carryall Pack", 20000, "B_Carryall_oli", "$20000", "\A3\weapons_f_beta\ammoboxes\bags\data\ui\icon_B_Tortila_oli_ca.paa"]
 				]	};
 			case "Presets" : {
 				_array = _array + [
@@ -164,40 +163,37 @@ switch (_shopType) do {
 		switch (_clothesType) do {
 			case "Uniforms" : {
 				_array = _array + [
-					["Driver Black", 8500, "U_C_Driver_1_black", "$8500"],
-					["Driver Blue", 8500, "U_C_Driver_1_blue", "$8500"],
-					["Driver Green", 8500, "U_C_Driver_1_green", "$8500"],
-					["Driver Orange", 8500, "U_C_Driver_1_orange", "$8500"],
-					["Driver Red", 8500, "U_C_Driver_1_red", "$8500"],
-					["Driver White", 8500, "U_C_Driver_1_white", "$8500"],
-					["Driver Yellow", 8500, "U_C_Driver_1_yellow", "$8500"],
-					["Driver Fuel", 9000, "U_C_Driver_1", "$8750"],
-					["Driver Bluking", 9000, "U_C_Driver_2", "$9000"],
-					["Driver Redstone", 9000, "U_C_Driver_3", "$9000"],
-					["Driver Vrana", 9000, "U_C_Driver_4", "$9000"]
-				];
-			};
+					["Driver Black", 8500, "U_C_Driver_1_black", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_black_ca.paa"],
+					["Driver Blue", 8500, "U_C_Driver_1_blue", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_blue_ca.paa"],
+					["Driver Green", 8500, "U_C_Driver_1_green", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_green_ca.paa"],
+					["Driver Orange", 8500, "U_C_Driver_1_orange", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_orange_ca.paa"],
+					["Driver Red", 8500, "U_C_Driver_1_red", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_red_ca.paa"],
+					["Driver White", 8500, "U_C_Driver_1_white", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_white_ca.paa"],
+					["Driver Yellow", 8500, "U_C_Driver_1_yellow", "$8500", "\A3\characters_f_kart\data\ui\icon_u_driver_base_yellow_ca.paa"],
+					["Driver Fuel", 9000, "U_C_Driver_1", "$8750", "\A3\characters_f_kart\data\ui\icon_u_driver_01_ca.paa"],
+					["Driver Bluking", 9000, "U_C_Driver_2", "$9000", "\A3\characters_f_kart\data\ui\icon_u_driver_02_ca.paa"],
+					["Driver Redstone", 9000, "U_C_Driver_3", "$9000", "\A3\characters_f_kart\data\ui\icon_u_driver_03_ca.paa"],
+					["Driver Vrana", 9000, "U_C_Driver_4", "$9000", "\A3\characters_f_kart\data\ui\icon_u_driver_04_ca.paa"]
+				]	};
 			case "Vests" : {
 				_array = _array + [
 					["Black Bandolier", 16500, "V_BandollierB_blk", "$16500", "\A3\characters_f\Data\UI\icon_V_bandollier_blk_CA.paa"],
 					["Black Chestrig", 22500, "V_Chestrig_blk", "$22500", "\A3\characters_F\data\ui\icon_V_FChestrig_blk_CA.paa"]
-				];	
-			};
+				]	};
 			case "Headgear" : {
 				_array = _array + [
-					["Helmet Black", 2000, "H_RacingHelmet_1_black_F", "$2000"],
-					["Helmet Blue", 2000, "H_RacingHelmet_1_blue_F", "$2000"],
-					["Helmet Green", 2000, "H_RacingHelmet_1_green_F", "$2000"],
-					["Helmet Orange", 2000, "H_RacingHelmet_1_orange_F", "$2000"],
-					["Helmet Red", 2000, "H_RacingHelmet_1_red_F", "$2000"],
-					["Helmet White", 2000, "H_RacingHelmet_1_white_F", "$2000"],
-					["Helmet Yellow", 2000, "H_RacingHelmet_1_yellow_F", "$2000"],
-					["Helmet Fuel", 2500, "H_RacingHelmet_1_F", "$2500"],
-					["Helmet Bluking", 2500, "H_RacingHelmet_2_F", "$2500"],
-					["Helmet Redstone", 2500, "H_RacingHelmet_3_F", "$2500"],
-					["Helmet Vrana", 2500, "H_RacingHelmet_4_F", "$2500"]
-				];
-			};
+					["Helmet Black", 2000, "H_RacingHelmet_1_black_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_black_ca.paa"],
+					["Helmet Blue", 2000, "H_RacingHelmet_1_blue_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_blue_ca.paa"],
+					["Helmet Green", 2000, "H_RacingHelmet_1_green_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_green_ca.paa"],
+					["Helmet Orange", 2000, "H_RacingHelmet_1_orange_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_orange_ca.paa"],
+					["Helmet Red", 2000, "H_RacingHelmet_1_red_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_red_ca.paa"],
+					["Helmet White", 2000, "H_RacingHelmet_1_white_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_white_ca.paa"],
+					["Helmet Yellow", 2000, "H_RacingHelmet_1_yellow_F", "$2000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_base_yellow_ca.paa"],
+					["Helmet Fuel", 2500, "H_RacingHelmet_1_F", "$2500", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_01_ca.paa"],
+					["Helmet Bluking", 2500, "H_RacingHelmet_2_F", "$2500", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_02_ca.paa"],
+					["Helmet Redstone", 2500, "H_RacingHelmet_3_F", "$2500", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_03_ca.paa"],
+					["Helmet Vrana", 2500, "H_RacingHelmet_4_F", "$2500", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_04_ca.paa"]
+				]	};
 			case "Facewear" : {
 				_array = _array + [
 					["Aviators", 1700, "G_Aviator", "$1700", "\A3\Characters_F\data\ui\icon_g_aviators_CA.paa"],
@@ -206,21 +202,20 @@ switch (_shopType) do {
 					["White Sports", 2500, "G_Sport_BlackWhite", "$2500", "\A3\Characters_F\data\ui\icon_g_sport_blackwhite_CA.paa"],
 					["Yellow Sports", 2500, "G_Sport_Blackyellow", "$2500", "\A3\Characters_F\data\ui\icon_g_sport_blackyellow_CA.paa"],
 					["Black Red Sports", 2500, "G_Sport_Blackred", "$2500", "\A3\Characters_F\data\ui\icon_g_sport_blackred_CA.paa"]
-				];				
-			};
+				]	};
 			case "Backpacks" : {
 				_array = _array + [
-					["Assault Pack", 12500, "B_AssaultPack_blk", "$12500"]
-				];
-			};
+					["Black Assault Pack", 12500, "B_AssaultPack_blk", "$12500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_blk_ca.paa"],
+					["Black Field Pack", 17500, "B_FieldPack_blk", "$15500", "\A3\Weapons_F_beta\ammoboxes\bags\data\ui\icon_B_Gorod_blk_ca.paa"],
+					["Black Tactical Pack", 15500, "B_TacticalPack_blk", "$17500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Small_blk.paa"]
+				]	};
 			case "Presets" : {
 				_array = _array + [
-					["Racer Fuel Outfit", 14000, "PresetDriverFuel", "$14000"],
-					["Racer Bluking Outfit", 14000, "PresetDriverBluking", "$14000"],
-					["Racer Redstone Outfit", 14000, "PresetDriverRedstone", "$14000"],
-					["Racer Vrana Outfit", 14000, "PresetDriverVrana", "$14000"]
-				];
-			};
+					["Racer Fuel Outfit", 14000, "PresetDriverFuel", "$14000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_01_ca.paa"],
+					["Racer Bluking Outfit", 14000, "PresetDriverBluking", "$14000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_02_ca.paa"],
+					["Racer Redstone Outfit", 14000, "PresetDriverRedstone", "$14000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_03_ca.paa"],
+					["Racer Vrana Outfit", 14000, "PresetDriverVrana", "$14000", "\A3\Characters_F_Kart\Data\UI\icon_H_RacingHelmet_04_ca.paa"]
+				]	};
 		};
 	};
 	case "Press" : {
@@ -243,7 +238,9 @@ switch (_shopType) do {
 				]	};
 			case "Backpacks" : {
 				_array = _array + [
-					["Outdoor Pack", 15000, "B_OutdoorPack_blu", "$15000"]
+					["Black Assault Pack", 12500, "B_AssaultPack_blk", "$12500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_blk_ca.paa"],
+					["Black Field Pack", 17500, "B_FieldPack_blk", "$15500", "\A3\Weapons_F_beta\ammoboxes\bags\data\ui\icon_B_Gorod_blk_ca.paa"],
+					["Black Tactical Pack", 15500, "B_TacticalPack_blk", "$17500", "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Small_blk.paa"]
 				]	};
 			case "Presets" : {
 				_array = _array + [
