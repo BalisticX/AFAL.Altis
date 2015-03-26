@@ -29,9 +29,8 @@ switch (_type) do {
 	
 	case "H" : {shopMannequin addHeadgear _class};
 	
-	case "P" : {
-	
-		_clothes = [_class] call AFAL_fnc_clothesShop_presets;
+	case "P" : {	
+		_clothes = [ _class] call AFAL_fnc_clothesShop_presets;
 		
 		_uniform = _clothes select 0;
 		_vest = _clothes select 1;
