@@ -6,21 +6,20 @@
 	Creates the clothes shop dialog and sets the inventory for After Altis
 */
 
-_location = [ _this, 0, objNull, [objNull]] call BIS_fnc_param;
-_type = [ _this, 1, "", [""]] call BIS_fnc_param;
+private ["_dialog", "_clothesList", "_selectList", "_price", "_inventory", "_dir"];
 
-shopLocation = _location;
-shopType = _type;
-shopValue = 0;
-shopSelect = [
-	["", 0, "", [ 1, 0.5, 0.14, 0.8]], 
+shopPivot = [ _this, 0, objNull, [objNull]] call BIS_fnc_param;
+shopType = [ _this, 1, "", [""]] call BIS_fnc_param;
+shopDir = [ _this, 2, 0, [0]] call BIS_fnc_param;
+
+shopSelect = [	["", 0, "", [ 1, 0.5, 0.14, 0.8]], 
 	["", 0, "", [ 0.855, 0.647, 0.125,0.8]], 
 	["", 0, "", [ 0.42, 0.557, 0.137, 0.8]], 
 	["", 0, "", [ 0.275, 0.51, 0.706, 0.8]], 
-	["", 0, "", [ 0.365, 0.278, 0.545, 0.8]]
-	];
+	["", 0, "", [ 0.365, 0.278, 0.545, 0.8]],
+	0	];
 
-if (!dialog) then {createdialog "clothesShop";};
+if (!dialog) then {		createdialog "clothesShop"	};
 
 disableSerialization;
 
@@ -29,56 +28,49 @@ _clothesList = _dialog displayCtrl 4017;
 _selectList = _dialog displayCtrl 4015;
 _price = _dialog displayCtrl 4001;
 
-_price ctrlSetText format ["$ %1", shopValue];
+_price ctrlSetText format ["$ %1", shopSelect select 5];
 
-_inventory = [_type, "Uniforms"] call AFAL_fnc_clothesShop_inventory;
+_inventory = [shopType, "Uniforms"] call AFAL_fnc_clothesShop_inventory;
 
 {
 	_selectIndex = _selectList lbAdd format ["%1", (_x select 0)];
 	_selectList lbSetValue [_selectIndex, (_x select 1)];
 	_selectList lbSetData [_selectIndex, (_x select 2)];
 	_selectList lbSetColor [_selectIndex, (_x select 3)];
-} forEach shopSelect;
+} forEach [shopSelect select 0, shopSelect select 1, shopSelect select 2, shopSelect select 3, shopSelect select 4];
 
 {
 	_index = _clothesList lbAdd format[ "%1", (_x select 0)];
 	_clothesList lbSetValue [_index, (_x select 1)];	
 	_clothesList lbSetData [_index, (_x select 2)];
 	_clothesList lbSetToolTip [_index, (_x select 3)];
+	_clothesList lbSetPicture [_index, (_x select 4)];
+	_clothesList lbSetPictureColor [_index, [1, 1, 1, 1]];
 } forEach _inventory;
 
 _clothesList ctrlSetEventHandler [ "LBSelChanged", "[_this] spawn AFAL_fnc_clothesShop_select"];
 
-_pivot = "Land_Tyre_F" createVehicleLocal [0,0,0];
-	hideObject _pivot;
-	_pivot setPosATL [getPosATL _location select 0, getPosATL _location select 1, getPosATL _location select 2]; 
-	_pivot allowDamage false;
-shopMannequin =  "C_Soldier_VR_F" createVehicleLocal [0,0,0];
-	shopMannequin attachTo [_pivot, [0, 0, 0.4]];
-	shopMannequin switchMove "Campaign_Base";
-shopCam = "camera" camCreate (shopLocation modelToWorld [ 0, 3, 1.5]);
-	shopCam camSetTarget (shopLocation modelToWorld [ 0, 0, 1]);
+_dir = getDir shopPivot;
+shopPivot setDir shopDir;
+shopCam = "camera" camCreate (shopPivot modelToWorld [ 0, 3, 1.5]);
+	shopCam camSetTarget (shopPivot modelToWorld [ 0, 0, 1]);
 	shopCam cameraEffect ["internal", "back"];
 	shopCam camPrepareFov 0.9;
 	shopCam camCommitPrepared 0;
+shopPivot setDir _dir;
 
-_dir = getDir _pivot;
+shopMannequin =  "C_Soldier_VR_F" createVehicleLocal [0,0,0];
+	shopMannequin attachTo [shopPivot, [0, 0, 0.4]];
+	shopMannequin switchMove "Campaign_Base";
+	
+waitUntil {isNull _dialog};
 
-waitUntil {
-
-	_dir = _dir + (
-		if (_dir > 360) then [{-360},{0.75}]
-	);
-	_pivot setDir _dir;
-
-	isNull (findDisplay 4000);
-};
-
+shopPivot = nil;
 shopType = nil;
-shopValue = nil;
+shopDir = nil;
 shopSelect = nil;
 
-{deleteVehicle _x} forEach [_pivot, shopMannequin];
+deleteVehicle shopMannequin;
 
 player cameraEffect ["terminate","back"];
 camDestroy shopCam;
