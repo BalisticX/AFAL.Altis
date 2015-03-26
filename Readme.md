@@ -15,14 +15,13 @@ AFAL.Altis Layout -
     * gunShop
     * clothesShop
     * itemShop
+    * playerMenu
     * masterfile
     * resource
 
 * Images /
     * sheriff
-    * inmate
     * phone
-    * keychain
     * license
     * atm
     * lockpick
