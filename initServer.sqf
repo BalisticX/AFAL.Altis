@@ -10,6 +10,7 @@
 [] call compile PreprocessFileLineNumbers "\AFAL_brain\init.sqf";
 
 [] spawn AFAL_fnc_wreckSpawn;
+[] spawn AFAL_fnc_rotate;
 [] spawn AFAL_fnc_cityBarricade;
 ////[] spawn AFAL_fnc_cityDemolish;	LEAVE THIS OUT FOR NOW
 
