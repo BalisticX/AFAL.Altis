@@ -27,10 +27,8 @@ shopVehicle = _class createVehicleLocal [0,0,0];
 	shopVehicle attachTo [shopPivot, [ 0, 0, 5]];
 
 switch (_class) do {
-
 	case "B_SDV_01_F" : {
-		shopVehicle setObjectTexture [0, "#(argb,8,8,3)color( 0.9, 0.45, 0.15, 1)"];
+		shopVehicle setObjectTexture [0, "#(argb,8,8,3)color(0.9,0.6,0.15,1)"];
 	};
-
 	default {};
 };
