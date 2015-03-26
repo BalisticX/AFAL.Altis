@@ -21,48 +21,51 @@ _type = _class select [0, 1];
 switch (_type) do {
 	
 	case "B" : {
+		shopSelect set [5, (shopSelect select 5) - _value];	
 		(shopSelect select 4) set [2, ""];
 		(shopSelect select 4) set [1, 0];
 		(shopSelect select 4) set [0, ""];
 	};
 	
 	case "G" : {
+		shopSelect set [5, (shopSelect select 5) - _value];	
 		(shopSelect select 3) set [2, ""];
 		(shopSelect select 3) set [1, 0];
 		(shopSelect select 3) set [0, ""];
 	};
 	
 	case "H" : {
+		shopSelect set [5, (shopSelect select 5) - _value];	
 		(shopSelect select 2) set [2, ""];
 		(shopSelect select 2) set [1, 0];
 		(shopSelect select 2) set [0, ""];
 	};
 	
-	case "P" : {};
-	
 	case "U" : {
+		shopSelect set [5, (shopSelect select 5) - _value];	
 		(shopSelect select 0) set [2, ""];
 		(shopSelect select 0) set [1, 0];
 		(shopSelect select 0) set [0, ""];
 	};
 	
 	case "V" : {
+		shopSelect set [5, (shopSelect select 5) - _value];	
 		(shopSelect select 1) set [2, ""];
 		(shopSelect select 1) set [1, 0];
 		(shopSelect select 1) set [0, ""];
 	};
 };
 
+_price ctrlSetText format ["$ %1", shopSelect select 5];
+
 lbClear _selectList;
 	
 {
-
 	_selectIndex = _selectList lbAdd format ["%1", (_x select 0)];
 	_selectList lbSetValue [_selectIndex, (_x select 1)];
 	_selectList lbSetData [_selectIndex, (_x select 2)];
 	_selectList lbSetColor [_selectIndex, (_x select 3)];
-
-} forEach shopSelect;
+} forEach [shopSelect select 0, shopSelect select 1, shopSelect select 2, shopSelect select 3, shopSelect select 4];
 
 removeUniform shopMannequin;
 	shopMannequin forceAddUniform ((shopSelect select 0) select 2);
