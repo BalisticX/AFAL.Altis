@@ -18,6 +18,7 @@ class AFAL_client {
 		class numberText {};
 		class checkBox {};
 		class eyePos {};
+		class rotate {};
 		class cityDemolish {};
 		class cityBarricade {};
 		class wreckSpawn {};
