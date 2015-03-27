@@ -2,51 +2,17 @@
 
 In the current build:
 
-////  UNIFORMS  ////
+* UNIFORMS
 
-  AFAL_sheriff.paa
-  
-    Sherrif uniform texture
-    
-  AFAL_inmate.paa
-  
-    Inmate uniform texture
-    
-////  PLAYER MENU ////
-    
-  AFAL_phone.paa
-  
-    Phone menu background
-    
-  AFAL_keychain.paa
-  
-    Keychain menu image
-    
-  AFAL_license.paa
-  
-    License menu background
-    
-  AFAL_atm.paa
-  
-    ATM menu background
-    
-////  LOCKPICKING ////
-    
-  AFAL_lockpick.paa
-  
-    Lockpick minigame pick
-    
-  AFAL_lockpick_base.paa
-  
-    Lockpick minigame lock
-    
-  AFAL_lockpick_tumbler.paa
-  
-    Lockpick minigame tumbler
-    
-    
-    
-  AFAL_title.paa
-  
-    After Altis logo for the intro
-    
+* ICONS
+
+* DIALOGS
+   * AFAL_phone.paa               Player menu phone image           59 KB
+   * AFAL_license.paa             License dialog image              38 KB
+   * AFAL_atm.paa                 ATM dialog image                  81 KB
+   * AFAL_lockpick.paa            Lockpick tool                     24 KB
+   * AFAL_lockpick_base.paa       Lockpick lock base                99 KB
+   * AFAL_lockpick_tumbler.paa    Lockpick tumblers                 48 KB
+
+* TITLES
+   * AFAL_title.paa             Intro title card                  29 KB
