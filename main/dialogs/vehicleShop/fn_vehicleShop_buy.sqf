@@ -46,4 +46,5 @@ if (AFAL_money >= _value) then {
 		};
 		default {};
 	};
+		
 } else {	systemChat "You can't afford this ride chump!" 	};
