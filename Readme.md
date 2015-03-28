@@ -2,8 +2,6 @@
 
 Developed by Ballistic & Nuke
 
-Created by Ballistic & Terminal
-
 Everything here is subject to change
 
 AFAL.Altis Layout - 
