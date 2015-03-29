@@ -34,6 +34,8 @@ switch (_shopType) do {
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
+	case "Scuba" : {[	"AFAL_chemlight"	]};
+	
 	case "Fish" : {[	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna"	]};
 
 	case "Museum" : {[	"AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold"	]};
