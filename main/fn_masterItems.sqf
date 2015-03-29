@@ -45,6 +45,7 @@ switch (_item) do
 	/// TOOLS	ORANGE [ 1, 0.5, 0.14, 1]
 	
 	case "AFAL_lockpick" :							{[ "Land_CanOpener_F", "Lockpick", 2000, "$2000", 1000, "$1000", [ 1, 0.5, 0.14, 1]], AFAL_fnc_lockpick};
+	case "AFAL_chemlight" :							{[ "Land_PenBlack_F", "Diver Chemlight", 250, "$250", 100, "$100", [ 1, 0.5, 0.14, 1]], AFAL_fnc_chemlight};
 	
 	//// VEHICLE	PURPLE [ 0.365, 0.278, 0.545, 1]
 	
