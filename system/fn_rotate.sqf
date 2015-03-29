@@ -9,16 +9,18 @@
 private ["_pivotList", "_dir"];
 
 _pivotList = [
-	KavalaItemShop1,
+	KavalaItemShop1, KavalaItemShop2, KavalaItemFish, KavalaItemEvidence, KavalaItemMuseum,
 	KavalaVehicleCivilian,
 	KavalaVehicleBoat1, KavalaVehicleBoat2,
 	KavalaVehiclePoliceHeli, KavalaVehiclePoliceCar,
 	KavalaVehicleMedicHeli, KavalaVehicleMedicCar, 
-	KavalaClothesShop1, KavalaClothesShop2, 
+	KavalaClothesShop1, KavalaClothesShop2, KavalaClothesPress,
 	KavalaClothesRace, KavalaItemRace,
 	KavalaClothesScuba1, KavalaItemScuba1, KavalaClothesScuba2, KavalaItemScuba2,
-	KavalaClothesPress,
-	KavalaItemFish
+	KavalaClothesPolice, KavalaGunPolice,
+	KavalaGunShop, KavalaGunRange1, KavalaGunRange2,
+	AltisVehiclePrison,
+	TopoliaGunShop, TopoliaClothesShop
 ];
 
 {
@@ -27,7 +29,7 @@ _pivotList = [
 	// hideObjectGlobal _x;
 } forEach _pivotList;
 
-_dir = getDir TestRotate;
+_dir = getDir TestRotate;	//// This is located atop the spawn pyramid
 
 waitUntil {
 	_dir = _dir + (
