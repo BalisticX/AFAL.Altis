@@ -50,6 +50,7 @@ class AFAL_client {
 	
 	class actions_items {
 		file = "main\actions\items";
+		class chemlight {};
 		class consume {};
 		class lockpick {};
 		class lockpick_attempt {};
