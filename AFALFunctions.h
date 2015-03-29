@@ -23,6 +23,7 @@ class AFAL_client {
 		class cityBarricade {};
 		class wreckSpawn {};
 		class wreckExtra {};
+		class ambientNPC {};
 	};
 	
 	class Main {
