@@ -18,6 +18,14 @@ _total = missionNamespace getVariable _item;
 missionNamespace setVariable [ _item, (_total - 1)];
 
 player playMove "DismountSide";
-	sleep 13;
+	sleep 1;
+_rope = "Land_Rope_01_F" createVehicle [0,0,0];
+	_rope allowDamage false;
+	_rope attachTo [ player, [0,0,0], "RightHand"];
+	sleep 8;
+deleteVehicle _rope;
+	sleep 1;
+	
+systemChat "UGL zipline equipped";
 
-exitWith {	canZipline = true	};
+canZipline = true;
