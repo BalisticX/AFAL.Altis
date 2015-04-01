@@ -11,18 +11,21 @@
 [] call AFAL_fnc_eventHandlerSetup;
 
 //// Player bools ////
-isWASD = false;
-isRestrained = false;
-isClimbing = false;
-isTazed = false;
-isDrugged = false;
-inUse = false;
+
+isWASD = false;				isRestrained = false;
+isClimbing = false;			isTazed = false;
+isDrugged = false;			inUse = false;
+canZipline = false;
+
 //// Player numbers ////
+
 AFAL_money = 0;
 AFAL_bank = 3000;
 AFAL_thirst = 100;
 AFAL_hunger = 100;
+
 //// Work Payments ////
+
 AFAL_mechanic = 500;
 AFAL_grinding = 250;
 AFAL_relicMoney = 10000;
@@ -45,18 +48,20 @@ AFAL_inventory = [
 	missionNamespace setVariable [ _x, 0]
 } foreach AFAL_inventory;
 
-player addAction [ "Use ATM", afal_fnc_playerMenu, "", 0, false, false, "", "call afal_fnc_checkBox == 'atm'"];
+player addEventHandler ["Fired", { if (zipFire) then { [_this] spawn AFAL_fnc_zipLine_setup } else {} }];
+
+player addAction [ "Use ATM", AFAL_fnc_playerMenu, "", 0, false, false, "", "call AFAL_fnc_checkBox == 'atm'"];
 
 AFAL_walls = [
 	"city_4m_f", "city_8m_f", "city_pillar_f",
 	"city2_4m_f", "city2_8m_f",
 	"stone_8m_f", "stone_4m_f", "stone_pillar_f",
 	"wall_tin_4_2",
-	"pipewall_concretel_8m_f"];
+	"pipewall_concretel_8m_f" ];
 	
 AFAL_atms = [
 	"Land_Atm_01_F",
-	"Land_Atm_02_F"];
+	"Land_Atm_02_F" ];
 
 switch (side player) do {
 	case west : { player setVariable [ "Role", "Police Officer", true]};
