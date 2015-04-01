@@ -7,6 +7,8 @@
 	Build: Alpha
 	
 */
+
+// if (!currentWeapon player in ["arifle_MX_GL_F", "arifle_MX_GL_Black_F", "arifle_TRG21_GL_F", "arifle_Mk20_GL_plain_F", "arifle_Mk20_GL_F", "arifle_Katiba_GL_F"]) exitWith {systemChat "You need a weapon capable of launching a zipline"}; 
 if (!(currentWeapon player == "arifle_MX_GL_F")) exitWith {systemChat "You need a Grappling Launcher!";};
 
 if (currentWeapon player == "arifle_MX_GL_F") then {
