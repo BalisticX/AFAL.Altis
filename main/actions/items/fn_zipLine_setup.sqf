@@ -75,4 +75,4 @@ _zipLine = ropeCreate [ _zipEnd, [0,0,2], _opp * 0.95];
   sleep 0.05;
 {	_x setVectorUp [0,0,1]	} forEach [_zipStart, _zipEnd];
 
-zipFire = false;
+canZipline = false;
