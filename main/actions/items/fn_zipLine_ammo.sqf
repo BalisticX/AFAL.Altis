@@ -18,6 +18,6 @@ _total = missionNamespace getVariable _item;
 missionNamespace setVariable [ _item, (_total - 1)];
 
 player playMove "DismountSide";
-sleep 13;
+	sleep 13;
 
 exitWith {	canZipline = true	};
