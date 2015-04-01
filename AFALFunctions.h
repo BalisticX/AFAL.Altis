@@ -62,6 +62,8 @@ class AFAL_client {
 		class repair {};
 		class restrain {};
 		class stunGun {};
+		class zipLine_ammo {};
+		class zipLine_setup {};
 	};
 	
 	class dialogs {
