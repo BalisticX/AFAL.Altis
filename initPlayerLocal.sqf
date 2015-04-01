@@ -33,7 +33,7 @@ waitUntil {!(isNull (findDisplay 46))};
 AFAL_inventory = [
 	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",	//// DRINKS
 	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon", "AFAL_milk",		//// FOOD
-	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_stunGun",		//// GADGETS
+	"AFAL_ductTape", "AFAL_zipline", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_stunGun",	//// GADGETS
 	"AFAL_lockpick", "AFAL_chemlight",		//// TOOLS
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull",		//// VEHICLE
 	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",					//// RESOURCE
