@@ -8,7 +8,9 @@
 	
 */
 
-// if (!currentWeapon player in ["arifle_MX_GL_F", "arifle_MX_GL_Black_F", "arifle_TRG21_GL_F", "arifle_Mk20_GL_plain_F", "arifle_Mk20_GL_F", "arifle_Katiba_GL_F"]) exitWith {systemChat "You need a weapon capable of launching a zipline"}; 
+
+
+
 if (!(currentWeapon player == "arifle_MX_GL_F")) exitWith {systemChat "You need a Grappling Launcher!";};
 
 if (currentWeapon player == "arifle_MX_GL_F") then {
@@ -52,71 +54,36 @@ if (currentWeapon player == "arifle_MX_GL_F") then {
 			];
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			player addAction["Set up zipline", {
 				
-				startUAV = "B_UAV_01_F" createVehicle pos;
-				startBall = "Sign_Sphere25cm_F" createVehicle position player;
-				startBall attachTo[startUAV, [0,0,0.5]];
-				startUAV setPosATL [getPosATL player select 0, getPosATL player select 1, (getPosATL player select 2)+0.1];
+				startUAV = "B_UAV_01_F" createVehicle position player;
 				startUAV allowDamage false;
 				startUAV setDir dirP;
-				startBall setDir dirP;
+				startUAV attachTo[player, [2,0,0]];
+				detach startUAV;
+
 				
 				ropeDestroy grappleRope;
 				
-				uav attachTo[startBall, [0,10,0]];
+				
+				
+				
 				
 				
 				{
-					_pole = "Metal_Pole_Platform_F" createVehicle position uav;
+					_pole = "Metal_Pole_Platform_F" createVehicle position _x;
 					_pole attachTo[_x, [0,-1,1]];
 					_pole allowdamage false;
 				} forEach [uav, startUAV];
 				
-				zipRope = ropeCreate[uav, [0,0,2], (startBall distance uav)];
+				
+				
+				
+				
+				
+				
+				zipRope = ropeCreate[uav, [0,0,2], (startUAV distance uav)];
 				[startUAV, [0,0,2], [0,0,0]] ropeAttachTo zipRope;
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				
 				player addAction ["Take the Zipline!", {
 					
@@ -165,6 +132,8 @@ if (currentWeapon player == "arifle_MX_GL_F") then {
 			
 };
 }];
+
+		
 
 
 
