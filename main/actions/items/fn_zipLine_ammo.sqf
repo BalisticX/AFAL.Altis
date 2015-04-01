@@ -8,3 +8,13 @@
 	Parameters:
 	0: STRING AFAL classname of zipline ammo
 */
+
+private ["_item", "_total"];
+
+_item = [ _this, 0, "", [""]] call BIS_fnc_param
+	if (_item == "") exitWith {};
+	
+_total = missionNamespace getVariable _item;
+missionNamespace setVariable [ _item, (_total - 1)];
+	
+exitWith {	canZipline = true	};
