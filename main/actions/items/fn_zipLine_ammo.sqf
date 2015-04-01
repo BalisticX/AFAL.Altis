@@ -26,6 +26,6 @@ _rope = "Land_Rope_01_F" createVehicle [0,0,0];
 deleteVehicle _rope;
 	sleep 1;
 	
-systemChat "UGL zipline equipped";
+systemChat "UGL zipline loaded";
 
 canZipline = true;
