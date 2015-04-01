@@ -16,5 +16,8 @@ _item = [ _this, 0, "", [""]] call BIS_fnc_param
 	
 _total = missionNamespace getVariable _item;
 missionNamespace setVariable [ _item, (_total - 1)];
-	
+
+player playMove "DismountSide";
+sleep 13;
+
 exitWith {	canZipline = true	};
