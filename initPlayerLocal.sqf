@@ -48,7 +48,7 @@ AFAL_inventory = [
 	missionNamespace setVariable [ _x, 0]
 } foreach AFAL_inventory;
 
-player addEventHandler ["Fired", { if (zipFire) then { [_this] spawn AFAL_fnc_zipLine_setup } else {} }];
+player addEventHandler ["Fired", { if (canZipline) then { [_this] spawn AFAL_fnc_zipLine_setup } else {} }];
 
 player addAction [ "Use ATM", AFAL_fnc_playerMenu, "", 0, false, false, "", "call AFAL_fnc_checkBox == 'atm'"];
 
