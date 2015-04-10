@@ -15,7 +15,7 @@
 isWASD = false;				isRestrained = false;
 isClimbing = false;			isTazed = false;
 isDrugged = false;			inUse = false;
-canZipline = false;
+canZipline = false;			isDelivery = false;
 
 //// Player numbers ////
 
@@ -23,6 +23,11 @@ AFAL_money = 0;
 AFAL_bank = 3000;
 AFAL_thirst = 100;
 AFAL_hunger = 100;
+
+//// Cyber Systems ////
+
+xrayCount = 0;
+xrayCircut = "";
 
 //// Work Payments ////
 
@@ -36,7 +41,7 @@ waitUntil {!(isNull (findDisplay 46))};
 AFAL_inventory = [
 	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",	//// DRINKS
 	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon", "AFAL_milk",		//// FOOD
-	"AFAL_ductTape", "AFAL_zipline", "AFAL_ziptie", "AFAL_handcuffs", "AFAL_stunGun",	//// GADGETS
+	"AFAL_ductTape", "AFAL_zipline", "AFAL_ziptie", "AFAL_stunGun",				//// GADGETS
 	"AFAL_lockpick", "AFAL_chemlight",		//// TOOLS
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull",		//// VEHICLE
 	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",					//// RESOURCE
@@ -51,6 +56,8 @@ AFAL_inventory = [
 player addEventHandler ["Fired", { if (canZipline) then { [_this] spawn AFAL_fnc_zipLine_setup } else {} }];
 
 player addAction [ "Use ATM", AFAL_fnc_playerMenu, "", 0, false, false, "", "call AFAL_fnc_checkBox == 'atm'"];
+
+player setVariable ["Restrain", false, true];
 
 AFAL_walls = [
 	"city_4m_f", "city_8m_f", "city_pillar_f",
