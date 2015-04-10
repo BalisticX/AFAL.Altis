@@ -72,7 +72,9 @@ switch (_type) do {
 			["MX Marksman", 40000, "arifle_MXM_F", "$40000", "\A3\weapons_F\Rifles\MX\data\UI\gear_mx_dmr_X_CA.paa"],
 			["MX LMG", 42000, "arifle_MX_SW_F", "$42000", "\A3\weapons_F\Rifles\MX\data\UI\gear_mx_lmg_X_CA.paa"],
 			["Mk. 2000", 63500, "LMG_Mk200_F", "$53500", "\A3\weapons_F\Machineguns\M200\Data\UI\gear_m200_X_CA.paa"],
+			["Mk-I EMR", 72500, "srifle_DMR_03_F", "$72500", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_X_CA.paa"],
 			["Mk.18 ABR", 75550, "srifle_EBR_F", "$75550", "\A3\weapons_F\longrangerifles\ebr\data\UI\gear_ebr_X_CA.paa"],
+			["MAR-10", 78950, "srifle_DMR_02_F", "$78950", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_X_CA.paa"],
 			["M320 LRR", 150500, "srifle_LRR_F", "$150500", "\A3\weapons_F\longrangerifles\M320\data\UI\gear_m320_lrr_X_CA.paa"]
 		];
 	};
