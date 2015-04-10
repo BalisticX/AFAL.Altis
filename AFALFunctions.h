@@ -24,28 +24,33 @@ class AFAL_client {
 		class wreckSpawn {};
 		class wreckExtra {};
 		class ambientNPC {};
+		class rotate {};
 	};
 	
 	class Main {
 		file = "main";
-		class eventHandlerSetup {};
-		class keyboard {};
-		class weaponDamage {};
 		class consumables {};
-		class newSpawn {};
+		class eventHandlerSetup {};
+		class handleDamage {};
+		class keyboard {};
 		class newEquip {};
+		class newSpawn {};
 	};
 	
 	class actions {
 		file = "main\actions";
+		class checkID {};
 		class climb {};
-		class items {};
+		class cyberLogin {};
+		class cyberXray {};
+		class restrainSit {};
 		class tazed {};
 		class unlock {};
-		class restrained {};
 		class workChurch {};
-		class workGrinding {};
+		class workDelivery {};
+		class workDelivery_name {};
 		class workFishing {};
+		class workGrinding {};
 		class workMechanic {};
 	};
 	
@@ -53,6 +58,7 @@ class AFAL_client {
 		file = "main\actions\items";
 		class chemlight {};
 		class consume {};
+		class hacker {};
 		class lockpick {};
 		class lockpick_attempt {};
 		class marijuana {};
@@ -60,7 +66,6 @@ class AFAL_client {
 		class recover {};
 		class refuel {};
 		class repair {};
-		class restrain {};
 		class stunGun {};
 		class zipLine_ammo {};
 		class zipLine_setup {};
@@ -68,7 +73,9 @@ class AFAL_client {
 	
 	class dialogs {
 		file = "main\dialogs";
+		class ctrlFade {};
 		class playerMenu {};
+		class policeMenu {};
 		class clothesShop {};
 		class itemShop {};
 		class gunShop {};
