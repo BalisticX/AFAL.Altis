@@ -8,37 +8,32 @@ Everything here is subject to change
 
 AFAL.Altis Layout - 
 * Dialogs /
-    * title
-    * map
-    * lockpick
-    * vehicleShop
-    * gunShop
     * clothesShop
-    * itemShop
-    * playerMenu
-    * policeMenu
     * cyber
     * delivery
+    * gunShop
+    * itemShop
+    * lockpick
+    * map
     * masterfile
+    * playerMenu
+    * policeMenu
     * resource
+    * title
+    * vehicleMenu
 
 * Images /
-    * sheriff
-    * phone
-    * license
-    * atm
-    * lockpick
-    * lockpick_base
-    * lockpick_tumbler
-    * title
+   See Images for list of files, located on oneDrive
 
 * Main /
     * fn_comsumables
     * fn_eventHandlerSetup
     * fn_handleDamage
     * fn_keyboard
+    * fn_masterItems
     * fn_newEquip
     * fn_newSpawn
+
     * Actions /
        * Items /
           * fn_consume
