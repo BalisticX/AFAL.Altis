@@ -20,17 +20,17 @@ switch (_shopType) do {
 	case "Civ" : {[
 	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",	//// DRINKS
 	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon", "AFAL_milk",	//// FOOD
-	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_lockpick",	//// GADGETS 
+	"AFAL_lockpick",	//// GADGETS 
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
 	case "Police" : {[
-	"AFAL_ziptie", "AFAL_handcuffs", "AFAL_lockpick", "AFAL_stunGun",	//// GADGETS
+	"AFAL_lockpick", "AFAL_stunGun",	//// GADGETS
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
 	case "Illegal" : {[
-	"AFAL_ductTape", "AFAL_rope", "AFAL_ziptie", "AFAL_stunGun", "AFAL_lockpick",	//// GADGETS
+	"AFAL_stunGun", "AFAL_lockpick",	//// GADGETS
 	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull"	//// VEHICLE
 	]};
 	
