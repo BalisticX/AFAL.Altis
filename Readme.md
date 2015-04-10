@@ -7,7 +7,7 @@ Created by Terminal & Ballistic
 Everything here is subject to change
 
 AFAL.Altis Layout - 
-* Dialogs /
+DIALOGS /
     * clothesShop
     * cyber
     * delivery
@@ -22,10 +22,10 @@ AFAL.Altis Layout -
     * title
     * vehicleMenu
 
-* Images /
-   See Images for list of files, located on oneDrive
+IMAGES /
+    * See Images for list of files, located on oneDrive
 
-* Main /
+MAIN /
     * fn_comsumables
     * fn_eventHandlerSetup
     * fn_handleDamage
@@ -34,7 +34,27 @@ AFAL.Altis Layout -
     * fn_newEquip
     * fn_newSpawn
 
-    * Actions /
+ MAIN / ACTIONS /
+    * fn_checkID
+    * fn_climb
+    * fn_cyberLogin
+    * fn_cyberXray
+    * fn_restrainSit
+    * fn_tazed
+    * fn_unlock
+    * fn_workChurch
+    * fn_workDelivery
+    * fn_workDelivery_name
+    * fn_workFishing
+    * fn_workGrinding
+    * fn_workMechanic
+
+
+
+
+
+
+
        * Items /
           * fn_consume
           * fn_drugMJ
