@@ -108,6 +108,19 @@ switch (_class) do {
 	case "srifle_DMR_01_F" : {	_array = _array + [		
 		["10Rnd 7.62mm", 8000, "10Rnd_762x51_Mag", "$8000", "\A3\weapons_F\data\UI\m_20rnd_762x51_CA.paa"], 
 		["Suppressor 7.62mm", 13000, "muzzle_snds_B", "$13000", "\A3\weapons_F\data\UI\gear_acca_snds_h_CA.paa"]		]	};
+		
+	case "srifle_DMR_02_F" : {	_array = _array + [
+		["10Rnd .338", 9500, "10Rnd_338_Mag", "$9500", "\A3\Weapons_F_Mark\Data\UI\M_338_CA.paa"], 
+		["Tan Spray", 0, "camo_1", "", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_sniper_X_CA.paa"],
+		["Camo Spray", 0, "camo_2", "", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_camo_X_CA.paa"],
+		["Suppressor .338", 13000, "muzzle_snds_338_black", "$13000", "\A3\Weapons_F_Mark\Data\UI\gear_acca_snds_338_black_CA.paa"]		]	};
+		
+	case "srifle_DMR_03_F" : {	_array = _array + [
+		["20Rnd 7.62mm", 8500, "20Rnd_762x51_Mag", "$8500", "\A3\weapons_F\data\UI\m_20rnd_762x51_CA.paa"],
+		["Khaki Spray", 0, "camo_1", "", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_khaki_X_CA.paa"],
+		["Tan Spray", 0, "camo_2", "", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_tan_X_CA.paa"],
+		["Camo Spray", 0, "camo_3", "", "\A3\Weapons_F_Mark\LongRangeRifles\DMR_03\Data\UI\gear_DMR_03_woodland_X_CA.paa"],
+		["Suppressor 7.62mm", 13000, "muzzle_snds_B", "$13000", "\A3\weapons_F\data\UI\gear_acca_snds_h_CA.paa"]		]	};
 	
 	case "srifle_LRR_F" : {		_array = _array + [		
 		["7Rnd .408", 15000, "7Rnd_408_Mag", "$15000", "\A3\weapons_f\data\UI\m_M24_CA.paa"],  
@@ -141,7 +154,7 @@ if (_class in ["arifle_MXC_F", "arifle_MX_F", "arifle_MX_GL_F", "arifle_TRG20_F"
 		["ACO Green", 5550, "optic_Aco_grn", "$5550", "\A3\weapons_F\data\UI\gear_acco_aco_CA.paa"],
 		["Holosight", 6000, "optic_Holosight", "$6000", "\A3\weapons_F\data\UI\gear_acco_eotxps3_CA.paa"]	]	};
 //// DMR
-if (_class in ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_F"]) then {
+if (_class in ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_F", "srifle_DMR_02_F", "srifle_DMR_03_F"]) then {
 	_array = _array + [
 		["Flashlight", 7500, "acc_flashlight", "$7500", "\A3\weapons_F\data\UI\gear_accv_flashlight_CA.paa"],
 		["IR Laser", 7500, "acc_pointer_IR", "$7500", "\A3\weapons_F\data\UI\gear_accv_pointer_CA.paa"],
