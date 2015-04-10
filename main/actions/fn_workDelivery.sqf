@@ -10,54 +10,62 @@
 	1 : STRING Type of delivery mission
 */
 
-private ["_start", "_type", "_canStart", "_list", "_typePay", "_vehicle", "_vehiclePay", "_go"];
+private ["_start", "_type", "_go", "_list", "_locations", "_multiplier", "_vehicle", "_rate"];
 
 _start = [ _this, 0, objNull, [objNull]] call BIS_fnc_param;
 _type = [ _this, 1, "", [""]] call BIS_fnc_param;
-	
+
 _go = false;	
 
 _list = [];
 switch (_type) do {
-	case "Civ" : 		{		_list = ["C_Offroad_01_F", "C_Van_01_transport_F", "C_Van_01_box_F", "C_Van_01_fuel_F"]; _typePay = 1;		};
-	case "Illegal" : 	{		_list = ["C_Van_01_transport_F", "C_Van_01_box_F", "O_Truck_03_transport_F", "O_Truck_03_covered_F"]; _typePay = 1.5;		};
+	case "Civ" : 		{
+		_list = ["C_Offroad_01_F", "C_Van_01_transport_F", "C_Van_01_box_F", "C_Van_01_fuel_F"];
+		_locations = [KavalaDeliveryFactory1, KavalaDeliveryFactory2, KavalaDeliveryFactory3, KavalaDeliveryPower, KavalaDeliveryStadium, KavalaDeliveryPrison];
+		_multiplier = 1;		
+	};
+	case "Valuable" :	{
+		_list = ["C_Van_01_box_F"];
+		_locations = [];
+		_multiplier = 1.65;
+	};
+	case "Illegal" : 	{		
+		_list = ["C_Van_01_transport_F", "C_Van_01_box_F", "O_Truck_03_transport_F", "O_Truck_03_covered_F"]; 
+		_locations = [KavalaDeliveryTopolia];
+		_multiplier = 1.5;	
+	};
 };	
 _list;
-
-systemChat "0";
 
 _vehicle = getPos _start nearestObject "Car";
 _truck = typeOf _vehicle;
 
 if (_truck in _list) then {
 	if (_start distance _vehicle > 5) then {
-		systemChat "You need to move a delivery vehicle closer to the start position";
+		systemChat "Your delivery vehicle needs to be closer to the start position";
 	} else {
-		_go = true;
+		if (isDelivery) then {
+			systemChat "You previous delivery job has been cancelled";
+			isDelivery = false;
+		} else {
+			isDelivery = false;
+			_go = true;
+		};
 	};
 } else {
-	systemChat "You need a valid delivery vehicle to begin a delivery job";
+	systemChat "You need a delivery vehicle to begin a delivery job";
 };
-
-systemChat "1";
 
 switch (_truck) do {
-	case "C_Offroad_01_F" : 		{		_vehiclePay = 1			};
-	case "C_Van_01_transport_F" : 	{		_vehiclePay = 2			};
-	case "C_Van_01_box_F" : 		{		_vehiclePay = 3			};
-	case "C_Van_01_fuel_F" : 		{		_vehiclePay = 4			};
+	case "C_Offroad_01_F" : 		{		_rate = 1			};
+	case "C_Van_01_transport_F" : 	{		_rate = 1.5			};
+	case "C_Van_01_box_F" : 		{		_rate = 2			};
+	case "C_Van_01_fuel_F" : 		{		_rate = 3.5			};
 };
-_vehiclePay;
-
-systemChat "2";
 
 if (_go) then {
 
-systemChat "3";
-
-	private ["_dialog", "_map", "_startCtrl", "_finishCtrl", "_distanceCtrl", "_payCtrl", "_locationList", "_finish", "_distance", "_pay", "_markerStart", "_markerFinish", "_commence", "_waypoint"];
-	
-systemChat "4";	
+	private ["_dialog", "_map", "_startCtrl", "_finishCtrl", "_distanceCtrl", "_payCtrl", "_finish", "_distance", "_pay", "_startName", "_finishName", "_markerStart", "_markerFinish", "_waypoint"];
 
 	disableSerialization;
 	if (!dialog) then {		createdialog "AFAL_delivery"	};
@@ -69,39 +77,56 @@ systemChat "4";
 	_distanceCtrl = _dialog displayCtrl 1804;
 	_payCtrl = _dialog displayCtrl 1805;
 	
-	_locationList = [TestDelivery1, TestDelivery2, TestDelivery3, TestDelivery4, TestDelivery5, TestDelivery6] - [_start];
-	_finish = _locationList call BIS_fnc_selectRandom;
+	_locations =  _locations - [_start];
+	_finish = _locations call BIS_fnc_selectRandom;
 
-	_distance = round (_start distance _finish);
-	_pay = (_distance * _vehiclePay) * _typePay;
+	_distance = [(_start distance _finish), 100] call BIS_fnc_roundNum;
+	_pay = ((_distance * 0.5) * _rate) * _multiplier;
 	
-	_startCtrl ctrlSetText format ["%1", _start];
-	_finishCtrl ctrlSetText format ["%1", _finish];
-	_distanceCtrl ctrlSetText format ["%1", _distance];
+	_startName = [_start] call AFAL_fnc_workDelivery_name;
+	_finishName = [_finish] call AFAL_fnc_workDelivery_name;
+	
+	_startCtrl ctrlSetText format ["%1", _startName];
+	_finishCtrl ctrlSetText format ["%1", _finishName];
+	_distanceCtrl ctrlSetText format ["%1 m", _distance];
 	_payCtrl ctrlSetText format ["$ %1", _pay];
-	
-	_markerStart = createMarkerLocal ["START",[getPos _start select 0, getPos _start select 1]];
+
+	_markerStart = createMarkerLocal ["START", [getPos _start select 0, getPos _start select 1]];
 		_markerStart setMarkerShapeLocal "ICON";
 		_markerStart setMarkerTypeLocal "mil_start";
 		"START" setMarkerColorLocal "ColorGreen";
-	_markerFinish = createMarkerLocal ["FINISH",[getPos _finish select 0, getPos _finish select 1]];
+	_markerFinish = createMarkerLocal ["FINISH", [getPos _finish select 0, getPos _finish select 1]];
 		_markerFinish setMarkerShapeLocal "ICON";
 		_markerFinish setMarkerTypeLocal "mil_end";
 		"FINISH" setMarkerColorLocal "ColorRed";
+	
+	_map ctrlMapAnimAdd [0, 0.1, getPos _start];
+		ctrlMapAnimCommit _map;
+	_map ctrlMapAnimAdd [9, 0.1, getPos _finish];
+		ctrlMapAnimCommit _map;
 		
 	waitUntil {		isNull _dialog		};
 	
-	deleteMarkerLocal "START";
-	deleteMarkerLocal "FINISH";
+	systemChat format ["You have started a delivery job from %1 to %2. You can speak to the worker again to pay a $%3 fee and cancel the job", _startName, _finishName, _pay * 0.5];
+	
+	deleteMarker "START";
+	deleteMarker "FINISH";
 	
 	if (isDelivery) then {
 		_waypoint = (group player) addWaypoint [_finish, 0, 1, "Delivery - Finish"];
 		(group player) setCurrentWaypoint _waypoint;
 		
-		waitUntil {		_vehicle distance _finish < 3 && speed _vehicle = 0	};
+		waitUntil {		sleep 5; _vehicle distance _finish < 3 && speed _vehicle < 0.25 or !isDelivery	};
 		
-		systemChat format ["You have reached your destination and been paid $ %1", _pay];
-		AFAL_money = AFAL_money + _pay;
-		deleteWaypoint [(group player), 1];
+		if (isDelivery) then {		
+			deleteWaypoint [(group player), 1];
+				systemChat format ["Delivery route completed, you have been paid $%1, good job!", _pay];
+			AFAL_money = AFAL_money + _pay;
+			isDelivery = false;
+		} else {
+			deleteWaypoint [(group player), 1];
+			systemChat format ["You have been charged $%1 for cancelling your job", _pay * 0.5];
+			AFAL_money = AFAL_money - (_pay * 0.5);
+		};
 	};
 };
