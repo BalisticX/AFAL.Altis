@@ -38,6 +38,10 @@ switch (_class) do {
 	case "arifle_MXM_F" :				{	_array = [		"arifle_MXM_F", "arifle_MXM_Black_F"			]	};
 	
 	case "arifle_MX_SW_F" : 			{	_array = [		"arifle_MX_SW_F", "arifle_MX_SW_Black_F"		]	};
+	
+	case "srifle_DMR_02_F" :			{	_array = [		"srifle_DMR_02_F", "srifle_DMR_02_sniper_F", "srifle_DMR_02_camo_F"		]	};
+	
+	case "srifle_DMR_03_F" :			{	_array = [		"srifle_DMR_03_F", "srifle_DMR_03_khaki_F", "srifle_DMR_03_tan_F", "srifle_DMR_03_woodland_F"	]	};
 };
 
 _array
