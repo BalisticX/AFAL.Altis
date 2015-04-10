@@ -16,6 +16,9 @@ AFAL.Altis Layout -
     * clothesShop
     * itemShop
     * playerMenu
+    * policeMenu
+    * cyber
+    * delivery
     * masterfile
     * resource
 
