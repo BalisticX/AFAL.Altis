@@ -333,77 +333,60 @@ class playerMenu_money {
 	};
 };
 
-/*
+//////////////////////////////// LICENSE CARD ////////////////////////////////
 
-///// LICENSE CARD ////
-
-class AFAL_playerMenu_license 
+class playerMenu_license 
 {
-	idd = 1300;
-	name = "AFAL_playerMenu_license";
+	idd = 1400;
+	name = "playerMenu_license";
 	movingEnable = true;
 	onLoad = "";
 	controlsBackground[] = {license};
-	controls[] = {exit, playerName, playerSide, playerTitle, permissions};
+	controls[] = {playerName, playerSide, playerTitle, playerPicture};
 	
 	class license : RscBground {
 		moving = true;
 		style = 48 + 2048;
-		x = safeZoneX + 0.3;		y = 0;
+		x = 0;		y = 0;
 		w = 0.6;		h = 1;
-		text = "AFAL_license.paa";
+		text = "images\AFAL_license.paa";
 		colorText[] = {};
 		colorBackground[] = {};
 	};
 	
-	class exit : RscButton {
-		style = 2;
-		x = safeZoneX + 0.81;		y = 0.125;
-		w = 0.07;		h = 0.08;
-		text = "X";
-		action = "closeDialog 1300";
-		colorText[] = { 0.2, 0.2, 0.2, 0.8};
-		colorBackground[] = { 0, 0, 0, 0};
-		colorBackgroundActive[] = { 0.8, 0.2, 0.2, 0.4};
-		colorFocused[] = { 0, 0, 0, 0};
-		sizeEx = 0.075;
-	};
-	
 	class playerName : RscText {
-		idc = 1301;
-		x = safeZoneX + 0.34;		y = 0.25;
-		w = 0.365;		h = 0.1;
-		text = "NAME";
-		sizeEx = 0.06;
-		colorText[] = { 0, 0, 0, 0.8};
-	};
-	
-	class playerSide : RscText {
-		idc = 1302;
-		style = 2;
-		x = safeZoneX + 0.705;		y = 0.25;
-		w = 0.15;		h = 0.1;
-		text = "SIDE"
-		sizeEx = 0.045;
-		colorText[] =  {0, 0, 0, 0.8};
+		idc = 1401;
+		x = 0.21;		y = 0.26;
+		w = 0.35;		h = 0.1;
+		text = "";
+		colorText[] = { 0, 0, 0, 0.7};
 	};
 	
 	class playerTitle : RscText {
-		idc = 1303;
-		x = safeZoneX + 0.37;		y = 0.32;
-		w = 0.29;		h = 0.08;
-		text = "TITLE";
-		sizeEx = 0.04;
-		colorText[] = { 0, 0, 0, 0.8};
+		idc = 1402;
+		x = 0.21;		y = 0.3625;
+		w = 0.3;		h = 0.1;
+		text = "";
+		sizeEx = 0.045;
+		colorText[] = { 0, 0, 0, 0.7};
 	};
 	
-	class permissions : RscListbox {
-		idc = 1304;
-		x = safeZoneX + 0.37;		y = 0.4;
-		w = 0.29;		h = 0.18;
-		colorText[] = { 0, 0, 0, 0.8};
-		colorBackground[] = { 0, 0, 0, 0};
+	class playerSide : RscText {
+		idc = 1403;
+		x = 0.21;		y = 0.465;
+		w = 0.3;		h = 0.1;
+		text = ""
+		sizeEx = 0.045;
+		colorText[] =  {0, 0, 0, 0.7};
+	};
+	
+	class playerPicture : RscBground {
+		idc = 1404;
+		style = 48 + 2048;
+		x = 0.05;		y = 0.295;
+		w = 0.143;		h = 0.255;
+		text = "";
+		colorText[] = {};
+		colorBackground[] = {};
 	};
 };
-
-*/
