@@ -8,14 +8,13 @@
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call AFAL_fnc_MPexec};
 
-[] call AFAL_fnc_eventHandlerSetup;
-
 //// Player bools ////
 
 isWASD = false;				isRestrained = false;
 isClimbing = false;			isTazed = false;
 isDrugged = false;			inUse = false;
-canZipline = false;			isDelivery = false;
+isHacking = false;			isDelivery = false;
+isPlacing = false;
 
 //// Player numbers ////
 
@@ -36,26 +35,27 @@ AFAL_grinding = 250;
 AFAL_relicMoney = 10000;
 
 waitUntil {!(isNull (findDisplay 46))};
-(findDisplay 46) displayAddEventHandler ["KeyDown", "_this call afal_fnc_keyboard"];
+(findDisplay 46) displayAddEventHandler ["KeyDown", "_this call AFAL_fnc_keyboard"];
 
 AFAL_inventory = [
-	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",	//// DRINKS
-	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon", "AFAL_milk",		//// FOOD
-	"AFAL_zipline", "AFAL_stunGun",			//// GADGETS
-	"AFAL_lockpick", "AFAL_chemlight",		//// TOOLS
-	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull",		//// VEHICLE
-	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",					//// RESOURCE
-	"AFAL_relicBox", "AFAL_relicMilitary", "AFAL_relicIllegal", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",	//// RESOURCE
-	"AFAL_turtle", "AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin"		//// ILLEGAL
+	//// DRINKS
+	"AFAL_waterbottle", "AFAL_canteen", "AFAL_sprite", "AFAL_fanta", "AFAL_redbull",
+	//// FOOD
+	"AFAL_cereal", "AFAL_rice", "AFAL_bakedBeans", "AFAL_bacon", "AFAL_milk",
+	//// GADGETS
+	"AFAL_zipline", "AFAL_stunGun",								
+	//// TOOLS
+	"AFAL_lockpick", "AFAL_chemlight", "AFAL_roadcone", "AFAL_roadcone_light", "AFAL_roadblock", "AFAL_roadbarrier",
+	//// VEHICLE
+	"AFAL_fuelSmall", "AFAL_fuelBig", "AFAL_repairFuel", "AFAL_repairEngine", "AFAL_repairTyre", "AFAL_repairHull",
+	//// RESOURCE
+	"AFAL_mullet", "AFAL_mahi", "AFAL_mackeral", "AFAL_bass", "AFAL_catshark", "AFAL_tuna",
+	"AFAL_relicBox", "AFAL_relicMilitary", "AFAL_relicIllegal", "AFAL_relicBronze", "AFAL_relicSilver", "AFAL_relicGold",
+	//// ILLEGAL
+	"AFAL_turtle", "AFAL_marijuana", "AFAL_cocaine", "AFAL_heroin"				
 ];
 
-{
-	missionNamespace setVariable [ _x, 0]
-} foreach AFAL_inventory;
-
-player addEventHandler ["Fired", { if (canZipline) then { [_this] spawn AFAL_fnc_zipLine_setup } else {} }];
-
-player addAction [ "Use ATM", AFAL_fnc_playerMenu, "", 0, false, false, "", "call AFAL_fnc_checkBox == 'atm'"];
+{	missionNamespace setVariable [ _x, 0]	} foreach AFAL_inventory;
 
 player setVariable ["Restrain", false, true];
 
@@ -66,15 +66,13 @@ AFAL_walls = [
 	"wall_tin_4_2",
 	"pipewall_concretel_8m_f" ];
 	
-AFAL_atms = [
-	"Land_Atm_01_F",
-	"Land_Atm_02_F" ];
+AFAL_atms = [	"Land_Atm_01_F", "Land_Atm_02_F"	];
 
-switch (side player) do {
-	case west : { player setVariable [ "Role", "Police Officer", true]};
-	case east : { player setVariable [ "Role", "Gang Member", true]};
-	case resistance : { player setVariable [ "Role", "Paramedic", true]};
-	case civilian : { player setVariable [ "Role", "Civilian", true]};
+switch (playerSide) do {
+	case west : 		{	player setVariable [ "Role", "Police Officer", true]		};
+	case east : 		{	player setVariable [ "Role", "Gang Member", true]		};
+	case resistance : 	{	player setVariable [ "Role", "Paramedic", true]			};
+	case civilian : 	{	player setVariable [ "Role", "Civilian", true]			};
 };
 
 sepiaEffect = ppEffectCreate ["colorCorrections", 1517];
@@ -88,5 +86,5 @@ _dust setParticleRandom [0, [0.25, 0.25, 0], [1, 1, 1], 0, 1, [0, 0, 0, 0.5], 0,
 _dust setParticleCircle [20, [0.5, 0, 0.1]];  
 _dust setDropInterval 0.07;
 
-[] spawn AFAL_fnc_newSpawn;
+[] spawn AFAL_fnc_life;
   
