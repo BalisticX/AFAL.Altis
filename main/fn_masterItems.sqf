@@ -106,8 +106,6 @@ switch (_item) do
 	case "AFAL_hammer":							{[ "Land_Grinder_F", "Hammer", 2000, "$2000", 500, "$500", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_drill":							{[ "Land_DrillAku_F", "Power Drill", 4000, "$4000", 1750, "$1750", [ 1, 0.5, 0.14, 1]]};
 	case "AFAL_grinder":							{[ "Land_Hammer_F", "Angle Grinder", 5000, "$5000", 2000, "$2000", [ 1, 0.5, 0.14, 1]]};
-	case "AFAL_cone" : 							{[ "RoadCone_F", "Orange Cone", 500, "$500", 250, "$250", [ 0.855, 0.647, 0.125, 1]]};	
-	case "AFAL_roadBlock" : 						{[ "RoadBarrier_small_F", "Roadblock", 2500, "$2500", 1000, "$1000", [ 0.855, 0.647, 0.125, 1]]};	
 	
 	//// ILLEGAL	DARK RED [ 0.502, 0, 0, 1]
 	
