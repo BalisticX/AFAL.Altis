@@ -11,6 +11,7 @@ AFAL.Altis Layout -
  * DIALOGS /
     * clothesShop
     * cyber
+    * death
     * delivery
     * gunShop
     * itemShop
@@ -28,18 +29,20 @@ AFAL.Altis Layout -
 
  * MAIN /
     * fn_comsumables
+    * fn_death
     * fn_eventHandlerSetup
     * fn_handleDamage
     * fn_keyboard
+    * fn_life
     * fn_masterItems
     * fn_newEquip
-    * fn_newSpawn
 
  * MAIN / ACTIONS /
     * fn_checkID
     * fn_climb
     * fn_cyberLogin
     * fn_cyberXray
+    * fn_dropDown
     * fn_restrainSit
     * fn_tazed
     * fn_unlock
@@ -58,6 +61,7 @@ AFAL.Altis Layout -
     * fn_lockpick_attmept
     * fn_marijuana
     * fn_open
+    * fn_placement
     * fn_recover
     * fn_refuel
     * fn_repair
