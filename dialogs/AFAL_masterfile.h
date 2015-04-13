@@ -28,10 +28,13 @@
 
 #include "AFAL_policeMenu.hpp"
 
+#include "AFAL_death.hpp"
+
 /*	DIALOG IDD's
 
-	Title				17
-	Map				500
+	title				17
+	death				100
+	map				500
 	policeMenu			900
 	playerMenu			1000
 		inventory		1100
