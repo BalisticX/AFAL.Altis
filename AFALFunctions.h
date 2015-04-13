@@ -30,11 +30,13 @@ class AFAL_client {
 	class Main {
 		file = "main";
 		class consumables {};
+		class death {};
 		class eventHandlerSetup {};
 		class handleDamage {};
 		class keyboard {};
+		class life {};
+		class masterItems {};
 		class newEquip {};
-		class newSpawn {};
 	};
 	
 	class actions {
@@ -43,6 +45,7 @@ class AFAL_client {
 		class climb {};
 		class cyberLogin {};
 		class cyberXray {};
+		class dropDown {};
 		class restrainSit {};
 		class tazed {};
 		class unlock {};
@@ -63,6 +66,7 @@ class AFAL_client {
 		class lockpick_attempt {};
 		class marijuana {};
 		class open {};
+		class placement {};
 		class recover {};
 		class refuel {};
 		class repair {};
