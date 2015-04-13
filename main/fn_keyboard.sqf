@@ -6,43 +6,50 @@
 	Sends message from keys to scripts basically it's a keyboard handler
 */
 
-
 _keyCode = _this select 1;
 _shiftKey = _this select 2;
 _ctrlKey = _this select 3;
 _altKey = _this select 4;
 _enableKeys = false;
 
-if(isRestrained && (_keyCode in (actionKeys "GetOver") || _keyCode in (actionKeys "salute"))) exitWith {
-	_enableKeys = true;
-};
+if ( player getVariable "Restrain" != 0 ) exitWith {	_enableKeys		};
 
-if(isWASD && _keyCode in [17,30,31,32]) exitWith {_enableKeys = true;};
+if (isPlacing) exitWith {
+	switch (_keyCode) do {
+
+		case 57 : 		{	systemChat "Object dropped"; isPlacing = false; _enableKeys = true;						};
+	
+		case 200 : 		{	if (placeOffset < 2) then { placeOffset = placeOffset + 0.15 } else { systemChat "You cannot raise this object any higher" }; _enableKeys = true;		};
+		
+		case 203 : 		{	placeDir = placeDir - 15; _enableKeys = true;	};
+		
+		case 205 : 		{	placeDir = placeDir + 15; _enableKeys = true;	};
+		
+		case 208 : 		{	if (placeOffset > 0.15) then { placeOffset = placeOffset - 0.15 } else { systemChat "You cannot lower this object any lower" }; _enableKeys = true;			};		
+	};
+	_enableKeys
+};
 
 switch (_keyCode) do {
 
-	case 21: {
-		if(!dialog) then {createDialog "bigB_playerMenu";[] spawn afal_fnc_playerMenu;};
+	case 20 : {		systemChat "T = Item Quick Use"		};
+
+	case 21 : {
+		if ( cursorTarget isKindOf "Man" ) then {	
+			[] spawn AFAL_fnc_interactMenu; _enableKeys = true;	
+		} else {
+			[] spawn AFAL_fnc_playerMenu; _enableKeys = true; 	
+		};
 	};
 	
-	case 47: {
-		if ((getPos player select 2) < 2 && !isClimbing) then {
-			_nearObjects = nearestObjects [getPosATL player, [], 2.5];
-			_countWalls	= []; 
-			{_obj = _x; 
-				if (typeOf _obj isEqualTo "") then {
-					_arr 	= toArray str (_obj); 
-					_start 	= _arr find 58; 
-					if !(_start < 0) then {
-						_name = [];
-						_end = _arr find 46;
-						for "_r" from (_start + 2) to (_end - 1) do {_name set [count _name, _arr select _r]};
-						if (toString _name in afal_walls) exitWith {[] spawn AFAL_fnc_climb; _enableKeys = true};
-					}
-				}
-			} count _nearObjects;
-		};
+	case 47 : {
+		_objects = lineIntersectsObjs [ eyePos player, eyePos player vectorAdd ((eyeDirection player) vectorMultiply 3), objNull, objNull, true, 2];
+		_thing = _objects select 0;
+		{	if ( [_x, str _thing, false] call BIS_fnc_inString && !isClimbing ) exitWith { [] spawn AFAL_fnc_climb; _enableKeys = true; _enableKeys };
+			_height = getPosATL player select 2;
+			if ( _height > 1.5 && _height < 5 && isNull cursorTarget && !isClimbing ) exitWith { [] spawn AFAL_fnc_dropDown; _enableKeys = true; _enableKeys; };
+		} forEach AFAL_walls;
 	};
 };
 
-_enableKeys;
+_enableKeys
