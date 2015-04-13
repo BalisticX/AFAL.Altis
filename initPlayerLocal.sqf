@@ -57,8 +57,6 @@ AFAL_inventory = [
 
 {	missionNamespace setVariable [ _x, 0]	} foreach AFAL_inventory;
 
-player setVariable ["Restrain", false, true];
-
 AFAL_walls = [
 	"city_4m_f", "city_8m_f", "city_pillar_f",
 	"city2_4m_f", "city2_8m_f",
@@ -75,6 +73,11 @@ switch (playerSide) do {
 	case civilian : 	{	player setVariable [ "Role", "Civilian", true]			};
 };
 
+//// Restrain : 0 Free, 1 Standing (Can be moved around), 2 Sitting
+player setVariable ["Restrain", 0, true];
+//// Dying : 0 Alive, 1 Incapacitated/Bleedout, 2 : Stabilized
+player setVariable ["Dying", 0, true];
+
 sepiaEffect = ppEffectCreate ["colorCorrections", 1517];
 sepiaEffect ppEffectEnable true;
 sepiaEffect ppEffectAdjust [ 0.8, 0.95, 0, [ 0.1, 0.2, 0.3, -0.4], [ 1, 1, 0.7, 0.48], [ 0.5, 0.2, 0, 1]];
@@ -87,4 +90,3 @@ _dust setParticleCircle [20, [0.5, 0, 0.1]];
 _dust setDropInterval 0.07;
 
 [] spawn AFAL_fnc_life;
-  
