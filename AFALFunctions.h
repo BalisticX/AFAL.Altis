@@ -15,16 +15,14 @@ class AFAL_client {
 		class BC {};
 		class NWAnimation {};
 		class NWEffects {};
-		class numberText {};
-		class checkBox {};
-		class eyePos {};
-		class rotate {};
-		class cityDemolish {};
-		class cityBarricade {};
-		class wreckSpawn {};
-		class wreckExtra {};
 		class ambientNPC {};
+		class cityBarricade {};
+		class cityDemolish {};
+		class eyePos {};
+		class numberText {};
 		class rotate {};
+		class wreckExtra {};
+		class wreckSpawn {};
 	};
 	
 	class Main {
