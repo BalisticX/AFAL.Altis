@@ -41,8 +41,12 @@ switch (_item) do
 	
 	/// TOOLS	ORANGE [ 1, 0.5, 0.14, 1]
 	
-	case "AFAL_lockpick" :							{[ "Land_CanOpener_F", "Lockpick", 2000, "$2000", 1000, "$1000", [ 1, 0.5, 0.14, 1]], AFAL_fnc_lockpick};
-	case "AFAL_chemlight" :							{[ "Land_PenBlack_F", "Diver Chemlight", 250, "$250", 100, "$100", [ 1, 0.5, 0.14, 1]], AFAL_fnc_chemlight};
+	case "AFAL_lockpick" :							{	[ "Land_CanOpener_F", "Lockpick", 2000, "$2000", 1000, "$1000", [ 1, 0.5, 0.14, 1], "AFAL_fnc_lockpick"]	};
+	case "AFAL_chemlight" :							{	[ "Land_PenBlack_F", "Diver Chemlight", 250, "$250", 100, "$100", [ 1, 0.5, 0.14, 1], "AFAL_fnc_chemlight"]	};
+	case "AFAL_roadcone" :							{	[ "RoadCone_F", "Roadcone", 300, "$300", 150, "$150", [ 1, 0.5, 0.14, 1], "AFAL_fnc_placement"]		};
+	case "AFAL_roadcone_light" :						{	[ "RoadCone_L_F", "Light Roadcone", 350, "$350", 200, "$200", [ 1, 0.5, 0.14, 1], "AFAL_fnc_placement"]	};
+	case "AFAL_roadblock" :							{	[ "RoadBarrier_small_F", "Roadblock", 500, "$500", 300, "$300", [ 1, 0.5, 0.14, 1], "AFAL_fnc_placement"]	};
+	case "AFAL_roadbarrier" :						{	[ "RoadBarrier_F", "Roadbarrier", 750, "$750", 400, "$400", [ 1, 0.5, 0.14, 1], "AFAL_fnc_placement"]	};
 	
 	//// VEHICLE	PURPLE [ 0.365, 0.278, 0.545, 1]
 	
